@@ -1,0 +1,14 @@
+---
+layout: layouts/base.vto
+---
+{{ set latestPost = search.page("type=post", "date=desc") }}
+
+{{
+  layout "templates/post.vto" {
+    title: latestPost.title,
+    date: latestPost.date,
+    img: latestPost.img,
+  }
+}}
+  {{ latestPost.content |> md }}
+{{ /layout }}
