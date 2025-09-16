@@ -1,0 +1,71 @@
+:root {
+  --font-text: Geist, system-ui, sans-serif;
+
+  /* Bold */
+  --font-bold: 600;
+
+  /* Line heights */
+  --line-base: 1.4;
+  --line-text: 1.6;
+}
+
+/* Fluid typography: https://utopia.fyi/blog/clamp/ */
+:root {
+  --unit: 1rem;
+  --min-width: 22;
+  --max-width: 75;
+  --width-diff: calc(var(--max-width) - var(--min-width));
+  --min-scale: 1.2;
+  --max-scale: 1.25;
+
+  /* Size 0 */
+  --size-0-min: 1;
+  --size-0-max: 1.25;
+  --size-0: clamp(
+    var(--size-0-min) * var(--unit),
+    (
+      -1 * var(--min-width)
+        * (
+        (var(--size-0-max) - var(--size-0-min)) / var(--width-diff)
+      )
+        + var(--size-0-min)
+    )
+      * var(--unit)
+      + (var(--size-0-max) - var(--size-0-min)) / var(--width-diff) * 100vw,
+    var(--size-0-max) * var(--unit)
+  );
+
+  /* Size 1 */
+  --size-1-min: calc(var(--size-0-min) * var(--min-scale));
+  --size-1-max: calc(var(--size-0-max) * var(--max-scale));
+  --size-1: clamp(
+    var(--size-1-min) * var(--unit),
+    (
+      -1 * var(--min-width)
+        * (
+        (var(--size-1-max) - var(--size-1-min)) / var(--width-diff)
+      )
+        + var(--size-1-min)
+    )
+      * var(--unit)
+      + (var(--size-1-max) - var(--size-1-min)) / var(--width-diff) * 100vw,
+    var(--size-1-max) * var(--unit)
+  );
+
+  /* Size 2 */
+  --size-2-min: calc(var(--size-1-min) * var(--min-scale));
+  --size-2-max: calc(var(--size-1-max) * var(--max-scale));
+  --size-2: clamp(
+    var(--size-2-min) * var(--unit),
+    (
+      -1 * var(--min-width)
+        * (
+        (var(--size-2-max) - var(--size-2-min)) / var(--width-diff)
+      )
+        + var(--size-2-min)
+    )
+      * var(--unit)
+      + (var(--size-2-max) - var(--size-2-min)) / var(--width-diff) * 100vw,
+    var(--size-2-max) * var(--unit)
+  );
+}

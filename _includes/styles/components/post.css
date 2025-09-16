@@ -1,0 +1,13 @@
+.post-content {
+  font-size: var(--size-0);
+  line-height: var(--line-text);
+  max-width: 45em;
+
+  p {
+    margin-block: 0 0.5em;
+
+    + p {
+      text-indent: 1em;
+    }
+  }
+}
