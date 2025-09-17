@@ -10,6 +10,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-weight: var(--font-regular);
 }
 h1, h2, h3, h4, h5, h6, strong, b {
   font-weight: var(--font-bold);

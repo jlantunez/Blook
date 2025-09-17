@@ -1,21 +1,27 @@
 .post {
   display: grid;
   grid-template-columns: 0 minmax(0, 40rem) 0;
-  grid-template-rows: 90vh 1fr;
+  grid-template-rows: 85vh 1fr;
   justify-content: space-between;
   column-gap: 2rem;
   row-gap: 4rem;
+  margin-bottom: 4rem;
   grid-template-areas:
     "header header header"
     ". content ."
-    ". nav .";
+    ". footer .";
 }
 .post-header {
   grid-area: header;
   display: grid;
   grid-template-columns: subgrid;
-  align-content: center;
-  color: white;
+  align-content: end;
+  color: var(--color-text);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-background)
+  );
 
   > * {
     grid-column: 2;
@@ -25,17 +31,19 @@
   z-index: 1;
   display: flex;
   column-gap: 1rem;
+  grid-area: header;
+  align-self: center;
 
   a {
-    background-color: white;
+    background-color: var(--color-background);
     border-radius: 50%;
-    color: var(--color);
+    color: var(--color-accent);
     padding: 1rem;
     transition: box-shadow 200ms;
-    box-shadow: 0 0 0 0 white;
+    box-shadow: 0 0 0 0 var(--color-background);
 
     &:hover {
-      box-shadow: 0 0 0 10px white;
+      box-shadow: 0 0 0 10px var(--color-background);
     }
   }
   svg {
@@ -54,15 +62,7 @@
   }
 
   @media (width <= 850px) {
-    grid-area: nav;
-    justify-self: center;
-    a {
-      border: solid 1px;
-    }
-  }
-  @media (width > 850px) {
-    grid-area: header;
-    align-self: center;
+    padding-inline: 1em;
   }
 }
 .post-title {
@@ -70,13 +70,23 @@
   font-size: var(--size-3);
   font-weight: 500;
   margin: 0;
-  text-shadow: 0 0 2rem var(--color);
   z-index: 2;
 }
-.post-date {
-  font-size: var(--size-0);
-  text-shadow: 0 0 1rem var(--color);
+.post-info {
+  font-size: var(--size--1);
   z-index: 2;
+  display: flex;
+  margin: .5em 0;
+
+  > * {
+    padding-block: .25em;
+  }
+}
+.post-date {
+  color: var(--color-accent);
+  border-right: solid 1px;
+  padding-right: 1em;
+  margin-right: 1em;
 }
 .post-image {
   grid-area: header;
@@ -99,11 +109,43 @@
   max-width: 45em;
   text-wrap: pretty;
 
+  strong {
+    color: var(--color-text-strong);
+  }
+
   p {
     margin-block: 0 0.5em;
 
     + p {
       text-indent: 1em;
     }
+  }
+}
+.post-footer {
+  grid-area: footer;
+}
+.post-author {
+  display: inline-grid;
+  column-gap: 1em;
+  row-gap: .25em;
+  font-size: var(--size--1);
+  color: var(--color-text);
+  text-decoration: none;
+  grid-template-areas: "avatar name"
+                       "avatar handler";
+  img {
+    grid-area: avatar;
+    width: 68px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: solid 4px color-mix(in srgb, var(--color-accent) 20%, var(--color-background));
+  }
+  strong {
+    grid-area: name;
+    align-self: end;
+  }
+  em {
+    grid-area: handler;
+    color: var(--color-accent);
   }
 }

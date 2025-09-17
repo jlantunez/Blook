@@ -1,9 +1,14 @@
 <article class="post" style="--color: {{ color || 'black' }}">
+  <img class="post-image" src="{{ img }}" alt="{{ title }}" width="600">
+  
   <header class="post-header">
     <h1 class="post-title">{{ title }}</h1>
-    <time class="post-date" datetime='{{ date |> date("DATETIME") }}'>
-      {{ date |> date("HUMAN_DATE") }}
-    </time>
+    <p class="post-info">
+      <time class="post-date" datetime='{{ date |> date("DATETIME") }}'>
+        {{ date |> date("HUMAN_DATE") }}
+      </time>
+      <span>{{ readingInfo?.words }} palabras</span>
+    </p>
   </header>
 
   <nav class="post-navigation">
@@ -26,9 +31,15 @@
     {{ /if }}
   </nav>
 
-  <img class="post-image" src="{{ img }}" alt="{{ title }}" width="600">
-
   <div class="post-content">
     {{ content }}
+  </div>
+
+  <div class="post-footer">
+    <a class="post-author" href="https://x.com/jlantunez">
+      <img src="/img/avatar.jpg" alt="Imagen avatar de José Luis">
+      <strong>José Luis Antúnez</strong>
+      <em>@jlantunez</em>
+    </a>
   </div>
 </article>

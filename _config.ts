@@ -5,6 +5,7 @@ import googleFonts from "lume/plugins/google_fonts.ts";
 import date from "lume/plugins/date.ts";
 import icons from "lume/plugins/icons.ts";
 import inline from "lume/plugins/inline.ts";
+import readingInfo from "lume/plugins/reading_info.ts";
 
 import { es } from "npm:date-fns@4.1.0/locale/es";
 
@@ -20,9 +21,11 @@ const site = lume()
     },
   }))
   .use(lightningcss())
+  .use(readingInfo())
   .use(inline())
   .use(basePath())
   .add("style.css")
+  .add("fonts")
   .add("img");
 
 export default site;
