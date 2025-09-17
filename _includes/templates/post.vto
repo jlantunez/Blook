@@ -36,10 +36,14 @@
   </div>
 
   <div class="post-footer">
-    <a class="post-author" href="https://x.com/jlantunez">
-      <img src="/img/avatar.jpg" alt="Imagen avatar de José Luis">
-      <strong>José Luis Antúnez</strong>
-      <em>@jlantunez</em>
+    {{ if previousPage }}
+      <a class="post-next" href="{{ previousPage.url }}" rel="next">
+        <span>Capítulo anterior <img src='{{ "arrow-right" |> icon("phosphor") }}' inline></span>
+        <strong>{{ previousPage.title }}</strong>
+      </a>
+    {{ /if }}
+    <a href="/" class="post-monograma">
+      <img src="/img/jl.svg" alt="José Luis" inline>
     </a>
   </div>
 </article>

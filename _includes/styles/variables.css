@@ -15,14 +15,24 @@
   --font-bold: 600;
 
   /* Colors */
-  --color-background: #232426;
-  --color-text: #e2e3e4;
-  --color-text-strong: white;
-  --color-accent: #e66a28;
+  --color-background: #FFEDE6;
+  --color-text: #232426;
+  --color-text-strong: black;
+  --color-accent: #c24c0c;
+  --color-selection: color-mix(in srgb, var(--color-accent) 15%, var(--color-background));
+  --color-line: color-mix(in srgb, var(--color-accent) 25%, var(--color-background));
 
   /* Line heights */
   --line-base: 1.4;
   --line-text: 1.6;
+
+  @media (prefers-color-scheme: dark) {
+    /* Colors */
+    --color-background: #232426;
+    --color-text: #e2e3e4;
+    --color-text-strong: white;
+    --color-accent: #e66a28;
+  }
 }
 
 /* Fluid typography: https://utopia.fyi/blog/clamp/ */
