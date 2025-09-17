@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'display';
+    src: url('/fonts/pstimes-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* deno-fmt-ignore-file */
 :root {
   --font-display: display, serif;

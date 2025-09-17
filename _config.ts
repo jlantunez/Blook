@@ -15,10 +15,8 @@ const site = lume()
   }))
   .use(googleFonts({
     fonts: {
-      display:
-        "https://fonts.google.com/share?selection.family=Cinzel:wght@400..900",
       text:
-        "https://fonts.google.com/share?selection.family=Figtree:ital,wght@0,300..900;1,300..900",
+        "https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900",
     },
   }))
   .use(lightningcss())
