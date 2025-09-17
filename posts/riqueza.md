@@ -2,6 +2,7 @@
 title: Riqueza
 date: 2025-08-30
 img: /img/riqueza.jpg
+color: "#292228"
 ---
 
 Desde niño tuve una brújula para distinguir, con relativa facilidad, entre el

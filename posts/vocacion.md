@@ -2,6 +2,7 @@
 title: Vocación
 date: 2025-08-09
 img: /img/vocacion.jpg
+color: "#31190e"
 ---
 
 Cuarenta grados. Agosto de 1993. Nos vamos de vacaciones a Chipiona. Seremos

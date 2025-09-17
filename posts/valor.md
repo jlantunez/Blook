@@ -2,6 +2,7 @@
 title: Valor
 date: 2025-08-23
 img: /img/valor.png
+color: "#833111"
 ---
 
 Aquel día tocaba revisión, la primera después de la pandemia. Fue cuando conocí

@@ -1,10 +1,32 @@
-<article class="post">
+<article class="post" style="--color: {{ color || 'black' }}">
   <header class="post-header">
     <h1 class="post-title">{{ title }}</h1>
-    <time>{{ date }}</time>
+    <time class="post-date" datetime='{{ date |> date("DATETIME") }}'>
+      {{ date |> date("HUMAN_DATE") }}
+    </time>
   </header>
 
-  <img src="{{ img }}" alt="{{ title }}" width="600">
+  <nav class="post-navigation">
+    {{ set nextPage = search.nextPage(url, "type=post", "date=dest") }}
+    {{ if nextPage }}
+      <a href="{{ nextPage.url }}" title="{{ nextPage.title }}" rel="next">
+        <img src='{{ "arrow-left" |> icon("phosphor") }}' inline>
+      </a>
+    {{ /if }}
+
+    {{ set previousPage = search.previousPage(url, "type=post", "date=dest") }}
+    {{ if previousPage }}
+      <a
+        href="{{ previousPage.url }}"
+        title="{{ previousPage.title }}"
+        rel="prev"
+      >
+        <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
+      </a>
+    {{ /if }}
+  </nav>
+
+  <img class="post-image" src="{{ img }}" alt="{{ title }}" width="600">
 
   <div class="post-content">
     {{ content }}
