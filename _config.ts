@@ -9,7 +9,6 @@ import inline from "lume/plugins/inline.ts";
 import { es } from "npm:date-fns@4.1.0/locale/es";
 
 const site = lume()
-  .use(basePath())
   .use(icons())
   .use(date({
     locales: { es },
@@ -24,6 +23,7 @@ const site = lume()
   }))
   .use(lightningcss())
   .use(inline())
+  .use(basePath())
   .add("style.css")
   .add("img");
 
