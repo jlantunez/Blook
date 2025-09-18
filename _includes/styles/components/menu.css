@@ -93,11 +93,8 @@
 .menu-post-date {
   font-size: var(--size--1);
   color: var(--color-accent);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.02em;
 
   @media (width > 400px) {
-    text-align: right;
     grid-area: 1 / 1;
   }
 }

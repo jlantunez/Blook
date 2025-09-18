@@ -5,6 +5,7 @@
   padding-inline: 2rem;
   column-gap: 2rem;
   margin-bottom: 4rem;
+  margin-top: 6rem;
 
   a {
     color: var(--color-accent);

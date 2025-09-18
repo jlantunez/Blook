@@ -8,6 +8,7 @@ import inline from "lume/plugins/inline.ts";
 import readingInfo from "lume/plugins/reading_info.ts";
 import feed from "lume/plugins/feed.ts";
 import metas from "lume/plugins/metas.ts";
+import favicon from "lume/plugins/favicon.ts";
 
 import { es } from "npm:date-fns@4.1.0/locale/es";
 
@@ -26,6 +27,7 @@ const site = lume()
     },
   }))
   .use(metas())
+  .use(favicon())
   .use(feed({
     query: "type=post",
     info: {
