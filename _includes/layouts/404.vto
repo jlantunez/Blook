@@ -5,7 +5,7 @@ layout: ./base.vto
 <main class="notfound">
   <header
     class="dark-scheme notfound-header"
-    style="--image: url('{{ image }}')"
+    style="--image: url('{{ image |> url }}')"
   >
     <h1>{{ title }}</h1>
   </header>
