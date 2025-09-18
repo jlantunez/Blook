@@ -1,5 +1,6 @@
 <article class="post">
-  <div class="post-image dark-scheme" style="--image: url('{{ img |> url }}')"></div>
+  <div class="post-image dark-scheme" style="--image: url('{{ img |> url }}')">
+  </div>
 
   <header class="post-header dark-scheme">
     <h1 class="post-title">{{ title }}</h1>
@@ -39,13 +40,17 @@
     <nav class="post-footer-nav">
       {{ if previousPage }}
         <a class="post-prev" href="{{ previousPage.url }}" rel="next">
-          <span><img src='{{ "arrow-left" |> icon("phosphor") }}' inline> Anterior</span>
+          <span><img src='{{ "arrow-left" |> icon("phosphor") }}' inline>
+            Anterior</span>
           <strong>{{ previousPage.title }}</strong>
         </a>
       {{ /if }}
       {{ if nextPage }}
         <a class="post-next" href="{{ nextPage.url }}" rel="next">
-          <span>Siguiente <img src='{{ "arrow-right" |> icon("phosphor") }}' inline></span>
+          <span>Siguiente <img
+              src='{{ "arrow-right" |> icon("phosphor") }}'
+              inline
+            ></span>
           <strong>{{ nextPage.title }}</strong>
         </a>
       {{ /if }}

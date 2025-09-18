@@ -72,10 +72,10 @@
   font-size: var(--size--1);
   z-index: 2;
   display: flex;
-  margin: .5em 0;
+  margin: 0.5em 0;
 
   > * {
-    padding-block: .25em;
+    padding-block: 0.25em;
   }
 }
 .post-date {
@@ -94,10 +94,10 @@
       var(--color-background)
     ),
     radial-gradient(
-      circle at 100% 0,
-      color-mix(in srgb, var(--color-background) 80%, transparent),
-      transparent 500px
-    ),
+    circle at 100% 0,
+    color-mix(in srgb, var(--color-background) 80%, transparent),
+    transparent 500px
+  ),
     var(--image);
   background-repeat: no-repeat;
   background-position: center, top right, center;
@@ -157,20 +157,20 @@
   strong {
     font-weight: normal;
     font-family: var(--font-display);
-    font-size: var(--size-1)
+    font-size: var(--size-1);
   }
 
   span {
     display: flex;
     align-items: center;
-    column-gap: .5em;
+    column-gap: 0.5em;
   }
 
   > a {
     text-decoration: none;
     color: currentColor;
     display: grid;
-    row-gap: .5em;
+    row-gap: 0.5em;
     color: var(--color-accent);
 
     &:hover {

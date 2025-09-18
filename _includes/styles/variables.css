@@ -1,11 +1,10 @@
 @font-face {
-    font-family: 'display';
-    src: url('/fonts/pstimes-regular-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "display";
+  src: url("/fonts/pstimes-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* deno-fmt-ignore-file */
 :root {
   --font-display: display, serif;
   --font-text: text, system-ui, sans-serif;
@@ -15,12 +14,20 @@
   --font-bold: 600;
 
   /* Colors */
-  --color-background: #FFEDE6;
+  --color-background: #ffede6;
   --color-text: #232426;
   --color-text-strong: black;
   --color-accent: #c24c0c;
-  --color-selection: color-mix(in srgb, var(--color-accent) 15%, var(--color-background));
-  --color-line: color-mix(in srgb, var(--color-accent) 25%, var(--color-background));
+  --color-selection: color-mix(
+    in srgb,
+    var(--color-accent) 15%,
+    var(--color-background)
+  );
+  --color-line: color-mix(
+    in srgb,
+    var(--color-accent) 25%,
+    var(--color-background)
+  );
 
   /* Line heights */
   --line-base: 1.4;
@@ -43,6 +50,7 @@
   --color-accent: #e66a28;
 }
 
+/* deno-fmt-ignore-start */
 /* Fluid typography: https://utopia.fyi/blog/clamp/ */
 :root {
   --unit: 1rem;
@@ -53,11 +61,19 @@
   --max-scale: 1.5;
 
   /* Size -1 */
-  --size--1-min: .875;
+  --size--1-min: 0.875;
   --size--1-max: 1;
   --size--1: clamp(
     var(--size--1-min) * var(--unit),
-    (-1 * var(--min-width) * ((var(--size--1-max) - var(--size--1-min)) / var(--width-diff)) + var(--size--1-min)) * var(--unit) + (var(--size--1-max) - var(--size--1-min)) / var(--width-diff) * 100vw,
+    (
+      -1 * var(--min-width)
+        * (
+        (var(--size--1-max) - var(--size--1-min)) / var(--width-diff)
+      )
+        + var(--size--1-min)
+    )
+      * var(--unit)
+      + (var(--size--1-max) - var(--size--1-min)) / var(--width-diff) * 100vw,
     var(--size--1-max) * var(--unit)
   );
 
@@ -66,7 +82,15 @@
   --size-0-max: 1.25;
   --size-0: clamp(
     var(--size-0-min) * var(--unit),
-    (-1 * var(--min-width) * ((var(--size-0-max) - var(--size-0-min)) / var(--width-diff)) + var(--size-0-min)) * var(--unit) + (var(--size-0-max) - var(--size-0-min)) / var(--width-diff) * 100vw,
+    (
+      -1 * var(--min-width)
+        * (
+        (var(--size-0-max) - var(--size-0-min)) / var(--width-diff)
+      )
+        + var(--size-0-min)
+    )
+      * var(--unit)
+      + (var(--size-0-max) - var(--size-0-min)) / var(--width-diff) * 100vw,
     var(--size-0-max) * var(--unit)
   );
 
@@ -75,7 +99,15 @@
   --size-1-max: calc(var(--size-0-max) * var(--max-scale));
   --size-1: clamp(
     var(--size-1-min) * var(--unit),
-    (-1 * var(--min-width) * ((var(--size-1-max) - var(--size-1-min)) / var(--width-diff)) + var(--size-1-min)) * var(--unit) + (var(--size-1-max) - var(--size-1-min)) / var(--width-diff) * 100vw,
+    (
+      -1 * var(--min-width)
+        * (
+        (var(--size-1-max) - var(--size-1-min)) / var(--width-diff)
+      )
+        + var(--size-1-min)
+    )
+      * var(--unit)
+      + (var(--size-1-max) - var(--size-1-min)) / var(--width-diff) * 100vw,
     var(--size-1-max) * var(--unit)
   );
 
@@ -84,7 +116,15 @@
   --size-2-max: calc(var(--size-1-max) * var(--max-scale));
   --size-2: clamp(
     var(--size-2-min) * var(--unit),
-    (-1 * var(--min-width) * ((var(--size-2-max) - var(--size-2-min)) / var(--width-diff)) + var(--size-2-min)) * var(--unit) + (var(--size-2-max) - var(--size-2-min)) / var(--width-diff) * 100vw,
+    (
+      -1 * var(--min-width)
+        * (
+        (var(--size-2-max) - var(--size-2-min)) / var(--width-diff)
+      )
+        + var(--size-2-min)
+    )
+      * var(--unit)
+      + (var(--size-2-max) - var(--size-2-min)) / var(--width-diff) * 100vw,
     var(--size-2-max) * var(--unit)
   );
 
@@ -93,7 +133,15 @@
   --size-3-max: calc(var(--size-2-max) * var(--max-scale));
   --size-3: clamp(
     var(--size-3-min) * var(--unit),
-    (-1 * var(--min-width) * ((var(--size-3-max) - var(--size-3-min)) / var(--width-diff)) + var(--size-3-min)) * var(--unit) + (var(--size-3-max) - var(--size-3-min)) / var(--width-diff) * 100vw,
+    (
+      -1 * var(--min-width)
+        * (
+        (var(--size-3-max) - var(--size-3-min)) / var(--width-diff)
+      )
+        + var(--size-3-min)
+    )
+      * var(--unit)
+      + (var(--size-3-max) - var(--size-3-min)) / var(--width-diff) * 100vw,
     var(--size-3-max) * var(--unit)
   );
 }

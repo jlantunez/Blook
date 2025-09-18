@@ -54,7 +54,7 @@
   padding: 0;
   display: grid;
   row-gap: 1em;
-  
+
   @media (width > 400px) {
     row-gap: 0;
   }
@@ -64,7 +64,7 @@
   display: grid;
   text-decoration: none;
   align-items: center;
-  padding-block: .5rem;
+  padding-block: 0.5rem;
   column-gap: 2.5rem;
 
   @media (width > 400px) {
@@ -82,7 +82,7 @@
   color: var(--color-text);
   font-family: var(--font-display);
   font-size: var(--size-2);
-  transform-origin: left calc(100% - .2em);
+  transform-origin: left calc(100% - 0.2em);
   transition-property: transform;
   transition-duration: 200ms;
 
@@ -95,7 +95,7 @@
   color: var(--color-accent);
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.02em;
-  
+
   @media (width > 400px) {
     text-align: right;
     grid-area: 1 / 1;
@@ -106,19 +106,21 @@
   display: grid;
   width: fit-content;
   column-gap: 1em;
-  row-gap: .25em;
+  row-gap: 0.25em;
   justify-content: start;
   font-size: var(--size--1);
   color: var(--color-text);
   text-decoration: none;
-  grid-template-areas: "avatar name"
-                       "avatar handler";
+  grid-template-areas:
+    "avatar name"
+    "avatar handler";
   img {
     grid-area: avatar;
     width: 68px;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: solid 4px color-mix(in srgb, var(--color-accent) 20%, var(--color-background));
+    border: solid 4px
+      color-mix(in srgb, var(--color-accent) 20%, var(--color-background));
   }
   strong {
     grid-area: name;

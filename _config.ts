@@ -6,6 +6,8 @@ import date from "lume/plugins/date.ts";
 import icons from "lume/plugins/icons.ts";
 import inline from "lume/plugins/inline.ts";
 import readingInfo from "lume/plugins/reading_info.ts";
+import feed from "lume/plugins/feed.ts";
+import metas from "lume/plugins/metas.ts";
 
 import { es } from "npm:date-fns@4.1.0/locale/es";
 
@@ -15,12 +17,23 @@ const site = lume()
     locales: { es },
     formats: {
       SHORT: "dd MMM yyyy",
-    }
+    },
   }))
   .use(googleFonts({
     fonts: {
       text:
         "https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900",
+    },
+  }))
+  .use(metas())
+  .use(feed({
+    query: "type=post",
+    info: {
+      title: "Columnas de José Luís Antúnez",
+      lang: "es",
+    },
+    items: {
+      image: "=img",
     },
   }))
   .use(lightningcss())

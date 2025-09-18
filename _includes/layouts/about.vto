@@ -16,20 +16,22 @@ layout: ./base.vto
   </a>
 </header>
 
-
-{{ set posts = search.pages("type=post", "date=desc" ) }}
+{{ set posts = search.pages("type=post", "date=desc") }}
 
 <nav class="menu">
   <ul class="menu-posts">
     {{ for post of posts }}
-    <li>
-      <a href="{{ post.url }}" class="menu-post">
-        <strong class="menu-post-title">{{ post.title }}</strong>
-        <time class="menu-post-date" datetime='{{ post.date |> date("DATETIME") }}'>
-          {{ post.date |> date("SHORT") }}
-        </time>
-      </a>
-    </li>
+      <li>
+        <a href="{{ post.url }}" class="menu-post">
+          <strong class="menu-post-title">{{ post.title }}</strong>
+          <time
+            class="menu-post-date"
+            datetime='{{ post.date |> date("DATETIME") }}'
+          >
+            {{ post.date |> date("SHORT") }}
+          </time>
+        </a>
+      </li>
     {{ /for }}
   </ul>
 </nav>
