@@ -1,5 +1,5 @@
 <article class="post">
-  <div class="post-image dark-scheme" style="--image: url('{{ img }}')">
+  <div class="post-image dark-scheme" style="--image: url('{{ img |> url }}')">
     <a href="/menu/" class="post-menu">
       <img title="Menú" src='{{ "list" |> icon("phosphor") }}' inline>
     </a>
