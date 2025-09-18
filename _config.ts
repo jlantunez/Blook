@@ -13,6 +13,9 @@ const site = lume()
   .use(icons())
   .use(date({
     locales: { es },
+    formats: {
+      SHORT: "dd MMM yyyy",
+    }
   }))
   .use(googleFonts({
     fonts: {

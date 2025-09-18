@@ -1,4 +1,43 @@
+.menu-header {
+  display: grid;
+  grid-template-columns: 0 minmax(0, 40rem) 0;
+  justify-content: space-between;
+  column-gap: 2rem;
+  margin-block: 4rem;
+  > * {
+    grid-column: 2;
+  }
+}
+.menu-title {
+  font-family: var(--font-display);
+  font-size: var(--size-3);
+  font-weight: normal;
+  margin: 0;
+}
+.menu-subtitle {
+  margin: 0;
+  font-size: var(--size-0);
+  font-weight: var(--font-bold);
+}
+.menu-intro {
+  font-size: var(--size--1);
+  line-height: var(--line-text);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+  p {
+    margin-block: 0 1em;
+
+    + p {
+      text-indent: 1em;
+    }
+  }
+}
+
 .menu {
+  border-top: solid 1px var(--color-line);
+  border-bottom: solid 1px var(--color-line);
+  padding-block: 4rem;
   display: grid;
   grid-template-columns: 0 minmax(0, 40rem) 0;
   justify-content: space-between;
@@ -13,14 +52,24 @@
   list-style-type: "";
   margin: 0;
   padding: 0;
+  display: grid;
+  row-gap: 1em;
+  
+  @media (width > 400px) {
+    row-gap: 0;
+  }
 }
 
 .menu-post {
   display: grid;
-  grid-template-columns: 8em 1fr;
   text-decoration: none;
-  align-items: baseline;
+  align-items: center;
   padding-block: .5rem;
+  column-gap: 2.5rem;
+
+  @media (width > 400px) {
+    grid-template-columns: 6.5em 1fr;
+  }
 
   &:hover {
     .menu-post-title {
@@ -31,15 +80,52 @@
 }
 .menu-post-title {
   color: var(--color-text);
-  grid-area: 1 / 2;
   font-family: var(--font-display);
   font-size: var(--size-2);
   transform-origin: left calc(100% - .2em);
   transition-property: transform;
   transition-duration: 200ms;
+
+  @media (width > 400px) {
+    grid-area: 1 / 2;
+  }
 }
 .menu-post-date {
-  grid-area: 1 / 1;
   font-size: var(--size--1);
   color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  
+  @media (width > 400px) {
+    text-align: right;
+    grid-area: 1 / 1;
+  }
+}
+
+.menu-author {
+  display: grid;
+  width: fit-content;
+  column-gap: 1em;
+  row-gap: .25em;
+  justify-content: start;
+  font-size: var(--size--1);
+  color: var(--color-text);
+  text-decoration: none;
+  grid-template-areas: "avatar name"
+                       "avatar handler";
+  img {
+    grid-area: avatar;
+    width: 68px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: solid 4px color-mix(in srgb, var(--color-accent) 20%, var(--color-background));
+  }
+  strong {
+    grid-area: name;
+    align-self: end;
+  }
+  em {
+    grid-area: handler;
+    color: var(--color-accent);
+  }
 }

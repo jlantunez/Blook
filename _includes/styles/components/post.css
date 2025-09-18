@@ -5,7 +5,6 @@
   justify-content: space-between;
   column-gap: 2rem;
   row-gap: 4rem;
-  margin-bottom: 4rem;
   grid-template-areas:
     "header header header"
     ". content ."
@@ -126,10 +125,6 @@
   max-width: 45em;
   text-wrap: pretty;
 
-  strong {
-    color: var(--color-text-strong);
-  }
-
   p {
     margin-block: 0 1em;
 
@@ -140,40 +135,6 @@
 }
 .post-footer {
   grid-area: footer;
-}
-.post-author {
-  display: inline-grid;
-  column-gap: 1em;
-  row-gap: .25em;
-  font-size: var(--size--1);
-  color: var(--color-text);
-  text-decoration: none;
-  grid-template-areas: "avatar name"
-                       "avatar handler";
-  img {
-    grid-area: avatar;
-    width: 68px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: solid 4px color-mix(in srgb, var(--color-accent) 20%, var(--color-background));
-  }
-  strong {
-    grid-area: name;
-    align-self: end;
-  }
-  em {
-    grid-area: handler;
-    color: var(--color-accent);
-  }
-}
-.post-monograma {
-  display: block;
-  margin: auto;
-  width: max-content;
-
-  svg {
-    fill: var(--color-text);
-  }
 }
 .post-footer-nav {
   display: grid;
@@ -230,20 +191,4 @@
 }
 .post-prev {
   grid-column: 1;
-}
-
-.post-menu {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  width: fit-content;
-  padding: 2rem;
-  color: var(--color-text);
-
-  svg {
-    width: 2rem;
-    height: 2rem;
-    fill: currentColor;
-    display: block;
-  }
 }

@@ -1,15 +1,11 @@
 <article class="post">
-  <div class="post-image dark-scheme" style="--image: url('{{ img |> url }}')">
-    <a href="/menu/" class="post-menu">
-      <img title="Menú" src='{{ "list" |> icon("phosphor") }}' inline>
-    </a>
-  </div>
-  
+  <div class="post-image dark-scheme" style="--image: url('{{ img |> url }}')"></div>
+
   <header class="post-header dark-scheme">
     <h1 class="post-title">{{ title }}</h1>
     <p class="post-info">
       <time class="post-date" datetime='{{ date |> date("DATETIME") }}'>
-        {{ date |> date("HUMAN_DATE") }}
+        {{ date |> date("SHORT") }}
       </time>
       <span>{{ readingInfo.words }} palabras</span>
     </p>
@@ -54,8 +50,5 @@
         </a>
       {{ /if }}
     </nav>
-    <a href="/" class="post-monograma">
-      <img src="/img/jl.svg" alt="José Luis" inline>
-    </a>
   </div>
 </article>

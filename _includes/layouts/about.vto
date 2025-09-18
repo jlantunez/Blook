@@ -1,6 +1,21 @@
 ---
-layout: layouts/base.vto
+layout: ./base.vto
 ---
+
+<header class="menu-header">
+  <h1 class="menu-title">{{ title }}</h1>
+  <p class="menu-subtitle">{{ subtitle }}</p>
+  <div class="menu-intro">
+    {{ intro |> md }}
+  </div>
+
+  <a href="{{ author.url }}" class="menu-author">
+    <img src="{{ author.avatar }}">
+    <strong>{{ author.name }}</strong>
+    <em>{{ author.handler }}</em>
+  </a>
+</header>
+
 
 {{ set posts = search.pages("type=post", "date=desc" ) }}
 
@@ -11,7 +26,7 @@ layout: layouts/base.vto
       <a href="{{ post.url }}" class="menu-post">
         <strong class="menu-post-title">{{ post.title }}</strong>
         <time class="menu-post-date" datetime='{{ post.date |> date("DATETIME") }}'>
-          {{ post.date |> date("DATE") }}
+          {{ post.date |> date("SHORT") }}
         </time>
       </a>
     </li>

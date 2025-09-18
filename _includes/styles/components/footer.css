@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2rem;
+  column-gap: 2rem;
+  margin-bottom: 4rem;
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.footer-monograma {
+  width: max-content;
+  border-radius: 50%;
+  padding: 1rem;
+  transition: background-color 200ms;
+
+  svg {
+    fill: var(--color-text);
+    display: block;
+  }
+
+  &:hover {
+    background-color: var(--color-selection);
+  }
+}
