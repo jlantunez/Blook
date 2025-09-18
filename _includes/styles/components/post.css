@@ -140,7 +140,7 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: solid 1px var(--color-line);
   border-bottom: solid 1px var(--color-line);
   padding-block: 2em;
