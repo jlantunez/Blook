@@ -48,6 +48,11 @@
   --color-text: #e2e3e4;
   --color-text-strong: white;
   --color-accent: #e66a28;
+  --color-selection: color-mix(
+    in srgb,
+    var(--color-accent) 15%,
+    var(--color-background)
+  );
 }
 
 /* deno-fmt-ignore-start */

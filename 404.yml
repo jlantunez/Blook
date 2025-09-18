@@ -1,4 +1,5 @@
 layout: layouts/404.vto
-title: Esta página no existe
+title: Página no encontrada
+image: /img/404.jpg
 description: |
-  Puedes empezar a explorar desde [la portada](/) o buscar algo específico en [la lista de columnas](/acerca-de/).
+  [Volver a inicio](/)

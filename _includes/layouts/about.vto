@@ -8,18 +8,12 @@ layout: ./base.vto
     <div class="menu-intro">
       {{ intro |> md }}
     </div>
-
-    <a href="{{ author.url }}" class="menu-author">
-      <img src="{{ author.avatar }}">
-      <strong>{{ author.name }}</strong>
-      <em>{{ author.handler }}</em>
-    </a>
   </header>
 
-  {{ set posts = search.pages("type=post", "date=desc") }}
+  {{ set posts = search.pages("type=post") }}
 
   <nav class="menu">
-    <ul class="menu-posts">
+    <ol class="menu-posts">
       {{ for post of posts }}
         <li>
           <a href="{{ post.url }}" class="menu-post">
@@ -30,9 +24,16 @@ layout: ./base.vto
             >
               {{ post.date |> date("SHORT") }}
             </time>
+            <img
+              class="menu-post-icon"
+              width="18"
+              height="18"
+              src="{{ 'arrow-right' |> icon("phosphor") }}"
+              inline
+            >
           </a>
         </li>
       {{ /for }}
-    </ul>
+    </ol>
   </nav>
 </main>

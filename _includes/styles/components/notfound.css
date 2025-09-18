@@ -4,7 +4,8 @@
   align-content: center;
   justify-content: center;
   column-gap: 2rem;
-  row-gap: 4rem;
+  row-gap: 2rem;
+  padding-block: 4rem;
   text-align: center;
 
   > * {
@@ -17,6 +18,27 @@
     font-weight: normal;
     margin: 0;
   }
+}
+.notfound-header {
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 25%,
+      var(--color-background)
+    ),
+    var(--image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  align-content: end;
+  padding: 2rem;
 }
 
 .notfound-description {
