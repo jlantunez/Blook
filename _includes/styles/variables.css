@@ -35,14 +35,22 @@
   }
 }
 
+/* To force dark mode */
+.dark-scheme {
+  --color-background: #232426;
+  --color-text: #e2e3e4;
+  --color-text-strong: white;
+  --color-accent: #e66a28;
+}
+
 /* Fluid typography: https://utopia.fyi/blog/clamp/ */
 :root {
   --unit: 1rem;
   --min-width: 22;
   --max-width: 75;
   --width-diff: calc(var(--max-width) - var(--min-width));
-  --min-scale: 1.5;
-  --max-scale: 1.618; /* Golden ratio */
+  --min-scale: 1.4;
+  --max-scale: 1.5;
 
   /* Size -1 */
   --size--1-min: .875;

@@ -8,12 +8,5 @@
   </head>
   <body>
     {{ content }}
-
-    {{# <hr>
-    <a href="/">Portada</a>
-    {{ set posts = search.pages("type=post", "date=dest") }}
-    {{ for post of posts }}
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    {{ /for }} #}}
   </body>
 </html>

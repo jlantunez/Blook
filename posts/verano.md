@@ -2,7 +2,6 @@
 title: Verano
 date: 2025-08-16
 img: /img/verano.png
-color: "#833111"
 ---
 
 Todo lo bueno es mejor en verano: las primeras veces son tan intensas que
