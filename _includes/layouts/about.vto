@@ -1,37 +1,38 @@
 ---
 layout: ./base.vto
 ---
+<main>
+  <header class="menu-header">
+    <h1 class="menu-title">{{ title }}</h1>
+    <p class="menu-subtitle">{{ subtitle }}</p>
+    <div class="menu-intro">
+      {{ intro |> md }}
+    </div>
 
-<header class="menu-header">
-  <h1 class="menu-title">{{ title }}</h1>
-  <p class="menu-subtitle">{{ subtitle }}</p>
-  <div class="menu-intro">
-    {{ intro |> md }}
-  </div>
+    <a href="{{ author.url }}" class="menu-author">
+      <img src="{{ author.avatar }}">
+      <strong>{{ author.name }}</strong>
+      <em>{{ author.handler }}</em>
+    </a>
+  </header>
 
-  <a href="{{ author.url }}" class="menu-author">
-    <img src="{{ author.avatar }}">
-    <strong>{{ author.name }}</strong>
-    <em>{{ author.handler }}</em>
-  </a>
-</header>
+  {{ set posts = search.pages("type=post", "date=desc") }}
 
-{{ set posts = search.pages("type=post", "date=desc") }}
-
-<nav class="menu">
-  <ul class="menu-posts">
-    {{ for post of posts }}
-      <li>
-        <a href="{{ post.url }}" class="menu-post">
-          <strong class="menu-post-title">{{ post.title }}</strong>
-          <time
-            class="menu-post-date"
-            datetime='{{ post.date |> date("DATETIME") }}'
-          >
-            {{ post.date |> date("SHORT") }}
-          </time>
-        </a>
-      </li>
-    {{ /for }}
-  </ul>
-</nav>
+  <nav class="menu">
+    <ul class="menu-posts">
+      {{ for post of posts }}
+        <li>
+          <a href="{{ post.url }}" class="menu-post">
+            <strong class="menu-post-title">{{ post.title }}</strong>
+            <time
+              class="menu-post-date"
+              datetime='{{ post.date |> date("DATETIME") }}'
+            >
+              {{ post.date |> date("SHORT") }}
+            </time>
+          </a>
+        </li>
+      {{ /for }}
+    </ul>
+  </nav>
+</main>

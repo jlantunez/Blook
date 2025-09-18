@@ -13,6 +13,9 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-weight: var(--font-regular);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr;
 }
 h1, h2, h3, h4, h5, h6, strong, b {
   font-weight: var(--font-bold);

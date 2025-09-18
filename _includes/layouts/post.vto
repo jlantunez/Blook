@@ -2,6 +2,8 @@
 layout: ./base.vto
 ---
 
-{{ layout "templates/post.vto" { title } }}
-  {{ content }}
-{{ /layout }}
+<main>
+  {{ layout "templates/post.vto" { title } }}
+    {{ content }}
+  {{ /layout }}
+</main>
