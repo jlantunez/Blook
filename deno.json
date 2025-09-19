@@ -5,7 +5,7 @@
     "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.13.0-beta.1/"
   },
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --env-file -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
     "cms": "deno task lume cms",

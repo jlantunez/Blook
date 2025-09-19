@@ -534,6 +534,7 @@
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3f5d69d8319d38bb4e11fdc284c985f395fd84b7/deps/vento.ts": "78db4022ee124fbcfd84caeb6c5a70f2c1e1706ec9f6415d0f1fe2e9aabcba2b",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3f5d69d8319d38bb4e11fdc284c985f395fd84b7/deps/xml.ts": "7a8a0b3564b5aa2b80b09120246c37d5f78690a90bf7c0a41c2b6e78e195f758",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3f5d69d8319d38bb4e11fdc284c985f395fd84b7/deps/yaml.ts": "a639f4fc44ddcfc87f35e38980bbe9fc8101bf8ce34867522e76cc13cb156611",
+    "https://cdn.jsdelivr.net/gh/lumeland/lume@3f5d69d8319d38bb4e11fdc284c985f395fd84b7/lint.ts": "23cf68a7cc17edfdb16f2e905de3c5d5a1da541638f04fb8f7d5c762288f2c52",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3f5d69d8319d38bb4e11fdc284c985f395fd84b7/middlewares/logger.ts": "c96f1a9f9d5757555b6f141865ce8551ac176f90c8ee3e9ad797b2b400a9a567",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3f5d69d8319d38bb4e11fdc284c985f395fd84b7/middlewares/no_cache.ts": "0119e3ae3a596ab12c42df693b93e5b03dd9608e289d862242751a9739438f35",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3f5d69d8319d38bb4e11fdc284c985f395fd84b7/middlewares/no_cors.ts": "4d24619b5373c98bcc3baf404db47ba088c87ac8538ea1784e58d197b81d4d02",
