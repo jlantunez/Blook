@@ -1,6 +1,6 @@
 .menu-header {
   display: grid;
-  grid-template-columns: 0 minmax(0, 40rem) 0;
+  grid-template-columns: 0 minmax(0, 50rem) 0;
   justify-content: space-between;
   column-gap: 2rem;
   margin-block: 4rem;
@@ -41,7 +41,7 @@
 .menu {
   padding-block: 4rem;
   display: grid;
-  grid-template-columns: 0 minmax(0, 40rem) 0;
+  grid-template-columns: 0 minmax(0, 50rem) 0;
   justify-content: space-between;
   column-gap: 2rem;
   row-gap: 4rem;
@@ -55,7 +55,6 @@
   margin: 0;
   padding: 0;
   display: grid;
-  border-bottom: solid 1px var(--color-line);
   counter-reset: post;
 
   @media (width > 400px) {
@@ -68,9 +67,8 @@
   text-decoration: none;
   align-items: baseline;
   padding-block: 1.5rem;
-  column-gap: 2.5rem;
+  column-gap: 0.5rem;
   row-gap: 0.5rem;
-  border-top: solid 1px var(--color-line);
   color: var(--color-text-strong);
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto;
@@ -84,7 +82,7 @@
   }
 
   @media (width > 400px) {
-    grid-template-columns: 2em 1fr auto auto;
+    grid-template-columns: 3rem 1fr auto auto;
     grid-template-rows: auto;
 
     &::before {
@@ -95,6 +93,16 @@
     }
     .menu-post-title {
       grid-column: 2;
+      display: flex;
+      align-items: baseline;
+      column-gap: 1rem;
+
+      &::after {
+        content: "";
+        display: block;
+        flex: 1 1 auto;
+        border-bottom: solid 1px var(--color-line);
+      }
     }
     .menu-post-date {
       grid-column: 3;
@@ -106,11 +114,6 @@
   }
 
   &:hover {
-    background: radial-gradient(
-      circle at 50%,
-      color-mix(in srgb, var(--color-accent) 15%, transparent),
-      transparent
-    );
     .menu-post-title {
       color: var(--color-text-strong);
     }
@@ -126,10 +129,6 @@
   color: var(--color-text);
   font-family: var(--font-display);
   font-size: var(--size-1);
-  transform-origin: left calc(100% - 0.2em);
-  transition-property: transform;
-  transition-duration: 200ms;
-  width: fit-content;
 }
 .menu-post-date {
   font-size: var(--size--1);
@@ -138,36 +137,5 @@
 .menu-post-icon {
   align-self: center;
   opacity: 0;
-  margin-left: -10px;
   fill: var(--color-text);
-}
-
-.menu-author {
-  display: grid;
-  width: fit-content;
-  column-gap: 1em;
-  row-gap: 0.25em;
-  justify-content: start;
-  font-size: var(--size--1);
-  color: var(--color-text);
-  text-decoration: none;
-  grid-template-areas:
-    "avatar name"
-    "avatar handler";
-  img {
-    grid-area: avatar;
-    width: 68px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: solid 4px
-      color-mix(in srgb, var(--color-accent) 15%, var(--color-background));
-  }
-  strong {
-    grid-area: name;
-    align-self: end;
-  }
-  em {
-    grid-area: handler;
-    color: var(--color-accent);
-  }
 }
