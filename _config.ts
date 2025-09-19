@@ -12,7 +12,9 @@ import favicon from "lume/plugins/favicon.ts";
 
 import { es } from "npm:date-fns@4.1.0/locale/es";
 
-const site = lume()
+const site = lume({
+  location: new URL("https://jlantunez.com/"),
+})
   .use(icons())
   .use(date({
     locales: { es },
@@ -40,8 +42,8 @@ const site = lume()
   }))
   .use(lightningcss())
   .use(readingInfo())
-  .use(inline())
   .use(basePath())
+  .use(inline())
   .add("style.css")
   .add("fonts")
   .add("img");
