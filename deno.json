@@ -2,7 +2,7 @@
   "imports": {
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@a4b50d0d34c60a1c665b7e5d52b6663695d15063/",
     "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.12/jsx-runtime.ts",
-    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@b38a75876ce422d7478b33eba3666961163febc7/"
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@36fa27ffb29bcb1635b714a0328acf47bc642214/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --env-file -A -",
