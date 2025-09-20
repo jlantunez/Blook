@@ -16,6 +16,7 @@ cms.git();
 cms.collection({
   name: "Posts",
   store: "src:posts/*.md",
+  documentName: `{title}.md`,
   fields: [
     "title: text",
     "date: date",
