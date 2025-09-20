@@ -1,16 +1,15 @@
 {
   "imports": {
-    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@75531075b2fe7afd7fe21dbd939422d0dfa16994/",
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@a4b50d0d34c60a1c665b7e5d52b6663695d15063/",
     "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.12/jsx-runtime.ts",
-    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@b38a75876ce422d7478b33eba3666961163febc7/",
-    "lume_cms_adapter": "https://deno.land/x/lume_cms_adapter@v0.3.0/mod.ts"
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@b38a75876ce422d7478b33eba3666961163febc7/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --env-file -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
     "cms": "deno task lume cms",
-    "cms:prod": "deno serve -A lume_cms_adapter"
+    "cms:prod": "deno serve -A lume/serve.ts"
   },
   "compilerOptions": {
     "types": [
@@ -25,7 +24,7 @@
   ],
   "lint": {
     "plugins": [
-      "https://cdn.jsdelivr.net/gh/lumeland/lume@75531075b2fe7afd7fe21dbd939422d0dfa16994/lint.ts"
+      "https://cdn.jsdelivr.net/gh/lumeland/lume@a4b50d0d34c60a1c665b7e5d52b6663695d15063/lint.ts"
     ],
     "rules": {
       "exclude": [
