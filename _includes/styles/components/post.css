@@ -11,7 +11,6 @@
     ". footer .";
 }
 .post-header {
-  text-decoration: none;
   grid-area: header;
   display: grid;
   grid-template-columns: subgrid;
@@ -24,6 +23,17 @@
   }
   &:hover .post-title svg {
     opacity: 1;
+  }
+
+  &.is-link {
+    text-decoration: none;
+    grid-template-columns: 0 minmax(0, 1000px) 0;
+    column-gap: 2rem;
+    justify-content: center;
+    
+    @media (min-width: 850px) {
+      column-gap: 4rem;
+    }
   }
 }
 .post-navigation {
@@ -195,6 +205,7 @@
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
+  background-color: var(--color-background-highlight);
 
   @media (width > 1000px) {
     border-radius: 1rem;
@@ -204,10 +215,9 @@
   list-style-type: "";
   margin: 0;
   padding: 0;
-  border: solid 1px var(--color-background-highlight);
 
-  > :nth-child(odd) {
-    background-color: var(--color-background-highlight);
+  > li {
+    border-bottom: solid 1px var(--color-line2);
   }
 }
 .post-list-item {
@@ -217,16 +227,18 @@
   column-gap: min(2rem, 5vw);
   row-gap: 1rem;
   padding: min(2rem, 5vw);
+  transition: background-color 200ms;
   grid-template-areas:
     "title"
     "content";
 
   &:hover {
+    background-color: var(--color-background-highlight2);
     .post-list-title svg {
       opacity: 1;
     }
     .post-list-image {
-      filter: sepia(50%) brightness(0.7);
+      filter: brightness(1.15);
     }
   }
 

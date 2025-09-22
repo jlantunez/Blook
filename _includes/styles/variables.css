@@ -18,7 +18,12 @@
   --color-background-highlight: color-mix(
     in srgb,
     var(--color-background) 93%,
-    var(--color-accent)
+    var(--color-text)
+  );
+  --color-background-highlight2: color-mix(
+    in srgb,
+    var(--color-background) 97%,
+    var(--color-text)
   );
   --color-text: #232426;
   --color-text-strong: black;
@@ -33,6 +38,11 @@
     var(--color-accent) 25%,
     var(--color-background)
   );
+  --color-line2: color-mix(
+    in srgb,
+    var(--color-text) 12%,
+    var(--color-background)
+  );
 
   /* Line heights */
   --line-base: 1.4;
@@ -44,7 +54,12 @@
     --color-background-highlight: color-mix(
       in srgb,
       var(--color-background) 96%,
-      var(--color-accent)
+      var(--color-text)
+    );
+    --color-background-highlight2: color-mix(
+      in srgb,
+      var(--color-background) 93%,
+      var(--color-text)
     );
     --color-text: #e2e3e4;
     --color-text-strong: white;

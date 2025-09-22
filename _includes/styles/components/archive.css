@@ -3,12 +3,18 @@
   max-width: min(50rem, 100% - 4rem);
   margin-inline: auto;
   margin-block: 4rem;
-
+  background-image: url("/img/archivo.png");
+  background-size: 70px auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 130px;
+  text-align: center;
+  
   @media (width > 500px) {
-    padding-left: calc(80px + 2rem);
-    background-image: url("/img/archivo.png");
-    background-repeat: no-repeat;
-    background-size: 80px auto;
+    background-position: left top;
+    padding-left: clamp(120px, 15vw, 180px);
+    text-align: left;
+    padding-top: 0;
   }
 
   a {
