@@ -1,6 +1,8 @@
 ---
 layout: layouts/base.vto
 title: Columnas
+metas:
+  description: Por José Luis Antúnez. Publico las columnas para ordenar mi visión sobre hacer empresa.
 ---
 {{ set latestPosts = search.pages("type=post", "date=desc", 5) }}
 {{ set post = latestPosts.shift() }}
