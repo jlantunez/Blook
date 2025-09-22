@@ -1,8 +1,8 @@
 {
   "imports": {
-    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@88a0674f8c8e1f6f1f0fdb91b8a90fa03949bdae/",
+    "lume/": "https://deno.land/x/lume@v3.0.9/",
     "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.12/jsx-runtime.ts",
-    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@36fa27ffb29bcb1635b714a0328acf47bc642214/"
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.12.5/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --env-file -A -",
@@ -25,7 +25,7 @@
   ],
   "lint": {
     "plugins": [
-      "https://cdn.jsdelivr.net/gh/lumeland/lume@88a0674f8c8e1f6f1f0fdb91b8a90fa03949bdae/lint.ts"
+      "https://deno.land/x/lume@v3.0.9/lint.ts"
     ],
     "rules": {
       "exclude": [
