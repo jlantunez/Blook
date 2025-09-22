@@ -115,7 +115,7 @@
     var(--image);
   background-color: var(--color-background);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: var(--position-x) var(--position-y);
   background-size: cover;
 
   @media (width > 850px) {
@@ -258,6 +258,7 @@
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
+    object-position: var(--position-x) var(--position-y);
   }
   @media (width > 600px) {
     aspect-ratio: 16/9;

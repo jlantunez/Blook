@@ -1,7 +1,10 @@
 ---
 title: Plenitud
 date: 2025-09-06
-img: /img/plenitud.jpg
+image:
+  src: /img/plenitud.webp
+  x: 70
+  y: 50
 ---
 
 La felicidad es el verdadero opio del pueblo. El problema empieza con los

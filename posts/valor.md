@@ -1,7 +1,10 @@
 ---
 title: Valor
 date: 2025-08-23
-img: /img/valor.png
+image:
+  src: /img/valor.webp
+  x: 50
+  y: 50
 ---
 
 Aquel día tocaba revisión, la primera después de la pandemia. Fue cuando conocí

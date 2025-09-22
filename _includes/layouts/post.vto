@@ -3,7 +3,13 @@ layout: ./base.vto
 ---
 
 <article class="post">
-  <div class="post-image dark-scheme" style="view-transition-name: post-image-{{ basename }}; --image: url('{{ img |> url }}')">
+  <div class="post-image dark-scheme"
+    style="
+      view-transition-name: post-image-{{ basename }};
+      --image: url('{{ image.src |> url }}');
+      --position-x: {{ image.x }}%;
+      --position-y: {{ image.y }}%;
+    ">
   </div>
 
   <header class="post-header dark-scheme">

@@ -1,7 +1,10 @@
 ---
 title: Despertar
 date: 2025-09-13
-img: /img/despertar.jpg
+image:
+  src: /img/despertar.webp
+  x: 50
+  y: 50
 ---
 
 Llegué a la pubertad escuchando la lambada. Durante la siesta, me refugiaba en

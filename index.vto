@@ -8,14 +8,17 @@ title: Columnas
 <article class="post">
   <div
     class="post-image dark-scheme"
-    style="--image: url('{{ post.img |> url }}')"
+    style="
+      --image: url('{{ post.image.src |> url }}');
+      --position-x: {{ post.image.x }}%;
+      --position-y: {{ post.image.y }}%;
+    ">
   >
   </div>
 
   <a href="{{ post.url }}" class="post-header is-link dark-scheme">
     <h1 class="post-title" style="view-transition-name: post-title-{{ post.basename }}">
       {{ post.title }}
-      {{# <img src='{{ "arrow-right" |> icon("phosphor") }}' inline> #}}
     </h1>
     <p class="post-info">
       <time class="post-date" datetime='{{ post.date |> date("DATETIME") }}'>
@@ -30,10 +33,9 @@ title: Columnas
     {{ for post of latestPosts }}
       <li>
         <a href="{{ post.url }}" class="post-list-item">
-          <img style="view-transition-name: post-image-{{ post.basename }}" class="post-list-image" src="{{ post.img }}">
+          <img style="view-transition-name: post-image-{{ post.basename }}" class="post-list-image" src="{{ post.image.src }}">
           <h3 class="post-list-title" style="view-transition-name: post-title-{{ post.basename }}">
             {{ post.title }}
-            {{# <img src='{{ "arrow-right" |> icon("phosphor") }}' inline> #}}
           </h3>
           <div class="post-list-content">
             <time datetime='{{ post.date |> date("DATETIME") }}'>

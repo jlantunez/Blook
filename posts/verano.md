@@ -1,7 +1,10 @@
 ---
 title: Verano
 date: 2025-08-16
-img: /img/verano.png
+image:
+  src: /img/verano.webp
+  x: 60
+  y: 0
 ---
 
 Todo lo bueno es mejor en verano: las primeras veces son tan intensas que
