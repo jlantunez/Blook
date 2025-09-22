@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - José Luís Antúnez</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="expect" blocking="render" href="#footer">
   </head>
   <body>
     {{ content }}
@@ -19,7 +20,7 @@
       </a>
     </aside>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <a href="/archivo/" class="footer-menu">Archivo</a>
       <a href="/" class="footer-monograma">
         <img src="/img/jl.svg" alt="José Luis" inline>
