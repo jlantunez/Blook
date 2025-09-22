@@ -15,7 +15,7 @@ title: Columnas
   <a href="{{ post.url }}" class="post-header dark-scheme">
     <h1 class="post-title" style="view-transition-name: post-title-{{ post.basename }}">
       {{ post.title }}
-      <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
+      {{# <img src='{{ "arrow-right" |> icon("phosphor") }}' inline> #}}
     </h1>
     <p class="post-info">
       <time class="post-date" datetime='{{ post.date |> date("DATETIME") }}'>
@@ -33,7 +33,7 @@ title: Columnas
           <img style="view-transition-name: post-image-{{ post.basename }}" class="post-list-image" src="{{ post.img }}">
           <h3 class="post-list-title" style="view-transition-name: post-title-{{ post.basename }}">
             {{ post.title }}
-            <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
+            {{# <img src='{{ "arrow-right" |> icon("phosphor") }}' inline> #}}
           </h3>
           <div class="post-list-content">
             <time datetime='{{ post.date |> date("DATETIME") }}'>
