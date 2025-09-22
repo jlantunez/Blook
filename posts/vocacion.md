@@ -6,7 +6,6 @@ image:
   x: 90
   y: 0
 ---
-
 Cuarenta grados. Agosto de 1993. Nos vamos de vacaciones a Chipiona. Seremos
 siete en el Ford Orion rojo: nosotros cinco y los abuelos. Es la primera vez que
 verán la playa. Todo lo que sea sacarles de su rutina son nervios y preguntas

@@ -6,7 +6,6 @@ image:
   x: 50
   y: 50
 ---
-
 Aquel día tocaba revisión, la primera después de la pandemia. Fue cuando conocí
 en la sala de espera a Isabel, la matriarca de una bodega gaditana con el don de
 elevarte. Vio que estaba leyendo sobre polisemia. Como si estuviéramos en una

@@ -6,7 +6,6 @@ image:
   x: 70
   y: 50
 ---
-
 La felicidad es el verdadero opio del pueblo. El problema empieza con los
 sofistas, que la vincularon a la riqueza material y al prestigio.
 
