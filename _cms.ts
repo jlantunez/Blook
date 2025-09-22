@@ -23,6 +23,9 @@ cms.collection({
     {
       name: "image",
       type: "object",
+      attributes: {
+        open: true,
+      },
       fields: [
         "src: file",
         "x: number",
