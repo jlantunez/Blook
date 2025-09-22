@@ -30,7 +30,7 @@
     grid-template-columns: 0 minmax(0, 1000px) 0;
     column-gap: 2rem;
     justify-content: center;
-    
+
     @media (min-width: 850px) {
       column-gap: 4rem;
     }

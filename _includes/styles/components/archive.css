@@ -9,7 +9,7 @@
   background-position: center top;
   padding-top: 130px;
   text-align: center;
-  
+
   @media (width > 500px) {
     background-position: left top;
     padding-left: clamp(120px, 15vw, 180px);
