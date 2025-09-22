@@ -2,6 +2,7 @@
 @import "styles/reset.css";
 
 @import "styles/components/post.css";
-@import "styles/components/menu.css";
+@import "styles/components/archive.css";
 @import "styles/components/footer.css";
 @import "styles/components/notfound.css";
+@import "styles/components/newsletter.css";

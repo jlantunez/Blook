@@ -15,6 +15,11 @@
 
   /* Colors */
   --color-background: #ffede6;
+  --color-background-highlight: color-mix(
+    in srgb,
+    var(--color-background) 93%,
+    var(--color-accent)
+  );
   --color-text: #232426;
   --color-text-strong: black;
   --color-accent: #c24c0c;
@@ -35,7 +40,12 @@
 
   @media (prefers-color-scheme: dark) {
     /* Colors */
-    --color-background: #232426;
+    --color-background: #24201e;
+    --color-background-highlight: color-mix(
+      in srgb,
+      var(--color-background) 96%,
+      var(--color-accent)
+    );
     --color-text: #e2e3e4;
     --color-text-strong: white;
     --color-accent: #e66a28;
@@ -44,7 +54,7 @@
 
 /* To force dark mode */
 .dark-scheme {
-  --color-background: #232426;
+  --color-background: #24201e;
   --color-text: #e2e3e4;
   --color-text-strong: white;
   --color-accent: #e66a28;

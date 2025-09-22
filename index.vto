@@ -2,17 +2,54 @@
 layout: layouts/base.vto
 title: Columnas
 ---
-{{ set latestPost = search.page("type=post", "date=desc") }}
+{{ set latestPosts = search.pages("type=post", "date=desc", 5) }}
+{{ set post = latestPosts.shift() }}
 
-{{
-  layout "templates/post.vto" {
-    title: latestPost.title,
-    date: latestPost.date,
-    img: latestPost.img,
-    color: latestPost.color,
-    url: latestPost.url,
-    readingInfo: latestPost.readingInfo,
-  }
-}}
-  {{ latestPost.content |> md }}
-{{ /layout }}
+<article class="post">
+  <div
+    class="post-image dark-scheme"
+    style="--image: url('{{ post.img |> url }}')"
+  >
+  </div>
+
+  <a href="{{ post.url }}" class="post-header dark-scheme">
+    <h1 class="post-title">
+      {{ post.title }}
+      <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
+    </h1>
+    <p class="post-info">
+      <time class="post-date" datetime='{{ post.date |> date("DATETIME") }}'>
+        {{ post.date |> date("SHORT") }}
+      </time>
+    </p>
+  </a>
+</article>
+
+<section class="post-latest">
+  <ul class="post-latest-list">
+    {{ for post of latestPosts }}
+      <li>
+        <a href="{{ post.url }}" class="post-list-item">
+          <img class="post-list-image" src="{{ post.img }}">
+          <h3 class="post-list-title">
+            {{ post.title }}
+            <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
+          </h3>
+          <div class="post-list-content">
+            <time datetime='{{ post.date |> date("DATETIME") }}'>
+              {{ post.date |> date("SHORT") }}
+            </time>
+            —
+            {{ post.content |> excerpt |> md }}
+          </div>
+        </a>
+      </li>
+    {{ /for }}
+  </ul>
+  <footer class="post-latest-footer">
+    <a class="post-latest-cta" href="/archivo/">
+      Archivo
+      <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
+    </a>
+  </footer>
+</section>

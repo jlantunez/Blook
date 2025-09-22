@@ -2,8 +2,61 @@
 layout: ./base.vto
 ---
 
-<main>
-  {{ layout "templates/post.vto" { title } }}
+<article class="post">
+  <div class="post-image dark-scheme" style="--image: url('{{ img |> url }}')">
+  </div>
+
+  <header class="post-header dark-scheme">
+    <h1 class="post-title">{{ title }}</h1>
+    <p class="post-info">
+      <time class="post-date" datetime='{{ date |> date("DATETIME") }}'>
+        {{ date |> date("SHORT") }}
+      </time>
+    </p>
+  </header>
+
+  <nav class="post-navigation">
+    {{ set previousPage = search.previousPage(url, "type=post", "date=dest") }}
+    {{ if previousPage }}
+      <a
+        href="{{ previousPage.url }}"
+        title="{{ previousPage.title }}"
+        rel="prev"
+      >
+        <img src='{{ "arrow-left" |> icon("phosphor") }}' inline>
+      </a>
+    {{ /if }}
+
+    {{ set nextPage = search.nextPage(url, "type=post", "date=dest") }}
+    {{ if nextPage }}
+      <a href="{{ nextPage.url }}" title="{{ nextPage.title }}" rel="next">
+        <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
+      </a>
+    {{ /if }}
+  </nav>
+
+  <div class="post-content">
     {{ content }}
-  {{ /layout }}
-</main>
+  </div>
+
+  <div class="post-footer">
+    <nav class="post-footer-nav">
+      {{ if previousPage }}
+        <a class="post-prev" href="{{ previousPage.url }}" rel="next">
+          <span><img src='{{ "arrow-left" |> icon("phosphor") }}' inline>
+            Anterior</span>
+          <strong>{{ previousPage.title }}</strong>
+        </a>
+      {{ /if }}
+      {{ if nextPage }}
+        <a class="post-next" href="{{ nextPage.url }}" rel="next">
+          <span>Siguiente <img
+              src='{{ "arrow-right" |> icon("phosphor") }}'
+              inline
+            ></span>
+          <strong>{{ nextPage.title }}</strong>
+        </a>
+      {{ /if }}
+    </nav>
+  </div>
+</article>

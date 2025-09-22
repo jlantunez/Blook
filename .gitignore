@@ -2,3 +2,4 @@ _site
 _cache
 .env
 .DS_Store
+_columnas_server_v2

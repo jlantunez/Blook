@@ -4,3 +4,10 @@ metas:
   description: "=content"
   image: "=img"
   twitter: "@jlantunez"
+
+newsletter:
+  title: Primero en la newsletter
+  intro: 200 palabras cada sábado sobre hacer empresa con foco en diseño, marca y cultura.
+  cta:
+    text: Recibir por email
+    link: https://jlantunez.com/columnas

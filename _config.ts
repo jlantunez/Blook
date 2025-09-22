@@ -5,7 +5,6 @@ import googleFonts from "lume/plugins/google_fonts.ts";
 import date from "lume/plugins/date.ts";
 import icons from "lume/plugins/icons.ts";
 import inline from "lume/plugins/inline.ts";
-import readingInfo from "lume/plugins/reading_info.ts";
 import feed from "lume/plugins/feed.ts";
 import metas from "lume/plugins/metas.ts";
 import favicon from "lume/plugins/favicon.ts";
@@ -41,11 +40,22 @@ const site = lume({
     },
   }))
   .use(lightningcss())
-  .use(readingInfo())
   .use(basePath())
   .use(inline())
+  .filter("excerpt", extractExcerpt)
   .add("style.css")
   .add("fonts")
   .add("img");
 
 export default site;
+
+function extractExcerpt(text: string, length: number = 150) {
+  if (text.length <= length) {
+    return text;
+  }
+  const space = text.indexOf(" ", length);
+  if (space > 0) {
+    return text.slice(0, space) + "…";
+  }
+  return text.slice(0, length) + "…";
+}

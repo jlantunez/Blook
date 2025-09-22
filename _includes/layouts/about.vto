@@ -2,30 +2,32 @@
 layout: ./base.vto
 ---
 <main>
-  <header class="menu-header">
-    <h1 class="menu-title">{{ title }}</h1>
-    <p class="menu-subtitle">{{ subtitle }}</p>
-    <div class="menu-intro">
+  <header class="archive-header">
+    <h1 class="archive-title">{{ title }}</h1>
+    <div class="archive-intro">
       {{ intro |> md }}
+    </div>
+    <div class="archive-tech">
+      {{ technology |> md }}
     </div>
   </header>
 
   {{ set posts = search.pages("type=post") }}
 
-  <nav class="menu">
-    <ol class="menu-posts">
+  <nav class="archive-posts">
+    <ol>
       {{ for post of posts }}
         <li>
-          <a href="{{ post.url }}" class="menu-post">
-            <strong class="menu-post-title">{{ post.title }}</strong>
+          <a href="{{ post.url }}" class="archive-post">
+            <strong class="archive-post-title">{{ post.title }}</strong>
             <time
-              class="menu-post-date"
+              class="archive-post-date"
               datetime='{{ post.date |> date("DATETIME") }}'
             >
               {{ post.date |> date("SHORT") }}
             </time>
             <img
-              class="menu-post-icon"
+              class="archive-post-icon"
               width="18"
               height="18"
               src="{{ 'arrow-right' |> icon("phosphor") }}"

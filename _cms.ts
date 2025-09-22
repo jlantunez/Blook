@@ -26,8 +26,8 @@ cms.collection({
 });
 
 cms.document({
-  name: "Índice",
-  store: "src:acerca-de.yml",
+  name: "Archivo",
+  store: "src:archivo.yml",
   fields: [
     "title: text",
     "subtitle: text",
