@@ -1,9 +1,8 @@
 ---
 title: Valor
-date: 2025-08-23
-img: /img/valor.png
+date: '2025-08-23T00:00:00.000Z'
+img: /img/valor.webp
 ---
-
 Aquel día tocaba revisión, la primera después de la pandemia. Fue cuando conocí
 en la sala de espera a Isabel, la matriarca de una bodega gaditana con el don de
 elevarte. Vio que estaba leyendo sobre polisemia. Como si estuviéramos en una

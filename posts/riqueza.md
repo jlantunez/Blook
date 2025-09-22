@@ -1,9 +1,8 @@
 ---
 title: Riqueza
-date: 2025-08-30
-img: /img/riqueza.jpg
+date: '2025-08-30T00:00:00.000Z'
+img: /img/riqueza.webp
 ---
-
 Desde niño tuve una brújula para distinguir, con relativa facilidad, entre el
 bien y el mal; entre lo profundo y lo superfluo; entre la riqueza y el progreso
 con piel de pobreza.

@@ -1,9 +1,8 @@
 ---
 title: Vocación
-date: 2025-08-09
-img: /img/vocacion.jpg
+date: '2025-08-09T00:00:00.000Z'
+img: /img/vocacion.webp
 ---
-
 Cuarenta grados. Agosto de 1993. Nos vamos de vacaciones a Chipiona. Seremos
 siete en el Ford Orion rojo: nosotros cinco y los abuelos. Es la primera vez que
 verán la playa. Todo lo que sea sacarles de su rutina son nervios y preguntas
