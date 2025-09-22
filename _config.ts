@@ -40,8 +40,8 @@ const site = lume({
     },
   }))
   .use(lightningcss())
-  .use(inline())
   .use(basePath())
+  .use(inline())
   .filter("excerpt", extractExcerpt)
   .add("style.css")
   .add("fonts")
