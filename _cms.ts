@@ -20,7 +20,15 @@ cms.collection({
   fields: [
     "title: text",
     "date: date",
-    "img: file",
+    {
+      name: "image",
+      type: "object",
+      fields: [
+        "src: file",
+        "x: number",
+        "y: number",
+      ],
+    },
     "content: markdown",
   ],
 });
