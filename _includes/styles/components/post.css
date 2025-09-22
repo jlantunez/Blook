@@ -237,9 +237,6 @@
     .post-list-title svg {
       opacity: 1;
     }
-    .post-list-image {
-      filter: brightness(1.15);
-    }
   }
 
   @media (width > 400px) {

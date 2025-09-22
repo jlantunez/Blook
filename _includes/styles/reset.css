@@ -25,3 +25,6 @@ h1, h2, h3, h4, h5, h6, strong, b {
   background-color: var(--color-selection);
   color: var(--color-text-strong);
 }
+a {
+  text-underline-offset: 0.2em;
+}

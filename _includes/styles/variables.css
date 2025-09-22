@@ -22,7 +22,7 @@
   );
   --color-background-highlight2: color-mix(
     in srgb,
-    var(--color-background) 97%,
+    var(--color-background) 87%,
     var(--color-text)
   );
   --color-text: #232426;
