@@ -5,7 +5,6 @@ layout: ./base.vto
 <article class="post">
   <div class="post-image dark-scheme"
     style="
-      view-transition-name: post-image-{{ basename }};
       --image: url('{{ image.src |> url }}');
       --position-x: {{ image.x }}%;
       --position-y: {{ image.y }}%;
@@ -13,7 +12,7 @@ layout: ./base.vto
   </div>
 
   <header class="post-header dark-scheme">
-    <h1 class="post-title" style="view-transition-name: post-title-{{ basename }}">{{ title }}</h1>
+    <h1 class="post-title">{{ title }}</h1>
     <p class="post-info">
       <time class="post-date" datetime='{{ date |> date("DATETIME") }}'>
         {{ date |> date("SHORT") }}

@@ -14,8 +14,8 @@ cms.auth({
 cms.git();
 
 cms.collection({
-  name: "Posts",
-  store: "src:posts/*.md",
+  name: "Columnas",
+  store: "src:archivos/*.md",
   documentName: `{title}.md`,
   fields: [
     "title: text",
@@ -54,7 +54,7 @@ cms.document({
 
 cms.document({
   name: "Archivo",
-  store: "src:archivo.yml",
+  store: "src:archivos.yml",
   fields: [
     "title: text",
     "intro: markdown",

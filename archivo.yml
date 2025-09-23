@@ -1,9 +1,0 @@
-layout: layouts/about.vto
-title: Archivo y autoría
-intro: >
-  Publico las columnas para ordenar mi visión sobre hacer empresa. Todas tienen 200 palabras.
-  El desarrollo de la web es obra de [Óscar Otero](https://oscarotero.com).
-
-technology: |
-  Usamos [Lume](https://lume.land), un CMS que nos da versatilidad y paz.
-  Hemos subido todo a [GitHub](https://github.com/oscarotero/Blook) para animarte a escribir.

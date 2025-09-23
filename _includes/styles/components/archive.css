@@ -1,20 +1,47 @@
+.archive-image {
+  width: 70px;
+  margin: 80px auto 50px;
+  perspective: 1200px;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation: rotate-3d linear infinite 10s;
+    transform-style: preserve-3d;
+  }
+}
+
+@keyframes rotate-3d {
+  0% {
+    filter: brightness(100%) drop-shadow(0 20px 10px #0003);
+    transform: rotateY(0deg);
+  }
+  25% {
+    filter: brightness(0%) drop-shadow(0 20px 10px #0003);
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    filter: brightness(0%) drop-shadow(0 20px 10px #0003);
+    transform: rotateY(270deg);
+  }
+  100% {
+    filter: brightness(100%) drop-shadow(0 20px 10px #0003);
+    transform: rotateY(360deg);
+  }
+}
+
 .archive-header {
   display: grid;
   max-width: min(50rem, 100% - 4rem);
   margin-inline: auto;
-  margin-block: 4rem;
-  background-image: url("/img/archivo.png");
-  background-size: 70px auto;
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding-top: 130px;
   text-align: center;
 
   @media (width > 500px) {
-    background-position: left top;
-    padding-left: clamp(120px, 15vw, 180px);
     text-align: left;
-    padding-top: 0;
   }
 
   a {
@@ -26,9 +53,35 @@
     }
   }
 }
+.archive-intro {
+  max-width: min(50rem, 100% - 4rem);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  align-items: baseline;
+  line-height: var(--line-text);
+  column-gap: min(5vw, 100px);
+  margin-top: min(10vh, 90px);
+
+  h2 {
+    font-size: var(--size--1);
+    font-weight: normal;
+    margin: 0;
+  }
+  p {
+    font-size: var(--size-0);
+    margin: 0;
+  }
+  a {
+    color: var(--color-accent);
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
 .archive-title {
   font-family: var(--font-display);
-  font-size: var(--size-3);
+  font-size: var(--size-2);
   font-weight: normal;
   margin: 0;
 }
@@ -52,7 +105,7 @@
   justify-content: space-between;
   column-gap: 2rem;
   row-gap: 4rem;
-  margin-block: 4rem;
+  margin-block: 120px 4rem;
   > * {
     grid-column: 2;
   }

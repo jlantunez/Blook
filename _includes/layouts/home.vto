@@ -17,7 +17,7 @@ layout: layouts/base.vto
   </div>
 
   <a href="{{ post.url }}" class="post-header is-link dark-scheme">
-    <h1 class="post-title" style="view-transition-name: post-title-{{ post.basename }}">
+    <h1 class="post-title">
       {{ post.title }}
     </h1>
     <p class="post-info">
@@ -33,8 +33,8 @@ layout: layouts/base.vto
     {{ for post of latestPosts }}
       <li>
         <a href="{{ post.url }}" class="post-list-item">
-          <img style="view-transition-name: post-image-{{ post.basename }}" class="post-list-image" src="{{ post.image.src }}">
-          <h3 class="post-list-title" style="view-transition-name: post-title-{{ post.basename }}">
+          <img class="post-list-image" src="{{ post.image.src }}">
+          <h3 class="post-list-title">
             {{ post.title }}
           </h3>
           <div class="post-list-content">

@@ -1,3 +1,8 @@
+@property --img-fade-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: transparent;
+}
 .post {
   display: grid;
   grid-template-columns: 0 minmax(0, 40rem) 0;
@@ -56,6 +61,9 @@
     &:hover {
       box-shadow: 0 0 0 10px var(--color-background);
     }
+    &:active {
+      box-shadow: 0 0 0 0 var(--color-background);
+    }
   }
   svg {
     display: block;
@@ -84,6 +92,7 @@
   margin: 0;
   z-index: 2;
   color: currentColor;
+  animation: fade-in-up 1s both;
 
   svg {
     width: 2rem;
@@ -97,6 +106,7 @@
   z-index: 2;
   display: flex;
   margin: 0.5em 0;
+  animation: fade-in-up 1s both;
 
   > * {
     padding-block: 0.25em;
@@ -106,10 +116,12 @@
   color: var(--color-accent);
 }
 .post-image {
+  --img-fade-color: var(--color-background);
   grid-column: 1 / -1;
   grid-row: 1;
   overflow: hidden;
   background-image:
+    linear-gradient(var(--img-fade-color), var(--img-fade-color)),
     linear-gradient(
       to bottom,
       transparent 25%,
@@ -120,6 +132,7 @@
   background-repeat: no-repeat;
   background-position: var(--position-x) var(--position-y);
   background-size: cover;
+  animation: img-fade-in 4s forwards;
 
   @media (width > 850px) {
     width: min(100% - 4rem, 2000px);
@@ -135,6 +148,8 @@
   line-height: var(--line-text);
   max-width: 45em;
   text-wrap: pretty;
+  animation: fade-in 1s both;
+  animation-delay: 1s;
 
   p {
     margin-block: 0 1em;
@@ -206,6 +221,8 @@
   margin: 0 auto;
   overflow: hidden;
   background-color: var(--color-background-highlight);
+  animation: fade-in 1s both;
+  animation-delay: 0.5s;
 
   @media (width > 850px) {
     max-width: min(1000px, 100% - 4rem);
@@ -323,5 +340,30 @@
     width: 1em;
     height: 1em;
     fill: currentColor;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes img-fade-in {
+  to {
+    --img-fade-color: transparent;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

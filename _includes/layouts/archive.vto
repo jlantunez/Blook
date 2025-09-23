@@ -3,14 +3,19 @@ layout: ./base.vto
 ---
 <main>
   <header class="archive-header">
+    <div class="archive-image"><img src="/img/archivo.png"></div>
     <h1 class="archive-title">{{ title }}</h1>
-    <div class="archive-intro">
-      {{ intro |> md }}
-    </div>
-    <div class="archive-tech">
-      {{ technology |> md }}
-    </div>
   </header>
+
+  <div class="archive-intro">
+    <h2>{{ info.title }}</h2>
+    {{ info.text |> md }}
+  </div>
+
+  <div class="archive-intro">
+    <h2>{{ web.title }}</h2>
+    {{ web.text |> md }}
+  </div>
 
   {{ set posts = search.pages("type=post") }}
 

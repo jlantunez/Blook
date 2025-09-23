@@ -87,8 +87,8 @@
   --min-width: 22;
   --max-width: 75;
   --width-diff: calc(var(--max-width) - var(--min-width));
-  --min-scale: 1.4;
-  --max-scale: 1.5;
+  --min-scale: 1.35;
+  --max-scale: 1.4;
 
   /* Size -1 */
   --size--1-min: 0.875;
