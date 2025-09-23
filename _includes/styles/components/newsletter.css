@@ -19,7 +19,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-text);
+  background-color: var(--color-text-strong);
   color: var(--color-background);
   text-decoration: none;
   min-height: 3rem;

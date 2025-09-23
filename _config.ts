@@ -46,6 +46,7 @@ const site = lume({
   .use(inline())
   .filter("excerpt", extractExcerpt)
   .add("style.css")
+  .add("script.js")
   .add("fonts")
   .add("img");
 

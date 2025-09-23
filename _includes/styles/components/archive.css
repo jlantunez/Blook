@@ -175,7 +175,7 @@
   }
 }
 .archive-post-title {
-  color: var(--color-text);
+  color: var(--color-text-strong);
   font-family: var(--font-display);
   font-size: var(--size-1);
   font-weight: normal;

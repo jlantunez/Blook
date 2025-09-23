@@ -62,7 +62,7 @@ cms.document({
       type: "object",
       attributes: { open: true },
       fields: [
-        "title: text",
+        "title: textarea",
         "text: markdown",
       ]
     },

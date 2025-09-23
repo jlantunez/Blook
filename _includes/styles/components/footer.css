@@ -23,7 +23,7 @@
   transition: background-color 200ms;
 
   svg {
-    fill: var(--color-text);
+    fill: var(--color-text-strong);
     display: block;
     transition: fill 200ms;
   }
