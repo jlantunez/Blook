@@ -37,12 +37,28 @@ cms.collection({
 });
 
 cms.document({
+  name: "Portada",
+  store: "src:index.yml",
+  fields: [
+    "title: text",
+    "description: text",
+    {
+      name: "post_limit",
+      type: "number",
+      label: "Número de posts",
+      description:
+        "Número de posts a mostrar en la portada (incluyendo el destacado)",
+    },
+  ],
+});
+
+cms.document({
   name: "Archivo",
   store: "src:archivo.yml",
   fields: [
     "title: text",
-    "subtitle: text",
     "intro: markdown",
+    "technology: markdown",
   ],
 });
 
