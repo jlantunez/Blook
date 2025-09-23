@@ -8,6 +8,7 @@ import inline from "lume/plugins/inline.ts";
 import feed from "lume/plugins/feed.ts";
 import metas from "lume/plugins/metas.ts";
 import favicon from "lume/plugins/favicon.ts";
+import checkUrls from "lume/plugins/check_urls.ts";
 
 import { es } from "npm:date-fns@4.1.0/locale/es";
 
@@ -27,6 +28,7 @@ const site = lume({
         "https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900",
     },
   }))
+  .use(checkUrls())
   .use(metas())
   .use(favicon())
   .use(feed({
