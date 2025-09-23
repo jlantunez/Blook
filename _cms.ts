@@ -41,7 +41,7 @@ cms.document({
   store: "src:index.yml",
   fields: [
     "title: text",
-    "description: text",
+    "description: textarea",
     {
       name: "post_limit",
       type: "number",
@@ -57,8 +57,24 @@ cms.document({
   store: "src:archivos.yml",
   fields: [
     "title: text",
-    "intro: markdown",
-    "technology: markdown",
+    {
+      name: "info",
+      type: "object",
+      attributes: { open: true },
+      fields: [
+        "title: text",
+        "text: markdown",
+      ]
+    },
+    {
+      name: "web",
+      type: "object",
+      attributes: { open: true },
+      fields: [
+        "title: text",
+        "text: markdown",
+      ]
+    },
   ],
 });
 
