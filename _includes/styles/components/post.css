@@ -80,7 +80,7 @@
   font-family: var(--font-display);
   width: fit-content;
   font-size: var(--size-3);
-  font-weight: 500;
+  font-weight: normal;
   margin: 0;
   z-index: 2;
   color: currentColor;
@@ -239,6 +239,15 @@
     .post-list-title svg {
       opacity: 1;
     }
+    .post-list-image {
+      filter: none;
+    }
+    .post-list-title {
+      transform: translateX(.5rem);
+    }
+    .post-list-content {
+      transform: translateX(.5rem);
+    }
   }
 
   @media (width > 400px) {
@@ -254,6 +263,7 @@
   border-radius: 0.5rem;
   display: none;
   transition: filter 200ms;
+  filter: sepia(50%) grayscale(50%);
 
   @media (width > 400px) {
     display: block;
@@ -274,6 +284,7 @@
   font-weight: normal;
   margin: 0;
   width: fit-content;
+  transition: transform 200ms;
   svg {
     opacity: 0;
     width: 1rem;
@@ -285,6 +296,7 @@
   grid-area: content;
   font-size: var(--size--1);
   line-height: var(--line-text);
+  transition: transform 200ms;
   p {
     margin: 0;
     display: inline;

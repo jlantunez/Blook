@@ -26,13 +26,6 @@ layout: ./base.vto
             >
               {{ post.date |> date("SHORT") }}
             </time>
-            <img
-              class="archive-post-icon"
-              width="18"
-              height="18"
-              src="{{ 'arrow-right' |> icon("phosphor") }}"
-              inline
-            >
           </a>
         </li>
       {{ /for }}

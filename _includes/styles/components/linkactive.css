@@ -1,0 +1,25 @@
+.linkactive {
+  position: relative;
+
+  &:active {
+    position: relative;
+    top: 0.05em;
+  }
+
+  /* &:before {
+    background-color: var(--color-accent);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .125rem;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform .3s;
+    width: 100%
+  }
+
+  &:hover:before {
+    transform: scaleX(1)
+  } */
+}

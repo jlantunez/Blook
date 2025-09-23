@@ -35,7 +35,7 @@
   );
   --color-line: color-mix(
     in srgb,
-    var(--color-accent) 25%,
+    var(--color-accent) 20%,
     var(--color-background)
   );
   --color-line2: color-mix(

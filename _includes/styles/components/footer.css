@@ -25,9 +25,10 @@
   svg {
     fill: var(--color-text);
     display: block;
+    transition: fill 200ms;
   }
 
-  &:hover {
-    background-color: var(--color-selection);
+  &:hover svg {
+    fill: var(--color-accent);
   }
 }
