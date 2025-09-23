@@ -2,8 +2,7 @@ lang: es
 metas:
   title: "=title"
   description: "=description || =content"
-  image: "=image.src"
-  icon: /img/archivo.png
+  image: "=image.src || /img/preview-card.jpg"
   twitter: "@jlantunez"
 
 newsletter:

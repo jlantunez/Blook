@@ -61,7 +61,11 @@
       var(--color-background) 93%,
       var(--color-text)
     );
-    --color-text: #e2e3e4;
+    --color-text: color-mix(
+      in srgb,
+      var(--color-background) 30%,
+      white
+    );
     --color-text-strong: white;
     --color-accent: #e66a28;
   }
@@ -70,7 +74,11 @@
 /* To force dark mode */
 .dark-scheme {
   --color-background: #24201e;
-  --color-text: #e2e3e4;
+  --color-text: color-mix(
+    in srgb,
+    var(--color-background) 30%,
+    white
+  );
   --color-text-strong: white;
   --color-accent: #e66a28;
   --color-selection: color-mix(

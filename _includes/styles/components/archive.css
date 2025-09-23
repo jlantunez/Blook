@@ -1,7 +1,7 @@
 .archive-image {
   width: 70px;
   margin: 80px auto 50px;
-  perspective: 1200px;
+  perspective: 800px;
 
   img {
     width: 100%;
@@ -13,24 +13,17 @@
 }
 
 @keyframes rotate-3d {
-  0% {
-    filter: brightness(100%) drop-shadow(0 20px 10px #0003);
+  0%, 50%, 100% {
+    filter: brightness(100%);
     transform: rotateY(0deg);
   }
   25% {
-    filter: brightness(0%) drop-shadow(0 20px 10px #0003);
-    transform: rotateY(90deg);
-  }
-  50% {
-    transform: rotateY(180deg);
+    filter: brightness(50%);
+    transform: rotateY(45deg);
   }
   75% {
-    filter: brightness(0%) drop-shadow(0 20px 10px #0003);
-    transform: rotateY(270deg);
-  }
-  100% {
-    filter: brightness(100%) drop-shadow(0 20px 10px #0003);
-    transform: rotateY(360deg);
+    filter: brightness(75%);
+    transform: rotateY(-45deg);
   }
 }
 
@@ -101,7 +94,7 @@
 
 .archive-posts {
   display: grid;
-  grid-template-columns: 0 minmax(0, 50rem) 0;
+  grid-template-columns: 0 minmax(0, 60rem) 0;
   justify-content: space-between;
   column-gap: 2rem;
   row-gap: 4rem;

@@ -132,7 +132,7 @@
   background-repeat: no-repeat;
   background-position: var(--position-x) var(--position-y);
   background-size: cover;
-  animation: img-fade-in 4s forwards;
+  animation: img-fade-in 1s forwards;
 
   @media (width > 850px) {
     width: min(100% - 4rem, 2000px);
