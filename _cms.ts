@@ -1,6 +1,10 @@
 import lumeCMS from "lume/cms/mod.ts";
 
-const cms = lumeCMS();
+const cms = lumeCMS({
+  site: {
+    url: "https://jlantunez.com/columnas"
+  }
+});
 
 // user and pass are environment variables, stored in an .env file
 const user = Deno.env.get("CMS_USER") ?? "admin";
