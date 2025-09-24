@@ -1,4 +1,4 @@
-name: Publish on GitHub Pages
+name: Deploy
 
 on:
   push:
