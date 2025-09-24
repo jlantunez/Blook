@@ -1,10 +1,30 @@
-# Blook = Blook + Book
+# Blook = Blog + Book
 
-A project from [José Luis Antúnez](https://jlantunez.com/) and
-[Óscar Otero](https://oscarotero.com/). Created with [Lume](https://lume.land/).
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+[![Release](https://img.shields.io/github/release/jlantunez/blook.svg)](https://github.com/jlantunez/blook/releases/latest)
+
+Blook is a super simple way to publish your blog, turn your book into a website, or share your newsletter online.
+It’s powered by [Lume](https://lume.land/), fast & flexible static site generator for Deno.
 
 ## Run in your computer
 
 - Clone the project.
 - Install [Deno](https://deno.com/)
 - Run `deno task serve`.
+
+## Demo
+
+- Check it out live on the Spanish version of my newsletter. It features 200-word articles mixing philosophy and literature to inspire the creation of better companies: [jlantunez.com/columnas](https://jlantunez.com/columnas)
+
+## Nice little details
+
+- Clean, scalable code 
+- Light & Dark mode included
+- Navigate with arrow keys (next/previous)
+- Smooth, elegant fade-in animations
+- Fonts: PS Times + Inter
+- Hero images always look good (big or small screens).
+ 
+## Credits
+
+Just two people having fun building something simple & pretty. I handled the design, and Óscar Otero made all the code magic happen. Huge credit to him. 
