@@ -32,10 +32,6 @@
   max-width: min(50rem, 100% - 4rem);
   margin-inline: auto;
 
-  @media (width > 500px) {
-    text-align: left;
-  }
-
   a {
     color: var(--color-accent);
 
