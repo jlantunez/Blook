@@ -24,7 +24,7 @@ jobs:
 
       - name: Build site
         run: deno task build --location=https://jlantunez.com/columnas
-      
+
       - name: Upload
         uses: up9cloud/action-rsync@v1.4
         env:

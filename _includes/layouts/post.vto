@@ -22,7 +22,8 @@ layout: ./base.vto
     {{ set previousPage = search.previousPage(url, "type=post", "date=dest") }}
     {{ if previousPage }}
       <a
-        class="linkactive" href="{{ previousPage.url }}"
+        class="linkactive"
+        href="{{ previousPage.url }}"
         title="Anterior: {{ previousPage.title }}"
         rel="prev"
       >
@@ -33,7 +34,8 @@ layout: ./base.vto
     {{ set nextPage = search.nextPage(url, "type=post", "date=dest") }}
     {{ if nextPage }}
       <a
-        class="linkactive" href="{{ nextPage.url }}"
+        class="linkactive"
+        href="{{ nextPage.url }}"
         title="Siguiente: {{ nextPage.title }}"
         rel="next"
       >

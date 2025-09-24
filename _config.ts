@@ -28,7 +28,9 @@ const site = lume({
         "https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900",
     },
   }))
-  .use(checkUrls())
+  .use(checkUrls({
+    ignore: ["https://jlantunez.com/columnas/registro/"],
+  }))
   .use(metas())
   .use(favicon())
   .use(feed({
@@ -45,6 +47,7 @@ const site = lume({
   .use(basePath())
   .use(inline())
   .filter("excerpt", extractExcerpt)
+  .ignore("README.md")
   .add("style.css")
   .add("script.js")
   .add("fonts")
