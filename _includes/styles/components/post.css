@@ -242,7 +242,7 @@
   display: grid;
   column-gap: min(2rem, 5vw);
   row-gap: 1rem;
-  padding: min(2rem, 5vw);
+  padding: 2rem;
   transition: background-color 200ms;
   grid-template-areas:
     "title"

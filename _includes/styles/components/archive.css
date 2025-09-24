@@ -109,8 +109,20 @@
   display: grid;
   counter-reset: post;
 
+  > li {
+    border-bottom: solid 1px var(--color-line);
+
+    &:where(:first-child) {
+      border-top: solid 1px var(--color-line);
+    }
+  }
+
   @media (width > 400px) {
     row-gap: 0;
+
+    > li {
+      border: none;
+    }
   }
 }
 
