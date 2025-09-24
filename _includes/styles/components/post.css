@@ -219,6 +219,7 @@
   background-color: var(--color-background-highlight);
   animation: fade-in 1s both;
   animation-delay: 0.5s;
+  border: solid 1px var(--color-line);
 
   @media (width > 850px) {
     max-width: min(1000px, 100% - 4rem);
@@ -232,7 +233,7 @@
   padding: 0;
 
   > li {
-    border-bottom: solid 1px var(--color-line2);
+    border-bottom: solid 1px var(--color-line);
   }
 }
 .post-list-item {

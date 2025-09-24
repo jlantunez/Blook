@@ -6,6 +6,7 @@ image:
   x: 30
   y: 25
 ---
+
 Desde niño tuve una brújula para distinguir, con relativa facilidad, entre el
 bien y el mal; entre lo profundo y lo superfluo; entre la riqueza y el progreso
 con piel de pobreza.

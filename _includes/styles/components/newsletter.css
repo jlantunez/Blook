@@ -19,8 +19,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-text-strong);
-  color: var(--color-background);
+  background-color: var(--color-button);
+  color: var(--color-button-text);
   text-decoration: none;
   min-height: 3rem;
   padding-inline: 2em;

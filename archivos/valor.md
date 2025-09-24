@@ -1,11 +1,12 @@
 ---
 title: Valor
-date: '2025-08-23T00:00:00.000Z'
+date: "2025-08-23T00:00:00.000Z"
 image:
   src: /img/3-valor-hero.webp
   x: 50
-  'y': 50
+  "y": 50
 ---
+
 Aquel día tocaba revisión, la primera después de la pandemia. Fue cuando conocí
 en la sala de espera a Isabel, la matriarca de una bodega gaditana con el don de
 elevarte. Vio que estaba leyendo sobre polisemia. Como si estuviéramos en una

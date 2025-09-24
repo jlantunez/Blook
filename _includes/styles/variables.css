@@ -1,3 +1,5 @@
+/* deno-fmt-ignore-file */
+
 @font-face {
   font-family: "display";
   src: url("/fonts/pstimes-regular-webfont.woff2") format("woff2");
@@ -14,33 +16,18 @@
   --font-bold: 600;
 
   /* Colors */
-  --color-background: #ffede6;
-  --color-background-highlight: color-mix(
-    in srgb,
-    var(--color-background) 93%,
-    var(--color-text)
-  );
-  --color-background-highlight2: color-mix(
-    in srgb,
-    var(--color-background) 87%,
-    var(--color-text)
-  );
-  --color-text: #232426;
-  --color-text-strong: black;
-  --color-accent: #c24c0c;
+  --color-background: #FFF6F3;
+  --color-background-highlight: #FFEDE6;
+  --color-background-highlight2: #FFF2ED;
+  --color-text: #5B5856;
+  --color-text-strong: #151413;
+  --color-accent: #E66A28;
+  --color-button-text: white;
+  --color-button: #432906;
+  --color-line: #E9E1DD;
   --color-selection: color-mix(
     in srgb,
     var(--color-accent) 15%,
-    var(--color-background)
-  );
-  --color-line: color-mix(
-    in srgb,
-    var(--color-accent) 20%,
-    var(--color-background)
-  );
-  --color-line2: color-mix(
-    in srgb,
-    var(--color-text) 12%,
     var(--color-background)
   );
 
@@ -50,45 +37,29 @@
 
   @media (prefers-color-scheme: dark) {
     /* Colors */
-    --color-background: #24201e;
-    --color-background-highlight: color-mix(
-      in srgb,
-      var(--color-background) 96%,
-      var(--color-text)
-    );
-    --color-background-highlight2: color-mix(
-      in srgb,
-      var(--color-background) 93%,
-      var(--color-text)
-    );
-    --color-text: color-mix(
-      in srgb,
-      var(--color-background) 30%,
-      white
-    );
-    --color-text-strong: white;
-    --color-accent: #e66a28;
+    --color-background: #24201E;
+    --color-background-highlight: #2F2B29;
+    --color-background-highlight2: #353130;
+    --color-text: #837C71;
+    --color-text-strong: #ACA395;
+    --color-line: #494645;
+    --color-button: white;
+    --color-button-text: #24201E;
   }
 }
 
 /* To force dark mode */
 .dark-scheme {
-  --color-background: #24201e;
-  --color-text: color-mix(
-    in srgb,
-    var(--color-background) 30%,
-    white
-  );
-  --color-text-strong: white;
-  --color-accent: #e66a28;
-  --color-selection: color-mix(
-    in srgb,
-    var(--color-accent) 15%,
-    var(--color-background)
-  );
+  --color-background: #24201E;
+  --color-background-highlight: #2F2B29;
+  --color-background-highlight2: #353130;
+  --color-text: #837C71;
+  --color-text-strong: #ACA395;
+  --color-line: #494645;
+  --color-button: white;
+  --color-button-text: #24201E;
 }
 
-/* deno-fmt-ignore-start */
 /* Fluid typography: https://utopia.fyi/blog/clamp/ */
 :root {
   --unit: 1rem;
@@ -103,15 +74,7 @@
   --size--1-max: 1;
   --size--1: clamp(
     var(--size--1-min) * var(--unit),
-    (
-      -1 * var(--min-width)
-        * (
-        (var(--size--1-max) - var(--size--1-min)) / var(--width-diff)
-      )
-        + var(--size--1-min)
-    )
-      * var(--unit)
-      + (var(--size--1-max) - var(--size--1-min)) / var(--width-diff) * 100vw,
+    ( -1 * var(--min-width) * ((var(--size--1-max) - var(--size--1-min)) / var(--width-diff)) + var(--size--1-min)) * var(--unit) + (var(--size--1-max) - var(--size--1-min)) / var(--width-diff) * 100vw,
     var(--size--1-max) * var(--unit)
   );
 
@@ -120,15 +83,7 @@
   --size-0-max: 1.25;
   --size-0: clamp(
     var(--size-0-min) * var(--unit),
-    (
-      -1 * var(--min-width)
-        * (
-        (var(--size-0-max) - var(--size-0-min)) / var(--width-diff)
-      )
-        + var(--size-0-min)
-    )
-      * var(--unit)
-      + (var(--size-0-max) - var(--size-0-min)) / var(--width-diff) * 100vw,
+    (-1 * var(--min-width) * ((var(--size-0-max) - var(--size-0-min)) / var(--width-diff)) + var(--size-0-min)) * var(--unit) + (var(--size-0-max) - var(--size-0-min)) / var(--width-diff) * 100vw,
     var(--size-0-max) * var(--unit)
   );
 
@@ -137,15 +92,7 @@
   --size-1-max: calc(var(--size-0-max) * var(--max-scale));
   --size-1: clamp(
     var(--size-1-min) * var(--unit),
-    (
-      -1 * var(--min-width)
-        * (
-        (var(--size-1-max) - var(--size-1-min)) / var(--width-diff)
-      )
-        + var(--size-1-min)
-    )
-      * var(--unit)
-      + (var(--size-1-max) - var(--size-1-min)) / var(--width-diff) * 100vw,
+    (-1 * var(--min-width) * ((var(--size-1-max) - var(--size-1-min)) / var(--width-diff)) + var(--size-1-min)) * var(--unit) + (var(--size-1-max) - var(--size-1-min)) / var(--width-diff) * 100vw,
     var(--size-1-max) * var(--unit)
   );
 
@@ -153,16 +100,7 @@
   --size-2-min: calc(var(--size-1-min) * var(--min-scale));
   --size-2-max: calc(var(--size-1-max) * var(--max-scale));
   --size-2: clamp(
-    var(--size-2-min) * var(--unit),
-    (
-      -1 * var(--min-width)
-        * (
-        (var(--size-2-max) - var(--size-2-min)) / var(--width-diff)
-      )
-        + var(--size-2-min)
-    )
-      * var(--unit)
-      + (var(--size-2-max) - var(--size-2-min)) / var(--width-diff) * 100vw,
+    var(--size-2-min) * var(--unit), (-1 * var(--min-width) * ((var(--size-2-max) - var(--size-2-min)) / var(--width-diff)) + var(--size-2-min)) * var(--unit) + (var(--size-2-max) - var(--size-2-min)) / var(--width-diff) * 100vw,
     var(--size-2-max) * var(--unit)
   );
 
@@ -171,15 +109,7 @@
   --size-3-max: calc(var(--size-2-max) * var(--max-scale));
   --size-3: clamp(
     var(--size-3-min) * var(--unit),
-    (
-      -1 * var(--min-width)
-        * (
-        (var(--size-3-max) - var(--size-3-min)) / var(--width-diff)
-      )
-        + var(--size-3-min)
-    )
-      * var(--unit)
-      + (var(--size-3-max) - var(--size-3-min)) / var(--width-diff) * 100vw,
+    (-1 * var(--min-width) * ((var(--size-3-max) - var(--size-3-min)) / var(--width-diff)) + var(--size-3-min)) * var(--unit) + (var(--size-3-max) - var(--size-3-min)) / var(--width-diff) * 100vw,
     var(--size-3-max) * var(--unit)
   );
 }

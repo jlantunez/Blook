@@ -6,6 +6,7 @@ image:
   x: 50
   y: 50
 ---
+
 Llegué a la pubertad escuchando la lambada. Durante la siesta, me refugiaba en
 el altillo para grabar canciones de _Los 40 Principales_. Esa tarde me rocé, sin
 intención, con el colchón al esquivar un rayo que se colaba por la persiana.
