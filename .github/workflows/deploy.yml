@@ -30,7 +30,7 @@ jobs:
         env:
           HOST: jlantunez.com
           TARGET: ~/jlantunez.com/columnas
-          SOURCE: ./_site
+          SOURCE: ./_site/*
           USER: ${{secrets.DEPLOY_SSH_USER}}
           PASSWORD: ${{secrets.DEPLOY_SSH_PASSWORD}}
           ARGS: -r
