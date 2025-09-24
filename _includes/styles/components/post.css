@@ -123,10 +123,10 @@
   background-image:
     linear-gradient(var(--img-fade-color), var(--img-fade-color)),
     linear-gradient(
-      to bottom,
-      transparent 25%,
-      var(--color-background)
-    ),
+    to bottom,
+    transparent 25%,
+    var(--color-background)
+  ),
     var(--image);
   background-color: var(--color-background);
   background-repeat: no-repeat;
@@ -152,11 +152,7 @@
   animation-delay: 1s;
 
   p {
-    margin-block: 0 1em;
-
-    + p {
-      text-indent: 1em;
-    }
+    margin-block: 0 1lh;
   }
 }
 .post-footer-nav {
@@ -260,10 +256,10 @@
       filter: none;
     }
     .post-list-title {
-      transform: translateX(.5rem);
+      transform: translateX(0.5rem);
     }
     .post-list-content {
-      transform: translateX(.5rem);
+      transform: translateX(0.5rem);
     }
   }
 

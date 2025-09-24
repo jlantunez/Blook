@@ -3,12 +3,10 @@ layout: ./base.vto
 ---
 
 <article class="post">
-  <div class="post-image dark-scheme"
-    style="
-      --image: url('{{ image.src |> url }}');
-      --position-x: {{ image.x }}%;
-      --position-y: {{ image.y }}%;
-    ">
+  <div
+    class="post-image dark-scheme"
+    style="--image: url('{{ image.src |> url }}'); --position-x: {{ image.x }}%; --position-y: {{ image.y }}%"
+  >
   </div>
 
   <header class="post-header dark-scheme">
@@ -25,7 +23,7 @@ layout: ./base.vto
     {{ if previousPage }}
       <a
         href="{{ previousPage.url }}"
-        title="{{ previousPage.title }}"
+        title="Anterior: {{ previousPage.title }}"
         rel="prev"
       >
         <img src='{{ "arrow-left" |> icon("phosphor") }}' inline>
@@ -34,7 +32,11 @@ layout: ./base.vto
 
     {{ set nextPage = search.nextPage(url, "type=post", "date=dest") }}
     {{ if nextPage }}
-      <a href="{{ nextPage.url }}" title="{{ nextPage.title }}" rel="next">
+      <a
+        href="{{ nextPage.url }}"
+        title="Siguiente: {{ nextPage.title }}"
+        rel="next"
+      >
         <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
       </a>
     {{ /if }}

@@ -1,7 +1,7 @@
 .archive-image {
   width: 70px;
   margin: 80px auto 50px;
-  perspective: 800px;
+  perspective: 500px;
 
   img {
     width: 100%;

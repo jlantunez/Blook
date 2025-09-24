@@ -8,11 +8,8 @@ layout: layouts/base.vto
 <article class="post">
   <div
     class="post-image dark-scheme"
-    style="
-      --image: url('{{ post.image.src |> url }}');
-      --position-x: {{ post.image.x }}%;
-      --position-y: {{ post.image.y }}%;
-    ">
+    style="--image: url('{{ post.image.src |> url }}'); --position-x: {{ post.image.x }}%; --position-y: {{ post.image.y }}%"
+  >
   </div>
 
   <a href="{{ post.url }}" class="post-header is-link dark-scheme">

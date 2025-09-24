@@ -57,14 +57,15 @@ cms.document({
   store: "src:archivos.yml",
   fields: [
     "title: text",
+    "description: textarea",
     {
       name: "info",
       type: "object",
       attributes: { open: true },
       fields: [
-        "title: textarea",
+        "title: text",
         "text: markdown",
-      ]
+      ],
     },
     {
       name: "web",
@@ -73,7 +74,7 @@ cms.document({
       fields: [
         "title: text",
         "text: markdown",
-      ]
+      ],
     },
   ],
 });
