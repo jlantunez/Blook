@@ -23,16 +23,14 @@ jobs:
           cache: true
 
       - name: Build site
-        run: deno task build --location=https://oscarotero.github.io/Blook
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "_site"
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        run: deno task build --location=https://jlantunez.com/columnas
+      
+      - name: Upload
+        uses: up9cloud/action-rsync@v1.4
+        env:
+          HOST: jlantunez.com
+          TARGET: ~/jlantunez.com/columnas
+          SOURCE: ./_site
+          USER: ${{secrets.DEPLOY_SSH_USER}}
+          PASSWORD: ${{secrets.DEPLOY_SSH_PASSWORD}}
+          ARGS: -r
