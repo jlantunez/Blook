@@ -21,7 +21,7 @@ It’s powered by [Lume](https://lume.land/), fast & flexible static site genera
 - Light & Dark mode included
 - Navigate with arrow keys (next/previous)
 - Smooth, elegant fade-in animations
-- Fonts: PS Times + Inter
+- Fonts: PS Times + Inter. The PS Times font is just for our use, so if anyone clones the project and wants to publish it, they’ll need to swap it out.
 - Hero images always look good (big or small screens).
  
 ## Credits
