@@ -3,7 +3,7 @@
 
   &:active {
     position: relative;
-    top: 0.05em;
+    top: 0.1em;
   }
 
   /* &:before {
