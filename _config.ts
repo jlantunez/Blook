@@ -24,7 +24,7 @@ const site = lume({
   }))
   .use(googleFonts({
     fonts: {
-      text:
+      Inter:
         "https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900",
     },
   }))

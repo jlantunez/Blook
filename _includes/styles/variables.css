@@ -1,15 +1,15 @@
 /* deno-fmt-ignore-file */
 
 @font-face {
-  font-family: "display";
+  font-family: "PS Times";
   src: url("/fonts/pstimes-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
-  --font-display: display, serif;
-  --font-text: text, system-ui, sans-serif;
+  --font-display: "PS Times", serif;
+  --font-text: Inter, system-ui, sans-serif;
 
   /* Bold */
   --font-regular: 350;
