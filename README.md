@@ -27,4 +27,4 @@ It’s powered by [Lume](https://lume.land/), fast & flexible static site genera
  
 ## Credits
 
-Just two people having fun building something simple & pretty. I handled the design, and Óscar Otero made all the code magic happen. Huge credit to him. 
+Just two people having fun building something simple & pretty. I handled the design, and [Óscar Otero](https://oscarotero.com/) made all the code magic happen. Huge credit to him. 
