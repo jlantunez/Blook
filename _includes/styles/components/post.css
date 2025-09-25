@@ -149,7 +149,7 @@
   max-width: 45em;
   text-wrap: pretty;
   animation: fade-in 1s both;
-  animation-delay: 1s;
+  animation-delay: .5s;
 
   p {
     margin-block: 0 1lh;
