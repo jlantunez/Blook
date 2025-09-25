@@ -1,12 +1,17 @@
 layout: layouts/archive.vto
 title: Archivo de columnas
-description: Este es el archivo web de las columnas. Puedes coleccionarlas si te suscribes a la newsletter que envío los sábados por la mañana. Todas tienen 200 palabras.
+description: >-
+  Este es el archivo web de las columnas. Si te suscribes a la newsletter que
+  envío los sábados, puedes coleccionarlas. Todas tienen 200 palabras.
 info:
   title: /info
-  text: |
-    Escribo para compartir mi visión sobre hacer empresa con foco en diseño, marca y cultura entremezclándola con la autoficción de mi vida.
-
+  text: >
+    Escribo para compartir mi visión sobre hacer empresa con foco en diseño,
+    marca y cultura entremezclándola con la autoficción de mi vida.
 web:
   title: /web
-  text: |
-    El desarrollo de la web es obra de [Óscar Otero](https://oscarotero.com). Usamos [Lume](https://lume.land), un CMS que nos da versatilidad y paz. Hemos subido todo a [GitHub](https://github.com/oscarotero/Blook) para que uses el código.
+  text: >
+    El desarrollo de la web es obra de [Óscar Otero](https://oscarotero.com).
+    Usamos [Lume](https://lume.land), un CMS que nos da versatilidad y paz.
+    Hemos subido todo a [GitHub](https://github.com/oscarotero/Blook) para que
+    uses el código.
