@@ -1,12 +1,11 @@
 ---
 title: Adicciones
-date: "2025-09-20T00:00:00.000Z"
+date: '2025-09-20T00:00:00.000Z'
 image:
   src: /img/adicciones.webp
   x: 50
-  y: 50
+  'y': 50
 ---
-
 Ese cumpleaños en el que me puse vaqueros por primera vez también fue el del
 primer beso. Ella maduró antes. Se notaba al verla competir. Lideraba desde el
 ejemplo: atacando, defendiendo, con las miradas, con los gestos. Se es como se

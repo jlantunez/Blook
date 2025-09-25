@@ -1,12 +1,11 @@
 ---
 title: Verano
-date: 2025-08-16
+date: '2025-08-16T00:00:00.000Z'
 image:
   src: /img/verano.webp
   x: 60
-  y: 0
+  'y': 0
 ---
-
 Todo lo bueno es mejor en verano: las primeras veces son tan intensas que
 parecen verdades en mármol, lo cotidiano es el lujo que siempre fue y los
 miedos, no todos, se superan cuando los conviertes en leyendas. ¿Por ejemplo?

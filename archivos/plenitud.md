@@ -1,12 +1,11 @@
 ---
 title: Plenitud
-date: 2025-09-06
+date: '2025-09-06T00:00:00.000Z'
 image:
   src: /img/plenitud.webp
   x: 70
-  y: 50
+  'y': 50
 ---
-
 La felicidad es el verdadero opio del pueblo. El problema empieza con los
 sofistas, que la vincularon a la riqueza material y al prestigio.
 
