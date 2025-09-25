@@ -114,9 +114,6 @@
     > li {
       border-bottom: solid 1px var(--color-line);
 
-      &:first-child {
-        border-top: solid 1px var(--color-line);
-      }
     }
 
     @media (min-width: 400px) {
