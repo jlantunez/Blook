@@ -30,7 +30,7 @@
 .archive-header {
   display: grid;
   max-width: min(50rem, 100% - 4rem);
-  animation: 1s both fade-in-up;
+  animation: fade-in-up 1s forwards;
   margin-inline: auto;
 
   a {
@@ -46,7 +46,7 @@
 .archive-intro {
   max-width: min(50rem, 100% - 4rem);
   margin-inline: auto;
-  animation: 1.5s both fade-in-up;
+  animation: fade-in-up 1s forwards;
   display: grid;
   grid-template-columns: 4rem 1fr;
   align-items: baseline;
