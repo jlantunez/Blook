@@ -9,6 +9,7 @@ import feed from "lume/plugins/feed.ts";
 import metas from "lume/plugins/metas.ts";
 import favicon from "lume/plugins/favicon.ts";
 import checkUrls from "lume/plugins/check_urls.ts";
+import transformImages from "lume/plugins/transform_images.ts";
 
 import { es } from "npm:date-fns@4.1.0/locale/es";
 
@@ -45,12 +46,14 @@ const site = lume({
   }))
   .use(lightningcss())
   .use(basePath())
+  .use(transformImages())
   .use(inline())
   .filter("excerpt", extractExcerpt)
   .ignore("README.md")
   .add("style.css")
   .add("script.js")
   .add("fonts")
+  .add("assets")
   .add("img");
 
 export default site;

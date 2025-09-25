@@ -31,4 +31,5 @@ h1, h2, h3, h4, h5, h6, strong, b {
 }
 a {
   text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
 }

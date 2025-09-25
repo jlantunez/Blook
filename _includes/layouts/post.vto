@@ -3,9 +3,17 @@ layout: ./base.vto
 ---
 
 <article class="post">
+  {{ set img_webp = image.src.replace(/\.\w+$/, ".webp") |> url }}
+  {{ set img_avif = image.src.replace(/\.\w+$/, ".avif") |> url }}
+  {{ set img_set }}
+  image-set(
+    url('{{ img_avif }}') type("image/avif"),
+    url('{{ img_webp }}') type("image/webp")
+  )
+  {{ /set }}
   <div
     class="post-image dark-scheme"
-    style="--image: url('{{ image.src |> url }}'); --position-x: {{ image.x }}%; --position-y: {{ image.y }}%"
+    style="--image: {{ img_set |> escape }}; --position-x: {{ image.x }}%; --position-y: {{ image.y }}%"
   >
   </div>
 

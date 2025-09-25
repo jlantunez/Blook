@@ -1,5 +1,5 @@
 layout: layouts/404.vto
 title: Página no encontrada
-image: /img/404.webp
+image: /assets/404.webp
 description: |
   [Volver a inicio](/)

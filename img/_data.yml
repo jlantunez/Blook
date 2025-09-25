@@ -1,0 +1,3 @@
+transformImages:
+  - format: avif
+  - format: webp
