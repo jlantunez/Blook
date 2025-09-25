@@ -51,14 +51,14 @@ layout: ./base.vto
   <div class="post-footer">
     <nav class="post-footer-nav">
       {{ if previousPage }}
-        <a class="post-prev" href="{{ previousPage.url }}" rel="next">
+        <a class="post-prev linkactive" href="{{ previousPage.url }}" rel="next">
           <span><img src='{{ "arrow-left" |> icon("phosphor") }}' inline>
             Anterior</span>
           <strong>{{ previousPage.title }}</strong>
         </a>
       {{ /if }}
       {{ if nextPage }}
-        <a class="post-next" href="{{ nextPage.url }}" rel="next">
+        <a class="post-next linkactive" href="{{ nextPage.url }}" rel="next">
           <span>Siguiente <img
               src='{{ "arrow-right" |> icon("phosphor") }}'
               inline
