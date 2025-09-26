@@ -10,6 +10,7 @@ import metas from "lume/plugins/metas.ts";
 import favicon from "lume/plugins/favicon.ts";
 import checkUrls from "lume/plugins/check_urls.ts";
 import transformImages from "lume/plugins/transform_images.ts";
+import sitemap from "lume/plugins/sitemap.ts";
 
 import { es } from "npm:date-fns@4.1.0/locale/es";
 
@@ -48,6 +49,7 @@ const site = lume({
   .use(basePath())
   .use(transformImages())
   .use(inline())
+  .use(sitemap())
   .filter("excerpt", extractExcerpt)
   .ignore("README.md")
   .add("style.css")
