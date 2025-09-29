@@ -365,3 +365,15 @@
     opacity: 1;
   }
 }
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 500ms both;
+}
