@@ -18,6 +18,11 @@
     width: auto;
   }
 
+  &.is-success {
+    animation: fade-in-up 400ms both;
+    animation-delay: 200ms;
+  }
+
   .newsletter-error:not([hidden]) {
     margin-top: 40px;
     color: var(--color-error);
@@ -28,6 +33,7 @@
     font-size: var(--size--1);
     column-gap: .5em;
     justify-content: center;
+    animation: shakeX .6s;
 
     svg {
       fill: currentColor;
@@ -41,6 +47,7 @@
   background-color: var(--color-button);
   color: var(--color-button-text);
   text-decoration: none;
+  white-space: nowrap;
   min-height: 3rem;
   font-size: inherit;
   padding-inline: 2em;
@@ -95,17 +102,23 @@
 
   input[type="text"], input[type="email"] {
     min-height: 3rem;
-    padding: 0 1em 0 2.2rem;
+    padding: 0 1em 0 3rem;
     font-size: inherit;
     border: solid 1px var(--color-line);
     border-radius: 6px;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: 10px center;
+    background-position: 18px center;
+    background-color: white;
+    transition-property: padding-left, background-position;
+    transition-duration: 200ms;
 
     &:focus {
       outline: solid 1px var(--color-accent);
       outline-offset: 2px;
+      padding-left: 2.5rem;
+      background-position: 12px center;
+      background-blend-mode: difference;
     }
     &:invalid {
       opacity: .8;
@@ -142,5 +155,25 @@
   to {
     stroke-width: 8;
     stroke-dasharray: 77 77;
+  }
+}
+
+
+@keyframes shakeX {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  30%,
+  70% {
+    transform: translate3d(10px, 0, 0);
   }
 }

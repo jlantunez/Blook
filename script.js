@@ -45,6 +45,7 @@ form?.addEventListener("submit", async (event) => {
   if (template) {
     const clone = template.content.cloneNode(true);
     form.replaceWith(clone);
+    document.querySelector(".newsletter")?.scrollIntoView({ behavior: "smooth" });
   }
 });
 
