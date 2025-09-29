@@ -33,7 +33,7 @@
     font-size: var(--size--1);
     column-gap: .5em;
     justify-content: center;
-    animation: shakeX .6s;
+    animation: error .6s;
 
     svg {
       fill: currentColor;
@@ -155,25 +155,5 @@
   to {
     stroke-width: 8;
     stroke-dasharray: 77 77;
-  }
-}
-
-
-@keyframes shakeX {
-  from,
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  50%,
-  70%,
-  90% {
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  30%,
-  70% {
-    transform: translate3d(10px, 0, 0);
   }
 }

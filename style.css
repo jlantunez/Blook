@@ -1,5 +1,6 @@
 @import "styles/variables.css";
 @import "styles/reset.css";
+@import "styles/animations.css";
 
 @import "styles/components/post.css";
 @import "styles/components/archive.css";
