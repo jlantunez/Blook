@@ -17,15 +17,29 @@
   <body>
     {{ content }}
 
-    <aside class="newsletter">
+    <form id="subscribe-form" class="newsletter" method="post" action="/subscribe.php">
       <h2>{{ newsletter.title }}</h2>
 
       {{ newsletter.intro |> md }}
 
-      <a class="newsletter-cta linkactive" href="{{ newsletter.cta.link }}">
-        {{ newsletter.cta.text }}
-      </a>
-    </aside>
+      <div class="newsletter-fields">
+        <p class="newsletter-field">
+          <label for="newsletter-name">{{ newsletter.name }}</label>
+          <input id="newsletter-name" type="text" required name="name">
+        </p>
+
+        <p class="newsletter-field">
+          <label for="newsletter-email">{{ newsletter.email }}</label>
+          <input id="newsletter-email" type="email" required name="email">
+        </p>
+
+        <button class="newsletter-cta linkactive">
+          {{ newsletter.submit }}
+        </button>
+      </div>
+
+      <p hidden role="alert" id="subscribe-error" class="newsletter-error"></p>
+    </form>
 
     <footer class="footer" id="footer">
       <a href="/archivos/" class="footer-menu linkactive" title="Archivos"

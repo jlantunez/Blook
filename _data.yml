@@ -7,7 +7,7 @@ metas:
 
 newsletter:
   title: Primero en la newsletter
-  intro: 200 palabras cada sábado sobre hacer empresa con foco en diseño, marca y cultura.
-  cta:
-    text: Recibir por email
-    link: https://jlantunez.com/columnas/registro/
+  intro: 200 palabras cada sábado.
+  name: Nombre de pila
+  email: Email personal
+  submit: Recibir por email
