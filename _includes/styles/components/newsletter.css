@@ -33,7 +33,7 @@
     font-size: var(--size--1);
     column-gap: .5em;
     justify-content: center;
-    animation: error .6s;
+    animation: fade-in .3s;
 
     svg {
       fill: currentColor;
@@ -61,6 +61,7 @@
 
   &:hover {
     background-color: var(--color-accent);
+    animation: bounce 0.4s ease-in-out infinite alternate;
   }
   &:focus {
     outline: solid 1px var(--color-accent);
@@ -93,7 +94,7 @@
   width: 100%;
 
   @media (width > 900px) {
-    max-width: 240px;
+    width: 240px;
   }
 
   label {
@@ -102,22 +103,18 @@
 
   input[type="text"], input[type="email"] {
     min-height: 3rem;
-    padding: 0 1em 0 3rem;
+    padding: 0 1em 0 2.5rem;
     font-size: inherit;
     border: solid 1px var(--color-line);
     border-radius: 6px;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: 18px center;
+    background-position: 12px center;
     background-color: white;
-    transition-property: padding-left, background-position;
-    transition-duration: 200ms;
 
     &:focus {
       outline: solid 1px var(--color-accent);
       outline-offset: 2px;
-      padding-left: 2.5rem;
-      background-position: 12px center;
       background-blend-mode: difference;
     }
     &:invalid {
