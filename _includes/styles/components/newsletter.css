@@ -1,7 +1,7 @@
 .newsletter {
   text-align: center;
   margin: min(8rem, 15vh) auto;
-  font-size: var(--size--1);
+  font-size: var(--size-0);
   line-height: var(--line-text);
   width: min(100%, 400px);
 
@@ -18,9 +18,20 @@
     width: auto;
   }
 
-  .newsletter-error {
-    margin-top: 1rem;
+  .newsletter-error:not([hidden]) {
+    margin-top: 40px;
     color: var(--color-error);
+    background-color: var(--color-error-background);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    font-size: var(--size--1);
+    column-gap: .5em;
+    justify-content: center;
+
+    svg {
+      fill: currentColor;
+    }
   }
 }
 .newsletter-cta {
@@ -33,6 +44,7 @@
   min-height: 3rem;
   font-size: inherit;
   padding-inline: 2em;
+  font-size: var(--size--1);
   font-weight: var(--font-bold);
   border: none;
   cursor: pointer;
@@ -48,41 +60,48 @@
     outline-offset: 2px;
   }
   @media (width > 900px) {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
     margin-top: 0;
   }
 }
 .newsletter-fields {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 1.5rem;
   margin-top: 3rem;
   
   @media (width > 900px) {
-    column-gap: 6px;
+    column-gap: 40px;
     align-items: end;
     flex-direction: row;
   }
 }
 .newsletter-field {
+  font-size: var(--size--1);
   text-align: left;
   display: grid;
   margin: 0;
   row-gap: .3em;
+  max-width: 340px;
+  width: 100%;
+
+  @media (width > 900px) {
+    max-width: 240px;
+  }
 
   label {
-    font-size: var(--size--1);
     font-weight: var(--font-bold);
   }
 
   input[type="text"], input[type="email"] {
     min-height: 3rem;
-    padding: 0 1em;
+    padding: 0 1em 0 2.2rem;
     font-size: inherit;
     border: solid 1px var(--color-line);
     border-radius: 6px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: 10px center;
 
     &:focus {
       outline: solid 1px var(--color-accent);
@@ -91,5 +110,37 @@
     &:invalid {
       opacity: .8;
     }
+  }
+  input[type="text"] {
+    background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 9a4.501 4.501 0 0 0 0-9 4.501 4.501 0 0 0 0 9m4 1h-1.722a5.45 5.45 0 0 1-4.556 0H4a4 4 0 0 0-4 4v.5A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5V14a4 4 0 0 0-4-4" fill="%23ACA395"/></svg>');
+  }
+  input[type="email"] {
+    background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.697 5.963a.188.188 0 0 1 .303.146V12.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V6.113c0-.157.178-.244.303-.147.7.543 1.628 1.234 4.816 3.55.66.48 1.772 1.493 2.881 1.487 1.116.01 2.25-1.025 2.884-1.487 3.188-2.316 4.113-3.01 4.813-3.553M8 10c.725.012 1.769-.912 2.294-1.294 4.147-3.01 4.462-3.272 5.419-4.022a.75.75 0 0 0 .287-.59V3.5A1.5 1.5 0 0 0 14.5 2h-13A1.5 1.5 0 0 0 0 3.5v.594c0 .231.106.447.288.59.956.747 1.271 1.013 5.418 4.022C6.231 9.088 7.275 10.012 8 10" fill="%23ACA395"/></svg>');
+  }
+}
+
+.newsletter-text {
+  text-align: left;
+  max-width: 640px;
+  margin-top: 60px;
+}
+
+.newsletter-success-icon {
+  display: block;
+  margin: auto;
+
+  path {
+    animation: successIcon 500ms both;
+  }
+}
+
+@keyframes successIcon {
+  from {
+    stroke-width: 1;
+    stroke-dasharray: 0 77;
+  }
+  to {
+    stroke-width: 8;
+    stroke-dasharray: 77 77;
   }
 }

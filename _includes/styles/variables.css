@@ -26,7 +26,8 @@
   --color-button-text: white;
   --color-button: #432906;
   --color-line: #E9E1DD;
-  --color-error: #f12525;
+  --color-error: #AA0000;
+  --color-error-background: #FBEBEB;
   --color-selection: color-mix(
     in srgb,
     var(--color-accent) 15%,
@@ -45,7 +46,6 @@
     --color-text: #ACA395;
     --color-text-strong: white;
     --color-line: #494645;
-    --color-error: #f96969;
     --color-button: white;
     --color-button-text: #24201E;
   }

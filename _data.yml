@@ -11,3 +11,9 @@ newsletter:
   name: Nombre de pila
   email: Email personal
   submit: Recibir por email
+
+  success:
+    title: Suscripción confirmada
+    intro: Muchas gracias.
+    text: |
+      Te llegará un email de bienvenida y otro con las columnas ya publicadas. Quizá te lleguen a Promociones. Muévelos a tu bandeja principal. Un saludo.

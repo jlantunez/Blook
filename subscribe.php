@@ -5,7 +5,7 @@ header('Content-Type: application/json');
 // Solo permitir POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
-    echo json_encode(['success'=>false, 'error' => "Método no permitido"]);
+    echo json_encode(['success'=>false, 'error' => "METHOD_NOT_ALLOWED"]);
     exit();
 }
 
@@ -19,12 +19,12 @@ $email = $_POST['email'];
 
 // Validación de datos
 if (empty($name) || mb_strlen($name) < 2 || mb_strlen($name) > 30) {
-    echo json_encode(['success'=>false, 'error'=> "El nombre no es correcto"]);
+    echo json_encode(['success'=>false, 'error'=> "INVALID_NAME"]);
     exit();
 }
 
 if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo json_encode(['success'=>false, 'error'=> "El email no es correcto"]);
+    echo json_encode(['success'=>false, 'error'=> "INVALID_EMAIL"]);
     exit();
 }
 
