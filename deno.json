@@ -2,7 +2,7 @@
   "imports": {
     "lume/": "https://deno.land/x/lume@v3.0.10/",
     "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.12/jsx-runtime.ts",
-    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@71d96dd89b7b9999300f6f6585b0ac47f3372d8c/"
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@3a85f104fd6e01151330adc524fe96e0f86a0379/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --env-file -A -",
