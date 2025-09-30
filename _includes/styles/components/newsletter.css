@@ -14,13 +14,8 @@
   > p {
     margin: 0;
   }
-  @media (width > 900px) {
+  @media (width > 1000px) {
     width: auto;
-  }
-
-  &.is-success {
-    animation: fade-in-up 400ms both;
-    animation-delay: 200ms;
   }
 
   .newsletter-error:not([hidden]) {
@@ -67,7 +62,7 @@
     outline: solid 1px var(--color-accent);
     outline-offset: 2px;
   }
-  @media (width > 900px) {
+  @media (width > 1000px) {
     margin-top: 0;
   }
 }
@@ -78,8 +73,8 @@
   row-gap: 1.5rem;
   margin-top: 3rem;
   
-  @media (width > 900px) {
-    column-gap: 40px;
+  @media (width > 1000px) {
+    column-gap: 20px;
     align-items: end;
     flex-direction: row;
   }
@@ -93,8 +88,8 @@
   max-width: 340px;
   width: 100%;
 
-  @media (width > 900px) {
-    width: 240px;
+  @media (width > 1000px) {
+    width: 340px;
   }
 
   label {
@@ -141,8 +136,29 @@
 
   path {
     animation: successIcon 500ms both;
+    animation-delay: 800ms;
   }
 }
+
+.newsletter.is-success {
+  > .newsletter-success-icon {
+    animation-delay: 800;
+  }
+  
+  > h2 {
+    animation: fade-in-up 400ms both;
+    animation-delay: 200ms;
+  }
+  > p {
+    animation: fade-in-up 400ms both;
+    animation-delay: 400ms;
+  }
+  > .newsletter-text {
+    animation: fade-in-up 400ms both;
+    animation-delay: 600ms;
+  }
+}
+
 
 @keyframes successIcon {
   from {

@@ -49,6 +49,7 @@ form?.addEventListener("submit", async (event) => {
     document.querySelector(".newsletter")?.scrollIntoView({ behavior: "smooth" });
   }
 });
+form?.addEventListener("input", clearErrorMessage);
 
 const ERROR_MESSAGES = {
     'INVALID_EMAIL': 'El email introducido no es válido',
@@ -65,26 +66,34 @@ const ERROR_MESSAGES = {
 
 function showErrorMessage(id) {
   error.hidden = false;
-  error.animate({
-    opacity: [0, 1]
-  }, {
-    duration: 500,
-    fill: 'forwards'
-  }).onfinish = () => {
-    setTimeout(() => {
-      error.animate({
-        opacity: [1, 0]
-      }, {
-        duration: 500,
-        fill: 'forwards'
-      }).onfinish = () => {
-        error.hidden = true;
-      };
-    }, 4000);
+  if ("scrollIntoViewIfNeeded" in error) {
+    error.scrollIntoViewIfNeeded({ behavior: "smooth" });
   }
+
+  error.animate({
+    opacity: [0, 1],
+    transform: ['translateY(10px)', 'translateY(0)']
+  }, {
+    duration: 400,
+    fill: 'forwards'
+  });
 
   error.innerHTML = `
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.6A9.6 9.6 0 0 1 2.4 12 9.6 9.6 0 0 1 12 2.4a9.6 9.6 0 0 1 9.6 9.6 9.6 9.6 0 0 1-9.6 9.6m0-7.2a1.199 1.199 0 1 0 0 2.4c.664 0 1.2-.536 1.2-1.2s-.536-1.2-1.2-1.2m0-7.2c-.683 0-1.226.581-1.178 1.264l.278 3.9a.898.898 0 0 0 1.793 0l.277-3.9A1.18 1.18 0 0 0 11.992 7.2z"/></svg>
     ${ERROR_MESSAGES[id] || ERROR_MESSAGES['DEFAULT']}
     `;
+}
+
+function clearErrorMessage() {
+  if (error.hidden) return;
+  error.animate({
+    opacity: [1, 0],
+    transform: ['translateY(0)', 'translateY(10px)']
+  }, {
+    duration: 500,
+    fill: 'forwards'
+  }).onfinish = () => {
+    error.hidden = true;
+    error.innerHTML = '';
+  };
 }
