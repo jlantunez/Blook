@@ -52,16 +52,16 @@ form?.addEventListener("submit", async (event) => {
 form?.addEventListener("input", clearErrorMessage);
 
 const ERROR_MESSAGES = {
-    'INVALID_EMAIL': 'El email introducido no es válido',
-    'EMAIL_EXISTS': 'Este email ya está siendo utilizado',
-    'INVALID_LIST': 'Error en la configuración de la lista',
-    'REQUIRED_FIELD': 'Todos los campos son obligatorios',
-    'API_ERROR': 'Error temporal del servicio. Inténtalo de nuevo',
-    'NETWORK_ERROR': 'Error de conexión con la plataforma. Estarán tocando algo',
-    'SPAM_DETECTED': 'Suscripción bloqueada por medidas de seguridad',
-    'RATE_LIMIT': 'Demasiados intentos. Espera unos minutos',
-    'INVALID_NAME': 'El nombre debe tener entre 2 y 30 caracteres',
-    'DEFAULT': 'Ha ocurrido un error inesperado. Inténtalo de nuevo'
+    'INVALID_EMAIL': 'El email introducido no es válido.',
+    'EMAIL_EXISTS': 'Este email ya está siendo utilizado.',
+    'INVALID_LIST': 'Error en la configuración de la lista.',
+    'REQUIRED_FIELD': 'Todos los campos son obligatorios.',
+    'API_ERROR': 'Error temporal del servicio. Inténtalo de nuevo.',
+    'NETWORK_ERROR': 'Error de conexión con la plataforma. Vuelve a intentarlo.',
+    'SPAM_DETECTED': 'Suscripción bloqueada por medidas de seguridad.',
+    'RATE_LIMIT': 'Demasiados intentos. Espera unos minutos.',
+    'INVALID_NAME': 'El nombre debe tener entre 2 y 30 caracteres.',
+    'DEFAULT': 'Ha ocurrido un error inesperado. Inténtalo de nuevo.'
 };
 
 function showErrorMessage(id) {
