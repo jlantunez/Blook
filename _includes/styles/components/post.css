@@ -340,28 +340,3 @@
     fill: currentColor;
   }
 }
-
-@keyframes fade-in-up {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-@keyframes img-fade-in {
-  to {
-    --img-fade-color: transparent;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}

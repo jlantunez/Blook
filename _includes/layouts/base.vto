@@ -17,15 +17,44 @@
   <body>
     {{ content }}
 
-    <aside class="newsletter">
+    <form id="subscribe-form" class="newsletter" method="post" action="/subscribe.php">
       <h2>{{ newsletter.title }}</h2>
 
       {{ newsletter.intro |> md }}
 
-      <a class="newsletter-cta linkactive" href="{{ newsletter.cta.link }}">
-        {{ newsletter.cta.text }}
-      </a>
-    </aside>
+      <div class="newsletter-fields">
+        <p class="newsletter-field">
+          <label for="newsletter-name">{{ newsletter.name }}</label>
+          <input minlength="2" maxlength="30" id="newsletter-name" type="text" required name="name">
+        </p>
+
+        <p class="newsletter-field">
+          <label for="newsletter-email">{{ newsletter.email }}</label>
+          <input id="newsletter-email" type="email" required name="email">
+        </p>
+
+        <button class="newsletter-cta linkactive">
+          {{ newsletter.submit }}
+        </button>
+      </div>
+
+      <p hidden role="alert" id="subscribe-error" class="newsletter-error"></p>
+    </form>
+    <template id="subscribe-success-template">
+      <div class="newsletter is-success">
+        <svg class="newsletter-success-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 36L22 51.5L54.5 7.5" stroke="#20CA5E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <h2>{{ newsletter.success.title }}</h2>
+
+        {{ newsletter.success.intro |> md }}
+
+        <div class="newsletter-text">
+          {{ newsletter.success.text |> md }}
+        </div>
+      </div>
+    </template>
 
     <footer class="footer" id="footer">
       <a href="/archivos/" class="footer-menu linkactive" title="Archivos"

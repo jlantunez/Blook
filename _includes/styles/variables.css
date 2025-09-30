@@ -26,6 +26,8 @@
   --color-button-text: white;
   --color-button: #432906;
   --color-line: #E9E1DD;
+  --color-error: #AA0000;
+  --color-error-background: #FBEBEB;
   --color-selection: color-mix(
     in srgb,
     var(--color-accent) 15%,
