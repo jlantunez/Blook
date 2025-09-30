@@ -128,6 +128,13 @@
   text-align: left;
   max-width: 640px;
   margin-top: 60px;
+
+  a {
+    color: var(--color-accent);
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .newsletter-success-icon {
