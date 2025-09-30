@@ -52,6 +52,7 @@ const site = lume({
   .use(sitemap())
   .filter("excerpt", extractExcerpt)
   .ignore("README.md")
+  .copy("subscribe.php")
   .add("style.css")
   .add("script.js")
   .add("fonts")

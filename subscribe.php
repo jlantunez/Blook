@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // Configuración
+include_once "../../env.php";
 $ACUMBAMAIL_AUTH_TOKEN = getenv("ACUMBAMAIL_AUTH_TOKEN");
 $ACUMBAMAIL_LIST_ID = 1159613;
 
