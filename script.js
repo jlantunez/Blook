@@ -31,7 +31,7 @@ form?.addEventListener("submit", async (event) => {
       }
       const result = await response.json();
       if (!result.success) {
-        showErrorMessage(result.error);
+        showErrorMessage(result.error?.code);
         return;
       }
     } catch (err) {
