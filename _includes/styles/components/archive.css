@@ -2,6 +2,7 @@
   width: 70px;
   margin: 80px auto 50px;
   perspective: 500px;
+  /* animation: fade-in-up 1s forwards; */
 
   img {
     width: 100%;
@@ -30,7 +31,6 @@
 .archive-header {
   display: grid;
   max-width: min(50rem, 100% - 4rem);
-  animation: fade-in-up 1s forwards;
   margin-inline: auto;
 
   a {
@@ -46,7 +46,8 @@
 .archive-intro {
   max-width: min(50rem, 100% - 4rem);
   margin-inline: auto;
-  animation: fade-in-up 1s forwards;
+  animation: fade-in-up 1s both;
+  animation-delay: 250ms;
   display: grid;
   grid-template-columns: 4rem 1fr;
   align-items: baseline;
@@ -80,6 +81,7 @@
   font-size: var(--size-2);
   font-weight: normal;
   margin: 0;
+  animation: fade-in-up 1s forwards;
 }
 
 .archive-tech {
