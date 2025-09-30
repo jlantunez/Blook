@@ -154,6 +154,9 @@
   p {
     margin-block: 0 1lh;
   }
+  ul li {
+    list-style:square;
+  }
 }
 .post-footer-nav {
   display: grid;
