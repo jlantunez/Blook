@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
-Blook is a super simple way to publish your blog, turn your book into a website, or share your newsletter online.
+Blook makes it easy to share your writing online—whether it’s a blog, book, or newsletter. This is where I post the blog version of my newsletter.
 It’s powered by [Lume](https://lume.land/), a fast & flexible static site generator for Deno.
 
 ## Run in your computer
