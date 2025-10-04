@@ -4,7 +4,7 @@ date: '2025-10-04T00:00:00.000Z'
 image:
   src: /img/lo-humano.webp
   x: 0
-  'y': 50
+  'y': 0
 ---
 Una madurez temprana, combinada con una curiosidad por todo lo artístico o diferente, me forjó un pensamiento *meta* que ve la realidad desde fuera, como si estuviera desterrado en la Luna con prismáticos. 
 
