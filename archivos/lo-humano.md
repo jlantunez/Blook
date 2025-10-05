@@ -6,10 +6,10 @@ image:
   x: 0
   'y': 0
 ---
-Una madurez temprana, combinada con una curiosidad por todo lo artístico o diferente, me forjó un pensamiento *meta* que ve la realidad desde fuera, como si estuviera desterrado en la Luna con prismáticos. 
+Una madurez temprana, combinada con una curiosidad ferviente por todo lo artístico o inusual, me forjó un pensamiento *meta* que ve la realidad desde fuera, como si estuviera desterrado en la Luna con prismáticos. 
 
-Días antes de ser legalmente adulto escribí en un folio, que aún conservo, cuál es la pregunta más importante del mundo. No creo que sea “¿cuál es el sentido de la vida?”. Divagaríamos. Gran parte de nuestro trabajo consiste en saber preguntar para descubrir valor. La cuestión trascendental es: ¿qué nos hace humanos? El *Homo habilis* empezó a responderla hace tres millones de años. Es la creatividad: la construcción de artefactos, mensajes y símbolos. ¿Las religiones, el dinero y las ideologías son nuestras tres grandes creaciones? Sí. 
+Días antes de ser legalmente adulto escribí en un folio, que aún conservo, cuál es la pregunta más importante del mundo. No creo que sea “¿cuál es el sentido de la vida?”. Divagaríamos. Gran parte de nuestro trabajo consiste en saber preguntar para descubrir valor. La cuestión trascendental es: ¿qué nos hace humanos? El *Homo habilis* empezó a darse cuenta hace tres millones de años. Es la creatividad: la construcción de artefactos, mensajes y símbolos. Las religiones, el dinero y las ideologías son nuestras tres grandes creaciones. 
 
-A partir de aquí: ¿para qué sirven los productos y las narrativas más allá de su función? Crean la realidad y la normalidad, decidiendo qué es legal, qué es correcto, qué es aceptado y qué no. Generan riqueza o pobreza. Y por último, nos empoderan o nos atrofian como especie. McLuhan decía que construimos objetos que luego nos transforman. Los dos objetos que me cambiaron fueron el MIKASA SuperNylon 1110 y el Spectrum 128k. 
+A partir de aquí: ¿para qué sirven los productos y las narrativas más allá de su función? Crean la realidad y la normalidad, decidiendo qué es legal, qué es correcto, qué es aceptado y qué no. Generan riqueza y pobreza. Y por último, nos empoderan o atrofian como especie. McLuhan decía que construimos objetos que luego nos transforman. Los dos objetos que me cambiaron fueron el MIKASA SuperNylon 1110 y el Spectrum 128k. 
 
 Me dieron autoconfianza, sentido y responsabilidad.
