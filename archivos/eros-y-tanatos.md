@@ -3,7 +3,7 @@ title: Eros y tánatos
 date: '2025-10-11T00:00:00.000Z'
 image:
   src: /img/eros-y-tanatos.webp
-  x: 50
+  x: 80
   'y': 50
 ---
 El viaje de fin de curso de 1994 lo hicimos a Italia. Fuimos en autobús desde Barcelona, pasando por el circuito de Mónaco, hasta llegar a las renacentistas Génova, Venecia y Florencia. El stendhalazo es real. No hay explicación médica. Era febrero; no hacía calor. Ver el Duomo alzarse por esas mojadas calles estrechas me sobrecogió. Nunca he vuelto a sentir nada igual.
