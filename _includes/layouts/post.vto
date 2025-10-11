@@ -3,9 +3,13 @@ layout: ./base.vto
 preloadImages: true
 ---
 
+{{ set src = image.src |> url }}
+{{ set img_webp = src.replace(/\.\w+$/, ".webp") }}
+{{ set img_avif = src.replace(/\.\w+$/, ".avif") }}
+<link href="{{ img_avif }}" rel="preload" as="image" type="image/avif" crossorigin="anonymous">
+<link href="{{ img_webp }}" rel="preload" as="image" type="image/webp" crossorigin="anonymous">
+
 <article class="post">
-  {{ set img_webp = image.src.replace(/\.\w+$/, ".webp") |> url }}
-  {{ set img_avif = image.src.replace(/\.\w+$/, ".avif") |> url }}
   {{ set img_set }}
   image-set(
     url('{{ img_avif }}') type("image/avif"),

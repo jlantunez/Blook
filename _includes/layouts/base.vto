@@ -10,13 +10,6 @@
     <link href="/fonts/inter-normal-100-900-latin.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="/fonts/inter-italic-100-900-latin.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
 
-    {{ if preloadImages }}
-      {{ set img_webp = image.src.replace(/\.\w+$/, ".webp") |> url }}
-      {{ set img_avif = image.src.replace(/\.\w+$/, ".avif") |> url }}
-      <link href="{{ img_avif }}" rel="preload" as="image" type="image/avif" crossorigin="anonymous">
-      <link href="{{ img_webp }}" rel="preload" as="image" type="image/webp" crossorigin="anonymous">
-    {{ /if }}
-
     <link rel="stylesheet" href="/style.css">
     <link rel="alternate" type="application/rss+xml" title="Columnas de José Luis Antúnez" href="/feed.rss">
     <link rel="expect" blocking="render" href="#footer">

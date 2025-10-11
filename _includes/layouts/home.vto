@@ -4,11 +4,22 @@ layout: layouts/base.vto
 
 {{ set latestPosts = search.pages("type=post", "date=desc", post_limit) }}
 {{ set post = latestPosts.shift() }}
+{{ set src = post.image.src |> url }}
+{{ set img_webp = src.replace(/\.\w+$/, ".webp") }}
+{{ set img_avif = src.replace(/\.\w+$/, ".avif") }}
+<link href="{{ img_avif }}" rel="preload" as="image" type="image/avif" crossorigin="anonymous">
+<link href="{{ img_webp }}" rel="preload" as="image" type="image/webp" crossorigin="anonymous">
 
 <article class="post">
+  {{ set img_set }}
+  image-set(
+    url('{{ img_avif }}') type("image/avif"),
+    url('{{ img_webp }}') type("image/webp")
+  )
+  {{ /set }}
   <div
     class="post-image dark-scheme"
-    style="--image: url('{{ post.image.src |> url }}'); --position-x: {{ post.image.x }}%; --position-y: {{ post.image.y }}%"
+    style="--image: {{ img_set |> escape }}; --position-x: {{ post.image.x }}%; --position-y: {{ post.image.y }}%"
   >
   </div>
 
