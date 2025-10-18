@@ -3,7 +3,7 @@ title: Esperanza
 date: 2025-10-18
 image:
   src: /img/esperanza.webp
-  x: 20
+  x: 15
   'y': 50
 ---
 ¿A qué asocias Andalucía? El himno de Blas Infante empieza diciendo: “La bandera blanca y verde vuelve, tras siglos de guerra, a decir paz y esperanza, bajo el sol de nuestra tierra.”
