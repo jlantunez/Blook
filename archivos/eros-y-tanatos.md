@@ -1,6 +1,6 @@
 ---
 title: Eros y tánatos
-date: '2025-10-11T00:00:00.000Z'
+date: 2025-10-11
 image:
   src: /img/eros-y-tanatos.webp
   x: 70

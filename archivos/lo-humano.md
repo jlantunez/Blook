@@ -1,6 +1,6 @@
 ---
 title: Lo humano
-date: '2025-10-04T00:00:00.000Z'
+date: 2025-10-04
 image:
   src: /img/lo-humano.webp
   x: 0

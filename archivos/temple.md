@@ -1,6 +1,6 @@
 ---
 title: Temple
-date: '2025-09-27T00:00:00.000Z'
+date: 2025-09-27
 image:
   src: /img/temple.webp
   x: 50
