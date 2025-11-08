@@ -3,7 +3,7 @@ title: Escenario
 date: 2025-11-08
 image:
   src: /img/escenario.webp
-  x: 50
+  x: 30
   'y': 50
 ---
 Tres semanas antes del lanzamiento de Ideasapiens empecé a maquetar los textos. Mientras se subía el análisis de la última obra que pintó Hopper, escuché a Matías Prats gritar: «La otra torre, Ricardo. La otra torre». Hoy sé que esos ataques inauguraron la sociedad de la atención: una droga que instaura una filosofía de hacer empresa, política e incluso relaciones personales que dependen de la explotación de la performance y del aceleracionismo. 
