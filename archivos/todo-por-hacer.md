@@ -1,5 +1,5 @@
 ---
-title: Todo por haacer
+title: Todo por hacer
 date: 2025-11-15
 image:
   src: /img/todo-por-hacer.webp
