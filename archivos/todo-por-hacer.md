@@ -6,7 +6,7 @@ image:
   x: 50
   'y': 50
 ---
-Los primeros años del nuevo milenio los recuerdo más por un programa de televisión que por el 11S. Cuando lancé Ideasapiens, nadie de mi entorno me apoyaba; ni siquiera existía un ecosistema startup en Barcelona. Tampoco me importaba. Había iniciado mi particular *Operación Triunfo*. Nina fue mi Paul Graham.
+Los primeros años del nuevo milenio los recuerdo más por un programa de televisión que por el 11S. Cuando lancé Ideasapiens, nadie de mi entorno me apoyaba; ni siquiera existía un ecosistema *startup* en Barcelona. Tampoco me importaba. Había iniciado mi particular *Operación Triunfo*. Nina fue mi Paul Graham.
 
 Todo estaba por hacer. Me invadió una fiebre que ningún termómetro reconoce. Fueron años de jornadas que se desbordaban unas sobre otras, como si el tiempo hubiera perdido su forma. Era una energía creadora, aún muy artesanal, en la que aprendimos a hacer casi de todo: HTML, CSS, SEO… Esa generación de emprendedores sentimos, por primera vez, que desde nuestra habitación podíamos cambiar el mundo.
 
