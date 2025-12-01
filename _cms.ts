@@ -25,6 +25,19 @@ cms.collection({
     "title: text",
     "date: date",
     {
+      name: "metas",
+      type: "object",
+      fields: [
+        {
+          name: "description",
+          type: "textarea",
+          attributes: {
+            maxlength: 155,
+          }
+        }
+      ]
+    },
+    {
       name: "image",
       type: "object",
       attributes: {
