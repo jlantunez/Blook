@@ -5,6 +5,8 @@ image:
   src: /img/verdades-tardias.webp
   x: 50
   'y': 50
+metas:
+  description: ¿A qué porcentaje de la población le gusta trabajar?
 ---
 Hace unas horas pregunté en Twitter a qué porcentaje de la población le gusta trabajar. ¿Serías capaz de completarte sin colaborar con nadie? ¿Sin comercio nos iríamos alejando de una sociedad justa? ¿El aprendizaje es indispensable para llegar a la plenitud? ¿Es la virtud un cuento, igual que la meritocracia?
 ¿La narrativa del trabajo como castigo y el wokismo identitario son dos manifestaciones de individualismo no reconocido, de ahí incluso la violencia contra el trabajo más elevado, como lo es el arte?

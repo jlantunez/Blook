@@ -5,6 +5,10 @@ image:
   src: /img/todo-por-hacer.webp
   x: 50
   'y': 50
+metas:
+  description: >-
+    Cuando lancé Ideasapiens, nadie de mi entorno me apoyaba; ni siquiera
+    existía un ecosistema startup en Barcelona.
 ---
 Los primeros años del nuevo milenio los recuerdo más por un programa de televisión que por el 11S. Cuando lancé Ideasapiens, nadie de mi entorno me apoyaba; ni siquiera existía un ecosistema *startup* en Barcelona. Tampoco me importaba. Había iniciado mi particular *Operación Triunfo*. Nina fue mi Paul Graham.
 

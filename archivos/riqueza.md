@@ -1,10 +1,14 @@
 ---
 title: Riqueza
-date: '2025-08-30T00:00:00.000Z'
+date: 2025-08-30
 image:
   src: /img/riqueza.webp
   x: 30
   'y': 25
+metas:
+  description: >-
+    Solemos culpar a la publicidad de nuestros vacíos, pero el problema nos
+    viene de fábrica: somos seres racionalizadores, no racionales.
 ---
 Desde niño tuve una brújula para distinguir, con relativa facilidad, entre el
 bien y el mal; entre lo profundo y lo superfluo; entre la riqueza y el progreso

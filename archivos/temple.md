@@ -5,6 +5,8 @@ image:
   src: /img/temple.webp
   x: 50
   'y': 50
+metas:
+  description: 'Ser el hermano mayor definió mi carácter en el mundo. '
 ---
 Hay destinos que se deciden al nacer. Ser el hermano mayor definió mi carácter en el mundo. Comprendí, por mera observación, que sería alguien a quien recurrirían para solucionar todos los problemas. Con ocho años ya parecía adulto: leía periódicos, celebraba los goles sin alharacas (como Butragueño) y en casa decidieron que sería el terapeuta matrimonial veinticuatro horas.
 

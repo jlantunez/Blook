@@ -5,6 +5,10 @@ image:
   src: /img/verdades-creadas.webp
   x: 50
   'y': 50
+metas:
+  description: >-
+    Producto, distribución y calar en la cultura popular. No vendas una
+    funcionalidad, regala una verdad contagiosamente real.
 ---
 Todo se inventa, incluso la verdad. El *zeitgeist* de la web de los primeros 2000 impuso, tras el éxito de Google, que lo importante era el producto. La distribución casi venía dada: bastaba con buen SEO o una comunidad fiel como la de WordPress.
 

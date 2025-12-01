@@ -5,6 +5,8 @@ image:
   src: /img/lo-humano.webp
   x: 0
   'y': 0
+metas:
+  description: ¿Para qué sirven los productos y las narrativas más allá de su función?
 ---
 Una madurez temprana, combinada con una curiosidad ferviente por todo lo artístico o inusual, me forjó un pensamiento *meta* que ve la realidad desde fuera, como si estuviera desterrado en la Luna con prismáticos. 
 

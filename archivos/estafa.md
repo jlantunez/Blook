@@ -5,6 +5,8 @@ image:
   src: /img/estafa.webp
   x: 0
   'y': 50
+metas:
+  description: Cada tiempo instaura verdades que luego son engaños.
 ---
 Cada tiempo instaura verdades que luego son engaños. Toda sociedad libre se sustenta en la Dogmatiquísima Trinidad del Estado, los medios (incluyo las redes) y la familia. Con la excusa del bienestar no pueden dejar de mentir. Sólo exculpo a los padres.
 

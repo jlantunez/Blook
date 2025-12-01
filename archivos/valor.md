@@ -1,10 +1,12 @@
 ---
 title: Valor
-date: '2025-08-23T00:00:00.000Z'
+date: 2025-08-23
 image:
   src: /img/valor.webp
   x: 50
   'y': 50
+metas:
+  description: ¿Qué es el valor? ¿Cuál es el primer significado que se activa en tu cabeza?
 ---
 Aquel día tocaba revisión, la primera después de la pandemia. Fue cuando conocí
 en la sala de espera a Isabel, la matriarca de una bodega gaditana con el don de

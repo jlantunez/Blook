@@ -1,10 +1,12 @@
 ---
 title: Despertar
-date: '2025-09-13T00:00:00.000Z'
+date: 2025-09-13
 image:
   src: /img/despertar.webp
   x: 50
   'y': 50
+metas:
+  description: Llegué a la pubertad escuchando la lambada.
 ---
 Llegué a la pubertad escuchando la lambada. Durante la siesta, me refugiaba en
 el altillo para grabar canciones de _Los 40 Principales_. Esa tarde me rocé, sin

@@ -5,6 +5,10 @@ image:
   src: /img/eros-y-tanatos.webp
   x: 70
   'y': 30
+metas:
+  description: >-
+    ¿Qué hace que una civilización ponga más foco en la creación que en la
+    destrucción?
 ---
 El viaje de fin de curso de 1994 lo hicimos a Italia. Fuimos en autobús desde Barcelona, pasando por el circuito de Mónaco, hasta llegar a las renacentistas Génova, Venecia y Florencia. El stendhalazo es real. No hay explicación médica. Era febrero; no hacía calor. Ver el Duomo alzarse por esas mojadas calles estrechas me sobrecogió. Nunca he vuelto a sentir nada igual.
 

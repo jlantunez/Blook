@@ -5,6 +5,8 @@ image:
   src: /img/artificial.webp
   x: 50
   'y': 50
+metas:
+  description: 'Lo artificial es lo que no surge de la naturaleza, sino de la intención.'
 ---
 La cultura va por delante de la ciencia. El milenio realmente comenzó en el 2000, igual que la era de la obsesión por la autenticidad. Decían que los *realities* eran experimentos sociológicos. Estopa «partía la pana» y en los chats de Terra te podías sincerar con una chica de Valencia que podía ser un señor reprimido de Jaén.
 

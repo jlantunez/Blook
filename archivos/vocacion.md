@@ -1,10 +1,12 @@
 ---
 title: Vocación
-date: '2025-08-09T00:00:00.000Z'
+date: 2025-08-09
 image:
   src: /img/vocacion.webp
   x: 90
   'y': 0
+metas:
+  description: 'Y en ese momento, a los dieciséis años, vi la luz.'
 ---
 Cuarenta grados. Agosto de 1993. Nos vamos de vacaciones a Chipiona. Seremos
 siete en el Ford Orion rojo: nosotros cinco y los abuelos. Es la primera vez que
