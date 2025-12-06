@@ -16,5 +16,6 @@ Con los fracasos aprendes otras verdades. El **producto** se copia hasta el infi
 
 Ni la publicidad ni las redes son ya suficientes. ¿Cómo empezar? Estudiando la relación entre poder, verdad y normalidad pasando por Foucault hasta Jobs. Sólo hace 70 años que los adolescentes se unieron a los adultos para trabajar en esa construcción de realidades. Hoy día, las nuevas generaciones clasifican la publicidad dentro de la ficción, dificultando relaciones sinceras a largo plazo. 
 
-No hablo de comprar influencia; hablo de construir presencia para decidir juntos qué es cierto, correcto y qué no. No vendas una *killer feature*, regala una verdad contagiosamente real. No compitas por cuota de mercado; compite por cuota mental. 
+No hablo de comprar influencia; hablo de construir presencia para decidir juntos qué es cierto, correcto y qué no. No vendas una *killer feature*, regala una verdad contagiosamente real. No compitas por cuota de mercado; compite por cuota mental.
+
 Ser memerable es ser antifrágil.
