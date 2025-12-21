@@ -1,13 +1,13 @@
 layout: layouts/archive.vto
 title: Archivo de columnas
 description: >-
-  Este es el archivo de las columnas. Si te apuntas a la newsletter que envío
-  los sábados, puedes coleccionarlas. Todas tienen 200 palabras.
+  Este es el archivo cronológico de las columnas que cada sábado envío por
+  correo. Todas tienen 200 palabras.
 info:
   title: /info
   text: >
-    Escribo para compartir mi visión sobre hacer empresa con foco en diseño,
-    marca y cultura entremezclándola con la autoficción de mi vida.
+    Escribo para compartir mi visión sobre hacer empresa y sociedad. Es un
+    ejercicio de autoficción muy personal con foco en diseño, marca y cultura.
 web:
   title: /web
   text: >
