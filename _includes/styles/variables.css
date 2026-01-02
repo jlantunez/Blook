@@ -42,7 +42,7 @@
     /* Colors */
     --color-background: #0a0a0a;
     --color-background-highlight: #111;
-    --color-background-highlight2: #222;
+    --color-background-highlight2: #151515;
     --color-text: #929292;
     --color-text-strong: white;
     --color-line: #222;
@@ -55,7 +55,7 @@
 .dark-scheme {
   --color-background: #0a0a0a;
   --color-background-highlight: #111;
-  --color-background-highlight2: #222;
+  --color-background-highlight2: #151515;
   --color-text: #929292;
   --color-text-strong: white;
   --color-line: #222;
