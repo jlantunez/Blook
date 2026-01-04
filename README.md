@@ -23,6 +23,10 @@ It’s powered by [Lume](https://lume.land/), a fast & flexible static site gene
 - Smooth, elegant fade-in animations
 - Typography: PS Times + Inter. The PS Times is just for our use, so if anyone clones the project and wants to publish it, they’ll need to swap it out.
 - Hero images always look good (big or small screens).
+
+![web-single](https://github.com/user-attachments/assets/56c6f60b-9ec4-48b3-91a6-4791eae9ce21)
+
+
  
 ## Credits
 
