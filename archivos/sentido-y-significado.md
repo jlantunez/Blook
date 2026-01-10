@@ -6,7 +6,7 @@ metas:
 image:
   src: /img/sentido-naming.webp
   x: 50
-  'y': 50
+  'y': 0
 ---
 ¿Cuál es la diferencia entre imaginar y evocar? La imaginación puede construir mundos desde cero, sin un referente previo. La evocación asigna sensaciones a los recuerdos. Es un proceso que involucra la memoria y la reconstrucción de experiencias pasadas, añadiendo tesoros subjetivos.
 
