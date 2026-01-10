@@ -12,6 +12,6 @@ image:
 
 Un buen *naming* va más allá de identificar un producto o una organización. Es una evocación que invita a vivir en un paraíso sin dolor ni pecados. 
 
-Piensa en la manera en que la NASA nombraba sus misiones e incluso las partes de la Luna. Piensa en Amazon o Nike como esa diosa griega de la Victoria. Apollo no es una nave; es mito y ambición humana condensados en una sola palabra. El Mar de la Tranquilidad transforma una superficie inhóspita en un lugar casi habitable en la mente. El nombre crea un relato previo al hecho. Convierte significado en emoción. Los mejores *namings* no se agotan en el presente; apuntan hacia adelante, como esas misiones espaciales o tus sueños infantiles.
+Piensa en la manera en que la NASA nombraba sus misiones e incluso las partes de la Luna. Piensa en Amazon o Nike como esa diosa griega de la Victoria. Apollo no es una nave; es mito y ambición humana condensados en una sola palabra. El Mar de la Tranquilidad transforma una superficie inhóspita en un lugar casi habitable en la mente. El nombre crea un relato previo al hecho. Convierte significante en emoción. Los mejores *namings* no se agotan en el presente; apuntan hacia adelante, como esas misiones espaciales o tus sueños infantiles.
 
 Un buen *naming* provoca que queramos pronunciarlo, como si paladeáramos el mejor bocado. Existen muy buenas clasificaciones y criterios para trabajar su ideación, dependiendo de lo que necesites. Pero recuerda: lo extraordinario nunca nace de lo obvio.
