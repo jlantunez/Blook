@@ -40,27 +40,27 @@
 
   @media (prefers-color-scheme: dark) {
     /* Colors */
-    --color-background: #14161c;
-    --color-background-highlight: #202228;
-    --color-background-highlight2: #26282e;
+    --color-background: #14161a;
+    --color-background-highlight: #181a1e;
+    --color-background-highlight2: #1e2024;
     --color-text: #9c9ea4;
     --color-text-strong: white;
-    --color-line: #292c34;
+    --color-line: #24262a;
     --color-button: white;
-    --color-button-text: #14161c;
+    --color-button-text: #14161a;
   }
 }
 
 /* To force dark mode */
 .dark-scheme {
-  --color-background: #14161c;
-  --color-background-highlight: #202228;
-  --color-background-highlight2: #26282e;
+  --color-background: #14161a;
+  --color-background-highlight: #181a1e;
+  --color-background-highlight2: #1e2024;
   --color-text: #9c9ea4;
   --color-text-strong: white;
-  --color-line: #292c34;
+  --color-line: #24262a;
   --color-button: white;
-  --color-button-text: #14161c;
+  --color-button-text: #14161a;
 }
 
 /* Fluid typography: https://utopia.fyi/blog/clamp/ */
