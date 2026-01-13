@@ -17,17 +17,17 @@
   --font-bold: 600;
 
   /* Colors */
-  --color-background: #FFF6F3;
-  --color-background-highlight: #FFEDE6;
-  --color-background-highlight2: #FFF2ED;
-  --color-text: #5B5856;
-  --color-text-strong: #151413;
-  --color-accent: #E66A28;
+  --color-background: #f4f3f2;
+  --color-background-highlight: #fcfbfa;
+  --color-background-highlight2: #f5f4f3;
+  --color-text: #4c4b4a;
+  --color-text-strong: #161514;
+  --color-accent: #e66a28;
   --color-button-text: white;
-  --color-button: #432906;
-  --color-line: #E9E1DD;
-  --color-error: #AA0000;
-  --color-error-background: #FBEBEB;
+  --color-button: #0c0b0a;
+  --color-line: #ebeae8;
+  --color-error: #aa0000;
+  --color-error-background: #fbebeb;
   --color-selection: color-mix(
     in srgb,
     var(--color-accent) 15%,
