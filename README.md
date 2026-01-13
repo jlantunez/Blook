@@ -24,8 +24,7 @@ It’s powered by [Lume](https://lume.land/), a fast & flexible static site gene
 - Typography: PS Times + Inter. The PS Times is just for our use, so if anyone clones the project and wants to publish it, they’ll need to swap it out.
 - Hero images always look good (big or small screens).
 
-![web-single](https://github.com/user-attachments/assets/56c6f60b-9ec4-48b3-91a6-4791eae9ce21)
-
+<img width="1280" height="800" alt="entry-dark" src="https://github.com/user-attachments/assets/0d35af70-f09b-4244-aab7-63393e3870e1" />
 
  
 ## Credits
