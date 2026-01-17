@@ -17,15 +17,15 @@
   --font-bold: 600;
 
   /* Colors */
-  --color-background: #f2f3f4;
-  --color-background-highlight: #fafbfc;
-  --color-background-highlight2: #f5f6f7;
-  --color-text: #4a4b4c;
-  --color-text-strong: #141516;
+  --color-background: #f5f3f1;
+  --color-background-highlight: #fcfbfa;
+  --color-background-highlight2: #f7f6f5;
+  --color-text: #3c3b3a;
+  --color-text-strong: #161514;
   --color-accent: #e66a28;
   --color-button-text: white;
-  --color-button: #0a0b0c;
-  --color-line: #e1e2e3;
+  --color-button: #0c0b0a;
+  --color-line: #e3e2e1;
   --color-error: #aa0000;
   --color-error-background: #fbebeb;
   --color-selection: color-mix(
