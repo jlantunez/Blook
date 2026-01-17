@@ -7,8 +7,8 @@ metas:
     con el cuidado y con la creación de estándares internos. Es una brújula.
 image:
   src: /img/gusto.webp
-  x: 80
-  'y': 30
+  x: 70
+  'y': 50
 ---
 Noviembre de 2003. De aquella mañana en la que enterramos al abuelo recuerdo la fila de lápidas sucias a su alrededor. Fue mi primer *memento mori*. El segundo ocurrió cuando abrimos su cajón de los papeles, con todos los recibos del Ocaso.
 
