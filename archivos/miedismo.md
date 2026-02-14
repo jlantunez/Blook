@@ -18,4 +18,6 @@ El miedismo es la explotación y amplificación sistemática de la existencia co
 Nuestros cerebros evolucionaron para alertarnos de que cualquier crujido en la hierba podía ser un depredador. Hoy esa conexión neurocultural nos empuja a hacer clic. Los medios no tienen una posición en el mundo; tienen un posicionamiento en el mercado. No buscan la verdad: buscan la rentabilidad. Las suscripciones agravarán el problema. Del “Que vienen los socialistas” de 1982 a “Que viene la ultraderecha” en 2026 para ocultar responsabilidades obvias. 
 
 Las clases medias viven peor en España, por mucha métrica macro engañosa que se empuñe. 
-El fin no justifica los medios. Andy se escapó.
+El fin no justifica los medios. 
+
+Andy se escapó.
