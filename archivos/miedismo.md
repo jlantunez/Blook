@@ -10,7 +10,7 @@ image:
   x: 50
   'y': 0
 ---
-Andy Dufresne está cumpliendo dos cadenas perpetuas en la Penitenciaría Estatal de Shawshank. Ha entablado amistad con Red, otro preso que le advierte de que la esperanza es una emoción peligrosa cuando vives enjaulado. Hemos pasado del HOPE de Obama al HATE trumpista de partidos, supuestamente no populistas, que explotan el miedo en una sociedad incapaz de analizar la realidad más allá del consumo de narrativas. 
+Andy Dufresne está cumpliendo dos cadenas perpetuas en la Penitenciaría Estatal de Shawshank. Ha entablado amistad con Red, otro preso que le advierte de que la esperanza es una emoción peligrosa cuando vives enjaulado. Hemos pasado del HOPE de Obama al HATE trumpista de partidos, supuestamente no populistas, que explotan el miedo en una sociedad incapaz de analizar la realidad a partir del consumo de narrativas. 
 
 El medio ya no es el mensaje. Es el miedo. 
 El miedismo es la explotación y amplificación sistemática de la existencia con fines particulares. El miedismo, igual que el machismo y el racismo, es un mal estructural que exige rechazo.
