@@ -7,7 +7,7 @@ metas:
     valor. 
 image:
   src: /img/lo-abierto.webp
-  x: 20
+  x: 0
   'y': 50
 ---
 El austríaco Peter Steinberger se convirtió en leyenda en 2010, cuando liberó un visor de PDF mejor que el de Apple. Al ver la demanda, lo convirtió en una empresa. Tras retirarse, ha vuelto con OpenClaw, un asistente que realiza tareas en tu equipo sin que se lo pidas expresamente. Es un paso más hacia la singularidad.
