@@ -5,7 +5,7 @@
 }
 .post {
   display: grid;
-  grid-template-columns: 0 minmax(0, 40rem) 0;
+  grid-template-columns: 0 minmax(0, 43rem) 0;
   grid-template-rows: 85vh;
   justify-content: space-between;
   column-gap: 2rem;
