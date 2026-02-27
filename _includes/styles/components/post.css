@@ -3,6 +3,22 @@
   inherits: false;
   initial-value: transparent;
 }
+
+hr {
+    border: none;
+    margin-block: 2lh;
+}
+
+hr::after {
+  
+    display: block;
+    text-align: center;
+    letter-spacing: 1rem;
+    content: '***';
+    color: var(--color-accent);
+    font-size: 1rem;
+}
+
 .post {
   display: grid;
   grid-template-columns: 0 minmax(0, 43rem) 0;
