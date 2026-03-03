@@ -5,10 +5,10 @@ preloadImages: true
 {{ set src = image.src |> url }}
 {{ set img_webp = src.replace(/\.\w+$/, ".webp") }}
 {{ set img_avif = src.replace(/\.\w+$/, ".avif") }}
-{{ set headContent }}
+
 <link href="{{ img_avif }}" rel="preload" as="image" type="image/avif" crossorigin="anonymous">
 <link href="{{ img_webp }}" rel="preload" as="image" type="image/webp" crossorigin="anonymous">
-{{ /set }}
+
 <article class="post">
   {{ set img_set }}
   image-set(
