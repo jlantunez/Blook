@@ -19,7 +19,8 @@ layout: ./base.vto
     {{ web.text |> md }}
   </div>
 
-  {{ set posts = search.pages("type=post|note", "date=asc") }}
+  {{ set posts = search.pages("type=post", "date=asc") }}
+  {{ set notes = search.pages("type=note", "date=asc") }}
 
   <nav class="archive-posts">
     <ol>
@@ -38,4 +39,27 @@ layout: ./base.vto
       {{ /for }}
     </ol>
   </nav>
+
+  {{ if notes.length }}
+  <hr>
+  <nav class="archive-posts archive-notes">
+    <ol>
+      {{ for note of notes }}
+        <li>
+          <a href="{{ note.url }}" class="archive-post linkactive">
+            <strong class="archive-post-title">
+              {{ note.title }}
+            </strong>
+            <time
+              class="archive-post-date"
+              datetime='{{ note.date |> date("DATETIME") }}'
+            >
+              {{ note.date |> date("SHORT") }}
+            </time>
+          </a>
+        </li>
+      {{ /for }}
+    </ol>
+  </nav>
+  {{ /if }}
 </main>
