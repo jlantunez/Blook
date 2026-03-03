@@ -1,5 +1,5 @@
 ---
-title: 'Medios habituales vs. Weblogs: Letizia Ortiz'
+title: 'Medios vs. Weblogs: Letizia Ortiz'
 date: 2003-11-11
 metas:
   description: >-
