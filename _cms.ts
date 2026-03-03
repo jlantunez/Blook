@@ -53,6 +53,34 @@ cms.collection({
   ],
 });
 
+cms.collection({
+  name: "Notas",
+  store: "src:notas/*.md",
+  documentName: `{title}.md`,
+  fields: [
+    "title: text",
+    "date: date",
+    {
+      name: "metas",
+      type: "object",
+      fields: [
+        {
+          name: "description",
+          type: "textarea",
+          attributes: {
+            maxlength: 155,
+          }
+        }
+      ]
+    },
+    {
+      name: "content",
+      type: "markdown",
+      uploads: "Imágenes",
+    },
+  ],
+});
+
 cms.document({
   name: "Portada",
   store: "src:index.yml",
@@ -71,7 +99,7 @@ cms.document({
 
 cms.document({
   name: "Archivo",
-  store: "src:archivos.yml",
+  store: "src:columnas.yml",
   fields: [
     "title: text",
     "description: textarea",
