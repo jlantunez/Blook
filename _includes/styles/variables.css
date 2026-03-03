@@ -12,27 +12,28 @@
   --font-display: "PS Times", serif;
   --font-text: Inter, system-ui, sans-serif;
 
-  /* Bold */
+  /* Font weight */
+  --font-light: 300;
   --font-regular: 400;
   --font-bold: 600;
 
   /* Colors */
-  --color-background: #f5f3f1;
-  --color-background-highlight: #fcfbfa;
-  --color-background-highlight2: #f7f6f5;
-  --color-text: #3c3b3a;
-  --color-text-strong: #161514;
-  --color-accent: #e66a28;
-  --color-button-text: white;
-  --color-button: #0c0b0a;
-  --color-line: #e3e2e1;
-  --color-error: #aa0000;
+  --color-background: #f5f3ef;
+  --color-background-highlight: #faf9f7;
+  --color-background-highlight2: #fff;
+  --color-text: #464442;
+  --color-text-strong: #161614;
+  --color-text-blockquote: #977055;
+  --color-line: #e9e5db;
+  --color-button: #733b09;
+  --color-button-text: #fff;
+  --color-accent: #d63e1f;
+  --color-input-icon: #e9e5db;
+  --color-error: #a00;
   --color-error-background: #fbebeb;
-  --color-selection: color-mix(
-    in srgb,
-    var(--color-accent) 15%,
-    var(--color-background)
-  );
+  --color-selection: color-mix(in srgb,
+      var(--color-accent) 15%,
+      var(--color-background));
 
   /* Line heights */
   --line-base: 1.4;
@@ -40,27 +41,31 @@
 
   @media (prefers-color-scheme: dark) {
     /* Colors */
-    --color-background: #161616;
-    --color-background-highlight: #1c1c1c;
-    --color-background-highlight2: #1e1e1e;
-    --color-text: #a0a0a0;
-    --color-text-strong: white;
-    --color-line: #282828;
-    --color-button: white;
-    --color-button-text: #161616;
+    --color-background: #1d1c1b;
+    --color-background-highlight: #21201f;
+    --color-background-highlight2: #242322;
+    --color-text: #a8a7a6;
+    --color-text-strong: #fff;
+    --color-text-blockquote: #977055;
+    --color-line: #333231;
+    --color-button: #fff;
+    --color-button-text: #1d1c1b;
+    --color-input-icon: #a8a7a6;
   }
 }
 
 /* To force dark mode */
 .dark-scheme {
-  --color-background: #161616;
-  --color-background-highlight: #1c1c1c;
-  --color-background-highlight2: #1e1e1e;
-  --color-text: #a0a0a0;
-  --color-text-strong: white;
-  --color-line: #282828;
-  --color-button: white;
-  --color-button-text: #161616;
+  --color-background: #1d1c1b;
+  --color-background-highlight: #21201f;
+  --color-background-highlight2: #242322;
+  --color-text: #a8a7a6;
+  --color-text-strong: #fff;
+  --color-text-blockquote: #977055;
+  --color-line: #333231;
+  --color-button: #fff;
+  --color-button-text: #1d1c1b;
+  --color-input-icon: #a8a7a6;
 }
 
 /* Fluid typography: https://utopia.fyi/blog/clamp/ */
@@ -75,44 +80,34 @@
   /* Size -1 */
   --size--1-min: 0.875;
   --size--1-max: 1;
-  --size--1: clamp(
-    var(--size--1-min) * var(--unit),
-    ( -1 * var(--min-width) * ((var(--size--1-max) - var(--size--1-min)) / var(--width-diff)) + var(--size--1-min)) * var(--unit) + (var(--size--1-max) - var(--size--1-min)) / var(--width-diff) * 100vw,
-    var(--size--1-max) * var(--unit)
-  );
+  --size--1: clamp(var(--size--1-min) * var(--unit),
+      (-1 * var(--min-width) * ((var(--size--1-max) - var(--size--1-min)) / var(--width-diff)) + var(--size--1-min)) * var(--unit) + (var(--size--1-max) - var(--size--1-min)) / var(--width-diff) * 100vw,
+      var(--size--1-max) * var(--unit));
 
   /* Size 0 */
   --size-0-min: 1;
   --size-0-max: 1.25;
-  --size-0: clamp(
-    var(--size-0-min) * var(--unit),
-    (-1 * var(--min-width) * ((var(--size-0-max) - var(--size-0-min)) / var(--width-diff)) + var(--size-0-min)) * var(--unit) + (var(--size-0-max) - var(--size-0-min)) / var(--width-diff) * 100vw,
-    var(--size-0-max) * var(--unit)
-  );
+  --size-0: clamp(var(--size-0-min) * var(--unit),
+      (-1 * var(--min-width) * ((var(--size-0-max) - var(--size-0-min)) / var(--width-diff)) + var(--size-0-min)) * var(--unit) + (var(--size-0-max) - var(--size-0-min)) / var(--width-diff) * 100vw,
+      var(--size-0-max) * var(--unit));
 
   /* Size 1 */
   --size-1-min: calc(var(--size-0-min) * var(--min-scale));
   --size-1-max: calc(var(--size-0-max) * var(--max-scale));
-  --size-1: clamp(
-    var(--size-1-min) * var(--unit),
-    (-1 * var(--min-width) * ((var(--size-1-max) - var(--size-1-min)) / var(--width-diff)) + var(--size-1-min)) * var(--unit) + (var(--size-1-max) - var(--size-1-min)) / var(--width-diff) * 100vw,
-    var(--size-1-max) * var(--unit)
-  );
+  --size-1: clamp(var(--size-1-min) * var(--unit),
+      (-1 * var(--min-width) * ((var(--size-1-max) - var(--size-1-min)) / var(--width-diff)) + var(--size-1-min)) * var(--unit) + (var(--size-1-max) - var(--size-1-min)) / var(--width-diff) * 100vw,
+      var(--size-1-max) * var(--unit));
 
   /* Size 2 */
   --size-2-min: calc(var(--size-1-min) * var(--min-scale));
   --size-2-max: calc(var(--size-1-max) * var(--max-scale));
-  --size-2: clamp(
-    var(--size-2-min) * var(--unit), (-1 * var(--min-width) * ((var(--size-2-max) - var(--size-2-min)) / var(--width-diff)) + var(--size-2-min)) * var(--unit) + (var(--size-2-max) - var(--size-2-min)) / var(--width-diff) * 100vw,
-    var(--size-2-max) * var(--unit)
-  );
+  --size-2: clamp(var(--size-2-min) * var(--unit), (-1 * var(--min-width) * ((var(--size-2-max) - var(--size-2-min)) / var(--width-diff)) + var(--size-2-min)) * var(--unit) + (var(--size-2-max) - var(--size-2-min)) / var(--width-diff) * 100vw,
+      var(--size-2-max) * var(--unit));
 
   /* Size 3 */
   --size-3-min: calc(var(--size-2-min) * var(--min-scale));
   --size-3-max: calc(var(--size-2-max) * var(--max-scale));
-  --size-3: clamp(
-    var(--size-3-min) * var(--unit),
-    (-1 * var(--min-width) * ((var(--size-3-max) - var(--size-3-min)) / var(--width-diff)) + var(--size-3-min)) * var(--unit) + (var(--size-3-max) - var(--size-3-min)) / var(--width-diff) * 100vw,
-    var(--size-3-max) * var(--unit)
-  );
+  --size-3: clamp(var(--size-3-min) * var(--unit),
+      (-1 * var(--min-width) * ((var(--size-3-max) - var(--size-3-min)) / var(--width-diff)) + var(--size-3-min)) * var(--unit) + (var(--size-3-max) - var(--size-3-min)) / var(--width-diff) * 100vw,
+      var(--size-3-max) * var(--unit));
 }
