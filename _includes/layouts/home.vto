@@ -2,13 +2,16 @@
 layout: layouts/base.vto
 ---
 
-{{ set latestPosts = search.pages("type=post", "date=desc", post_limit) }}
-{{ set post = latestPosts.shift() }}
+{{ set featuredPosts = search.pages("type=post", "date=desc", 1) }}
+{{ set post = featuredPosts[0] }}
 {{ set src = post.image.src |> url }}
 {{ set img_webp = src.replace(/\.\w+$/, ".webp") }}
 {{ set img_avif = src.replace(/\.\w+$/, ".avif") }}
+
+{{ set headContent }}
 <link href="{{ img_avif }}" rel="preload" as="image" type="image/avif" crossorigin="anonymous">
 <link href="{{ img_webp }}" rel="preload" as="image" type="image/webp" crossorigin="anonymous">
+{{ /set }}
 
 <article class="post">
   {{ set img_set }}
@@ -37,26 +40,42 @@ layout: layouts/base.vto
 
 <section class="post-latest">
   <ul class="post-latest-list">
-    {{ for post of latestPosts }}
+    {{ set allPosts = search.pages("type=post|note", "date=desc", post_limit) }}
+    {{ for item of allPosts }}
       <li>
-        <a href="{{ post.url }}" class="post-list-item">
-          <img class="post-list-image" src="{{ post.image.src }}">
-          <h3 class="post-list-title">
-            {{ post.title }}
-          </h3>
-          <div class="post-list-content">
-            <time datetime='{{ post.date |> date("DATETIME") }}'>
-              {{ post.date |> date("SHORT") }}
-            </time>
-            —
-            {{ post.content |> excerpt |> md }}
-          </div>
-        </a>
+        {{ if item.type == "note" }}
+          <a href="{{ item.url }}" class="post-list-item post-list-item--note">
+            <h3 class="post-list-title">
+              {{ item.title }}
+            </h3>
+            <div class="post-list-content">
+              <time datetime='{{ item.date |> date("DATETIME") }}'>
+                {{ item.date |> date("SHORT") }}
+              </time>
+              —
+              {{ item.content |> excerpt |> md }}
+            </div>
+          </a>
+        {{ else }}
+          <a href="{{ item.url }}" class="post-list-item">
+            <img class="post-list-image" src="{{ item.image.src }}">
+            <h3 class="post-list-title">
+              {{ item.title }}
+            </h3>
+            <div class="post-list-content">
+              <time datetime='{{ item.date |> date("DATETIME") }}'>
+                {{ item.date |> date("SHORT") }}
+              </time>
+              —
+              {{ item.content |> excerpt |> md }}
+            </div>
+          </a>
+        {{ /if }}
       </li>
     {{ /for }}
   </ul>
   <footer class="post-latest-footer">
-    <a class="post-latest-cta linkactive" href="/archivos/">
+    <a class="post-latest-arch linkactive" href="/archivos/">
       Archivo
       <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
     </a>
