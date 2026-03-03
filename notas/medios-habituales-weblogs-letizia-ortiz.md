@@ -2,7 +2,9 @@
 title: 'Medios habituales vs. Weblogs: Letizia Ortiz'
 date: 2003-11-11
 metas:
-  description: Las notas son reflexiones cortas sin imagen destacada.
+  description: >-
+    Una periodista que fue compañera de universidad de la futura reina de España
+    ha escrito un post sobre ella.
 ---
 La libertad de escribir en un blog.
 

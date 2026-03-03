@@ -1,9 +1,10 @@
 ---
-title: Los 6 blogs temáticos
+title: 6 blogs temáticos
 metas:
   description: >-
     Los 6 blogs temáticos que lanzaremos en Ideasapiens: actualidad, mass media,
     humanidades...
+date: 2003-11-09
 ---
 Los blogs que abriremos en [Ideasapiens](https://www.ideasapiens.com).
 
