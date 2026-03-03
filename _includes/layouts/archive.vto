@@ -19,7 +19,7 @@ layout: ./base.vto
     {{ web.text |> md }}
   </div>
 
-  {{ set posts = search.pages("type=post") }}
+  {{ set posts = search.pages("type=post|note", "date=asc") }}
 
   <nav class="archive-posts">
     <ol>

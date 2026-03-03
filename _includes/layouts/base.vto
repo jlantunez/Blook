@@ -5,72 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#151413">
     <title>{{ title }} - José Luis Antúnez</title>
-
     <link href="/fonts/pstimes-regular-webfont.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="/fonts/inter-normal-100-900-latin.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="/fonts/inter-italic-100-900-latin.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-
     <link rel="stylesheet" href="/style.css">
     <link rel="alternate" type="application/rss+xml" title="Columnas de José Luis Antúnez" href="/feed.rss">
     <link rel="expect" blocking="render" href="#footer">
+    {{ headContent }}
   </head>
   <body>
     {{ content }}
-
     <form id="subscribe-form" class="newsletter" method="post" action="/columnas/subscribe.php">
       <h2>{{ newsletter.title }}</h2>
-
       {{ newsletter.intro |> md }}
-
-      <div class="newsletter-fields">
-        <p class="newsletter-field">
+      <div class="user-infos">
+        <p class="user-info">
           <label for="newsletter-name">{{ newsletter.name }}</label>
-          <input minlength="2" maxlength="30" id="newsletter-name" type="text" required name="name">
+          <span class="input-wrapper">
+            <input minlength="2" maxlength="30" id="newsletter-name" type="text" required name="name" autocomplete="name">
+            <svg class="input-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path fill="currentColor" d="M8 9a4.501 4.501 0 0 0 0-9 4.501 4.501 0 0 0 0 9m4 1h-1.722a5.45 5.45 0 0 1-4.556 0H4a4 4 0 0 0-4 4v.5A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5V14a4 4 0 0 0-4-4" />
+            </svg>
+          </span>
         </p>
-
-        <p class="newsletter-field">
+        <p class="user-info">
           <label for="newsletter-email">{{ newsletter.email }}</label>
-          <input id="newsletter-email" type="email" required name="email">
+          <span class="input-wrapper">
+            <input id="newsletter-email" type="email" required name="email" autocomplete="email">
+            <svg class="input-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path fill="currentColor" d="M15.697 5.963a.188.188 0 0 1 .303.146V12.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V6.113c0-.157.178-.244.303-.147.7.543 1.628 1.234 4.816 3.55.66.48 1.772 1.493 2.881 1.487 1.116.01 2.25-1.025 2.884-1.487 3.188-2.316 4.113-3.01 4.813-3.553M8 10c.725.012 1.769-.912 2.294-1.294 4.147-3.01 4.462-3.272 5.419-4.022a.75.75 0 0 0 .287-.59V3.5A1.5 1.5 0 0 0 14.5 2h-13A1.5 1.5 0 0 0 0 3.5v.594c0 .231.106.447.288.59.956.747 1.271 1.013 5.418 4.022C6.231 9.088 7.275 10.012 8 10" />
+            </svg>
+          </span>
         </p>
-
-        <button class="newsletter-cta linkactive">
+        <button type="submit" class="linkactive">
           {{ newsletter.submit }}
         </button>
       </div>
-
       <p hidden role="alert" id="subscribe-error" class="newsletter-error"></p>
     </form>
     <template id="subscribe-success-template">
       <div class="newsletter is-success">
         <svg class="newsletter-success-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 36L22 51.5L54.5 7.5" stroke="#20CA5E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 36L22 51.5L54.5 7.5" stroke="#20CA5E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-
         <h2>{{ newsletter.success.title }}</h2>
-
         {{ newsletter.success.intro |> md }}
-
         <div class="newsletter-text">
           {{ newsletter.success.text |> md }}
         </div>
       </div>
     </template>
-
     <footer class="footer" id="footer">
-      <a href="/archivos/" class="footer-menu linkactive" title="Archivos"
-      >Archivos</a>
-      <a href="/" class="footer-monograma linkactive" title="Inicio">
-        <img
-          src="/assets/jl.svg"
-          alt="Monograma con las letras J y L de José Luis"
-          inline
-        >
-      </a>
-      <a
-        href="https://github.com/jlantunez/Blook"
-        class="footer-menu linkactive"
-        title="GitHub"
-      >GitHub</a>
+      <div class="footer-top">
+        <a href="/" class="footer-logo linkactive" title="Portada de Columnas">
+          <img src="/assets/jl.svg" alt="Monograma JL" inline>
+        </a>
+      </div>
+      <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <ul>
+          <li>
+            <a class="linkactive" href="/archivos/" title="Archivos">Archivos</a>
+          </li>
+          <li>
+            <a class="linkactive" href="https://x.com/jlantunez" title="Twitter">@jlantunez</a>
+          </li>
+          <li>
+            <a class="linkactive" href="https://sapiare.com/" title="Sapiare · Inspiración">Sapiare</a>
+          </li>
+        </ul>
+      </nav>
     </footer>
     <script type="module" src="/script.js"></script>
   </body>

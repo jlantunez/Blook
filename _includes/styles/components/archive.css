@@ -33,14 +33,6 @@
   max-width: min(50rem, 100% - 4rem);
   margin-inline: auto;
 
-  a {
-    color: var(--color-accent);
-
-    &:hover {
-      color: var(--color-text-strong);
-      text-decoration: none;
-    }
-  }
 }
 
 .archive-intro {

@@ -59,6 +59,17 @@ const site = lume({
   .add("assets")
   .add("img");
 
+site.preprocess([".md"], (pages) => {
+  for (const page of pages) {
+    if (page.data.type === "note") {
+      const filename = page.src.entry?.name?.replace(/\.md$/, "");
+      if (filename) {
+        page.data.url = `/archivos/${filename}/`;
+      }
+    }
+  }
+});
+
 export default site;
 
 function extractExcerpt(text: string, length: number = 150) {
