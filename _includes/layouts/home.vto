@@ -38,6 +38,7 @@ layout: layouts/base.vto
 <section class="post-latest">
   <ul class="post-latest-list">
     {{ set allPosts = search.pages("type=post|note", "date=desc", post_limit) }}
+    {{ set allPosts = allPosts.filter((item) => item.url !== post.url) }}
     {{ for item of allPosts }}
       <li>
         {{ if item.type == "note" }}
