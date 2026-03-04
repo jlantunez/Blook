@@ -5,7 +5,7 @@ metas:
   description: '¿Qué ocurre cuando lo abundante no es el trigo, sino la inteligencia?'
 image:
   src: /img/abundancia.webp
-  x: 0
+  x: 50
   'y': 50
 ---
 Hoy es el Día de Andalucía. La geografía es una trampa. La patria que merece defenderse es la infancia. La inocencia valiente. La escasez ilusionante.
