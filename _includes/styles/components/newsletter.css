@@ -1,6 +1,4 @@
-
 /* ---- Control autofill ---- */
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -14,24 +12,27 @@ input:-webkit-autofill:active {
 
 /* ---- Newsletter form ---- */
 .newsletter {
+  position: relative;
   text-align: center;
   margin: min(8rem, 15vh) auto;
   font-size: var(--size-0);
   line-height: var(--line-text);
-  width: min(100%, 400px);
+  width: 100%;
+  max-width: 960px;
+  padding-inline: 1.5rem;
 
-  @media (width > 1000px) {
-    width: auto;
+  @media (width >= 1000px) {
+    padding-inline: 0;
   }
 
-  >h2 {
+  > h2 {
     font-family: var(--font-display);
     font-size: var(--size-2);
     font-weight: normal;
     margin: 0;
   }
 
-  >p {
+  > p {
     margin: 0;
   }
 
@@ -55,16 +56,18 @@ input:-webkit-autofill:active {
 
 /* ---- User info fields ---- */
 .user-infos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   margin-top: 3rem;
 
-  @media (width > 1000px) {
-    flex-direction: row;
+  @media (width >= 800px) {
+    grid-template-columns: 1fr 1fr auto;
     align-items: end;
-    column-gap: 20px;
+  }
+
+  @media (width >= 1000px) {
+    grid-template-columns: 320px 320px auto;
   }
 }
 
@@ -74,12 +77,6 @@ input:-webkit-autofill:active {
   display: grid;
   row-gap: .3em;
   margin: 0;
-  width: 100%;
-  max-width: 340px;
-
-  @media (width > 1000px) {
-    width: 340px;
-  }
 
   label {
     font-weight: var(--font-bold);
@@ -152,7 +149,7 @@ input:-webkit-autofill:active {
   transition: background-color 200ms;
   margin-top: 1.3em;
 
-  @media (width > 1000px) {
+  @media (width >= 800px) {
     margin-top: 0;
   }
 
@@ -169,21 +166,21 @@ input:-webkit-autofill:active {
 
 /* ---- Success state ---- */
 .newsletter.is-success {
-  >.newsletter-success-icon {
+  > .newsletter-success-icon {
     animation-delay: 800ms;
   }
 
-  >h2 {
+  > h2 {
     animation: fade-in-up 400ms both;
     animation-delay: 200ms;
   }
 
-  >p {
+  > p {
     animation: fade-in-up 400ms both;
     animation-delay: 400ms;
   }
 
-  >.newsletter-text {
+  > .newsletter-text {
     animation: fade-in-up 400ms both;
     animation-delay: 600ms;
   }
