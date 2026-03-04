@@ -2,8 +2,9 @@
   position: relative;
   margin: 8rem auto 4em;
 
-  @media (max-width: 567px) {
+  @media (max-width: 480px) {
     margin-bottom: 1rem;
+    width: 98%;
   }
 
   .footer-top {
@@ -54,9 +55,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 1rem 2rem;
+      min-height: 3rem;
+      padding: 1rem 2rem; /* -- .footer-top line is bigger -- */
       text-decoration: none;
       transition: opacity 200ms, color 200ms;
+
+      @media (max-width: 480px) {
+        /* -- set paddings to zero to prevent horizontal 
+        scroll/overflow on small screens -- */
+        padding-left: 0;
+        padding-right: 0;
+        padding-inline: 1rem;
+      }
 
       &:hover {
         text-decoration: underline;
