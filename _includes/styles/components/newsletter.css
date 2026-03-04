@@ -62,12 +62,12 @@ input:-webkit-autofill:active {
   margin-top: 3rem;
 
   @media (width >= 800px) {
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
     align-items: end;
   }
 
   @media (width >= 1000px) {
-    grid-template-columns: 320px 320px auto;
+    grid-template-columns: minmax(0, 320px) minmax(0, 320px) auto;
   }
 }
 
@@ -85,7 +85,7 @@ input:-webkit-autofill:active {
   input[type="text"],
   input[type="email"] {
     min-height: 3rem;
-    padding: 0 1em 0 2.3rem;
+    padding: 0 1em 0 2em;
     border: 1px solid var(--color-line);
     border-radius: 6px;
     width: 100%;
@@ -148,6 +148,7 @@ input:-webkit-autofill:active {
   border-radius: 3rem;
   transition: background-color 200ms;
   margin-top: 1.3em;
+  flex-shrink: 0;
 
   @media (width >= 800px) {
     margin-top: 0;
