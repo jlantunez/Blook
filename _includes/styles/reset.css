@@ -11,7 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-family: var(--font-text);
   -webkit-font-smoothing: antialiased;
@@ -25,19 +24,25 @@ body {
   grid-template-rows: 1fr;
 }
 
-h1, h2, h3, h4, h5, h6, strong, b {
-  font-weight: var(--font-bold);
+h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-strong);
 }
+
+strong, b {
+  font-weight: var(--font-bold);
+}
+
 ::selection {
   background-color: var(--color-selection);
   color: var(--color-text-strong);
 }
+
 a {
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
   color: var(--color-accent);
 }
+
 a:hover {
     text-decoration: none;
 }
