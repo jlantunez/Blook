@@ -8,58 +8,116 @@ layout: ./base.vto
     </a>
     <h1 class="archive-title">{{ description }}</h1>
   </header>
-
   <div class="archive-intro">
     <h2>{{ info.title }}</h2>
     {{ info.text |> md }}
   </div>
-
   <div class="archive-intro">
     <h2>{{ web.title }}</h2>
     {{ web.text |> md }}
   </div>
 
-  {{ set posts = search.pages("type=post", "date=asc") }}
-  {{ set notes = search.pages("type=note", "date=asc") }}
+  <div class="archive-posts">
+    <div class="page-search search" id="search"></div>
+  </div>
 
-  <nav class="archive-posts">
-    <ol>
-      {{ for post of posts }}
-        <li>
-          <a href="{{ post.url }}" class="archive-post linkactive">
-            <strong class="archive-post-title">{{ post.title }}</strong>
-            <time
-              class="archive-post-date"
-              datetime='{{ post.date |> date("DATETIME") }}'
-            >
-              {{ post.date |> date("SHORT") }}
-            </time>
-          </a>
-        </li>
-      {{ /for }}
-    </ol>
-  </nav>
+  <div class="archive-tabs">
+    <ul class="archive-tab-list" role="tablist">
+      <li role="presentation">
+        <button
+          class="archive-tab-btn"
+          role="tab"
+          aria-selected="true"
+          aria-controls="tab-posts"
+          id="btn-posts"
+          onclick="switchTab('posts')"
+        >Columnas</button>
+      </li>
+      <li role="presentation">
+        <button
+          class="archive-tab-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tab-years"
+          id="btn-years"
+          onclick="switchTab('years')"
+        >Todo</button>
+      </li>
+    </ul>
 
-  {{ if notes.length }}
-  <hr>
-  <nav class="archive-posts archive-notes">
-    <ol>
-      {{ for note of notes }}
-        <li>
-          <a href="{{ note.url }}" class="archive-post linkactive">
-            <strong class="archive-post-title">
-              {{ note.title }}
-            </strong>
-            <time
-              class="archive-post-date"
-              datetime='{{ note.date |> date("DATETIME") }}'
-            >
-              {{ note.date |> date("SHORT") }}
-            </time>
-          </a>
-        </li>
-      {{ /for }}
-    </ol>
-  </nav>
-  {{ /if }}
+    <!-- Tab: Posts -->
+    <div class="archive-tab-panel is-active" id="tab-posts" role="tabpanel" aria-labelledby="btn-posts">
+      {{ set posts = search.pages("type=post", "date=asc") }}
+      <nav class="archive-posts">
+        <ol>
+          {{ for post of posts }}
+            <li>
+              <a href="{{ post.url }}" class="archive-post linkactive">
+                <strong class="archive-post-title">{{ post.title }}</strong>
+                <time
+                  class="archive-post-date"
+                  datetime='{{ post.date |> date("DATETIME") }}'>
+                  {{ post.date |> date("SHORT") }}
+                </time>
+              </a>
+            </li>
+          {{ /for }}
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Tab: Years -->
+    <div class="archive-tab-panel" id="tab-years" role="tabpanel" aria-labelledby="btn-years">
+      {{ set allItems = search.pages("layout=layouts/post.vto") }}
+      {{ set allNotes = search.pages("layout=layouts/note.vto") }}
+      {{ set combined = [...allItems, ...allNotes].sort((a, b) => {
+          const yearDiff = b.date.getFullYear() - a.date.getFullYear();
+          if (yearDiff !== 0) return yearDiff;
+          return a.date.getMonth() - b.date.getMonth();
+        }) }}
+      {{ set currentYear = null }}
+      {{ set currentMonth = null }}
+      {{ set currentMonthKey = null }}
+      <nav class="archive-years">
+        <h2>Archivos del blog</h2>
+        {{ for item of combined }}
+          {{ set itemYear = item.date |> date("yyyy") }}
+          {{ set itemMonthKey = item.date |> date("yyyy/MM") }}
+          {{ set itemMonth = item.date |> date("MMMM") }}
+          {{ if itemYear !== currentYear }}
+            {{ if currentYear !== null }}</ul></li></ul>{{ /if }}
+            {{ set currentYear = itemYear }}
+            {{ set currentMonthKey = null }}
+            <ul class="archive-year-list">
+              <li class="archive-year-item">
+                <h2 class="archive-year-title">{{ itemYear }}</h2>
+                <ul class="archive-month-list">
+          {{ /if }}
+          {{ if itemMonthKey !== currentMonthKey }}
+            {{ set currentMonthKey = itemMonthKey }}
+            {{ set currentMonth = itemMonth }}
+            <li class="archive-month-item">
+              <a href="/archivos/{{ itemMonthKey }}/" class="archive-month-link linkactive">
+                {{ itemMonth }}
+              </a>
+            </li>
+          {{ /if }}
+        {{ /for }}
+        {{ if currentYear !== null }}</ul></li></ul>{{ /if }}
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(tab) {
+      var panels = document.querySelectorAll('.archive-tab-panel');
+      var buttons = document.querySelectorAll('.archive-tab-btn');
+
+      panels.forEach(function(p) { p.classList.remove('is-active'); });
+      buttons.forEach(function(b) { b.setAttribute('aria-selected', 'false'); });
+
+      document.getElementById('tab-' + tab).classList.add('is-active');
+      document.getElementById('btn-' + tab).setAttribute('aria-selected', 'true');
+    }
+  </script>
 </main>
