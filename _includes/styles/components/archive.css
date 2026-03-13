@@ -59,12 +59,8 @@
     margin: 0;
   }
 
-  a {
-    color: var(--color-accent);
-
-    &:hover {
+  a:hover {
       text-decoration: none;
-    }
   }
 }
 
@@ -76,13 +72,47 @@
   animation: fade-in-up 1s forwards;
 }
 
-.archive-tech {
-  font-size: var(--size--1);
-  line-height: var(--line-text);
-  margin-bottom: 1rem;
+.archive-tabs {
+  margin-top: 2rem;
+  animation: fade-in-up 1.2s forwards;
+}
 
-  p {
-    margin-block: 0;
+.archive-tab-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--color-line);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-tab-btn {
+  padding: 1rem 2rem;
+  background: var(--color-background-search);
+  border: 1px solid var(--color-line);
+  border-bottom: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  position: relative;
+  bottom: -1px;
+
+  &[aria-selected="true"] {
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-background);
+    color: var(--color-accent);
+  }
+}
+
+.archive-tab-panel {
+  display: none;
+  padding-top: 2rem;
+  animation: fade-in 1s forwards;
+
+  &.is-active {
+    display: block;
   }
 }
 
@@ -92,7 +122,8 @@
   justify-content: space-between;
   column-gap: 2rem;
   row-gap: 4rem;
-  margin-block: 120px 4rem;
+  margin-block: 2rem 4rem;
+  animation: fade-in-up 1.2s forwards;
 
   > * {
     grid-column: 2;
@@ -195,4 +226,59 @@
 .archive-post-date {
   font-size: var(--size--1);
   color: var(--color-accent);
+}
+
+.archive-years {
+  max-width: min(60rem, 100% - 4rem);
+  line-height: var(--line-text);
+  margin-inline: auto;
+  font-size: var(--size-0);
+}
+
+.archive-year-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.archive-year-item {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  align-items: baseline;
+  column-gap: 1.5rem;
+  padding-block: 0.5rem;
+  border-top: solid 1px var(--color-line);
+}
+
+.archive-year-title {
+  font-family: var(--font-display);
+  font-size: var(--size-0);
+  font-weight: var(--font-bold);
+  color: var(--color-text-strong);
+  margin: 0;
+}
+
+.archive-month-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.archive-month-item {
+  margin: 0;
+}
+
+.archive-month-link {
+  display: inline-block;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: var(--size--1);
+  padding: 0.1rem 0.5rem 0.1rem 0;
+}
+
+.archive-month-link:hover {
+  text-decoration: underline;
 }

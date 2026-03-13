@@ -1,6 +1,7 @@
 .footer {
   position: relative;
-  margin: 8rem auto 4em;
+  margin: 8rem auto 2em;
+  animation: fade-in-up 1.2s forwards;
 
   @media (max-width: 480px) {
     margin-bottom: 1rem;
@@ -56,7 +57,7 @@
       justify-content: center;
       align-items: center;
       min-height: 3rem;
-      padding: 1rem 2rem; /* -- .footer-top line is bigger -- */
+      padding: 2rem; /* -- .footer-top line is bigger -- */
       text-decoration: none;
       transition: opacity 200ms, color 200ms;
 
