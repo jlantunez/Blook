@@ -1,13 +1,11 @@
 export const layout = "layouts/year-archive.vto";
 
 export default function* ({ search }) {
-  const allItems = search.pages("layout=layouts/post.vto", "date=asc");
-  const allNotes = search.pages("layout=layouts/note.vto", "date=asc");
-  const combined = [...allItems, ...allNotes].sort((a, b) => a.date - b.date);
+  const allItems = search.pages("type=post|note", "date=asc");
 
   const groups = new Map();
 
-  for (const item of combined) {
+  for (const item of allItems) {
     const year = item.date.getFullYear().toString();
     if (!groups.has(year)) groups.set(year, []);
     groups.get(year).push(item);
