@@ -1,0 +1,29 @@
+---
+layout: layouts/base.vto
+---
+<main>
+  <header class="archive-header">
+    <a title="Volver a archivos" href="/" class="archive-image linkactive">
+      <img src="/assets/archivo.png">
+    </a>
+  </header>
+
+  <div class="archive-posts">
+    <h1 class="archive-title upper">{{ title }}</h1>
+  </div>
+
+  <nav class="archive-posts">
+    <ol>
+      {{ for item of items }}
+        <li>
+          <a href="{{ item.url }}" class="archive-post linkactive">
+            <strong class="archive-post-title">{{ item.title }}</strong>
+            <time class="archive-post-date" datetime='{{ item.date |> date("DATETIME") }}'>
+              {{ item.date |> date("SHORT") }}
+            </time>
+          </a>
+        </li>
+      {{ /for }}
+    </ol>
+  </nav>
+</main>

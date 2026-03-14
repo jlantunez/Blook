@@ -1,15 +1,13 @@
 ---
 layout: layouts/base.vto
 ---
-
-{{ set post = search.page("type=post", "date=desc") }}
+{{ set post = search.page("layout=layouts/post.vto", "date=desc") }}
+{{ if post }}
 {{ set src = post.image.src |> url }}
 {{ set img_webp = src.replace(/\.\w+$/, ".webp") }}
 {{ set img_avif = src.replace(/\.\w+$/, ".avif") }}
-
 <link href="{{ img_avif }}" rel="preload" as="image" type="image/avif" crossorigin="anonymous">
 <link href="{{ img_webp }}" rel="preload" as="image" type="image/webp" crossorigin="anonymous">
-
 <article class="post">
   {{ set img_set }}
   image-set(
@@ -22,7 +20,6 @@ layout: layouts/base.vto
     style="--image: {{ img_set |> escape }}; --position-x: {{ post.image.x }}%; --position-y: {{ post.image.y }}%"
   >
   </div>
-
   <a href="{{ post.url }}" class="post-header is-link dark-scheme">
     <h1 class="post-title">
       {{ post.title }}
@@ -34,14 +31,15 @@ layout: layouts/base.vto
     </p>
   </a>
 </article>
-
 <section class="post-latest">
   <ul class="post-latest-list">
-    {{ set allPosts = search.pages("type=post|note", "date=desc", post_limit) }}
-    {{ set allPosts = allPosts.filter((item) => item.url !== post.url) }}
-    {{ for item of allPosts }}
+    {{ set allPosts = search.pages("layout=layouts/post.vto", "date=desc", post_limit) }}
+    {{ set allNotes = search.pages("layout=layouts/note.vto", "date=desc", post_limit) }}
+    {{ set allItems = [...allPosts, ...allNotes].sort((a, b) => b.date - a.date).slice(0, post_limit) }}
+    {{ set allItems = allItems.filter((item) => item.url !== post.url) }}
+    {{ for item of allItems }}
       <li>
-        {{ if item.type == "note" }}
+        {{ if item.layout == "layouts/note.vto" }}
           <a href="{{ item.url }}" class="post-list-item post-list-item--note">
             <h3 class="post-list-title">
               {{ item.title }}
@@ -74,8 +72,9 @@ layout: layouts/base.vto
   </ul>
   <footer class="post-latest-footer">
     <a class="post-latest-arch linkactive" href="/archivos/">
-      Archivo
+      Archivos
       <img src='{{ "arrow-right" |> icon("phosphor") }}' inline>
     </a>
   </footer>
 </section>
+{{ /if }}

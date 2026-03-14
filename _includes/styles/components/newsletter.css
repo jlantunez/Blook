@@ -13,6 +13,7 @@ input:-webkit-autofill:active {
 /* ---- Newsletter form ---- */
 .newsletter {
   position: relative;
+  z-index: 2;
   text-align: center;
   margin: min(8rem, 15vh) auto;
   font-size: var(--size-0);
@@ -20,6 +21,7 @@ input:-webkit-autofill:active {
   width: 100%;
   max-width: 960px;
   padding-inline: 1.5rem;
+  animation: fade-in-up 1s forwards;
 
   @media (width >= 1000px) {
     padding-inline: 0;
