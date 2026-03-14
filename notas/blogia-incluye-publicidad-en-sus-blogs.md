@@ -8,4 +8,4 @@ metas: {}
 
 <a href="http://www.infoaragon.net/servicios/blogs/wwwaragones/index.php">Roberto Abizanda</a> había <a href="http://blogia.com/blog/index.php?idarticulo=200312021">tanteado</a> el terreno días atrás entre la comunidad blogia. 
 
-Es el primer intento que sea realiza en la blogosfera hispana para generar unos pequeños ingresos para sufragar gastos. Es un buen camino para medir la fidelidad y solidaridad de los bloggers.
+Es el primer intento que se realiza en la blogosfera hispana para generar unos pequeños ingresos para sufragar gastos. Es un buen camino para medir la fidelidad y solidaridad de los bloggers.
