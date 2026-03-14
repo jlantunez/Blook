@@ -1,5 +1,5 @@
 ---
-title: 'Weblog BBC de Omar Razek, continúa'
+title: Weblog BBC de Omar Razek
 date: 2004-06-24
 slug: weblog-bbc-omar-razek-continua
 metas:
