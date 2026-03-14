@@ -118,6 +118,10 @@ layout: ./base.vto
 
       document.getElementById('tab-' + tab).classList.add('is-active');
       document.getElementById('btn-' + tab).setAttribute('aria-selected', 'true');
+      history.pushState(null, null, `#${tab}`)
+    }
+    if (document.location.hash.length > 2) {
+      switchTab(document.location.hash.slice(1))
     }
   </script>
 </main>
