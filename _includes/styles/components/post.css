@@ -202,9 +202,23 @@ main {
     list-style: decimal;
   }
 
+  .intro::after {
+    display: block;
+    text-align: center;
+    padding-top: 1lh;
+    letter-spacing: 1rem;
+    content: '***';
+    color: var(--color-text);
+    font-size: 1rem;
+
+ }
+
   blockquote {
-    font-style: italic;
-    color:var(--color-text-blockquote);
+    margin: 2lh 0;
+    padding-left: 2rem;
+    border-left: 6px solid var(--color-line);
+    font-size: 1rem;
+    
   }
 
   img,
@@ -464,6 +478,11 @@ main {
   grid-row: auto;
   padding-bottom: 1rem;
   display: grid;
+
+  .post-date {
+  color: var(--color-text);
+  opacity: .5;
+}
 
 .post-title {
 
