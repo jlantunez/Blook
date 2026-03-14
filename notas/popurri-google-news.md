@@ -7,7 +7,7 @@ metas:
     Ya que Google News permite la personalización he filtrado las noticias sobre
     blogs en español y en inglés.
 ---
-<p class="intro">Si rastrearan el contenidos de los blogs...</p>
+<p class="intro">Si rastrearan el contenido de los blogs...</p>
 
 <p><a href="http://news.google.com">Google News</a> permite filtar las noticias sobre blogs en <a href="http://news.google.es/news?q=Weblogs&ie=UTF-8">español</a> y en <a href="http://news.google.es/news?q=weblogs,+blogs&ie=UTF-8&hl=en">inglés</a>:
   

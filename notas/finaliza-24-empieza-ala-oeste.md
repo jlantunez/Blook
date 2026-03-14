@@ -2,7 +2,8 @@
 title: Finaliza '24' y empieza 'El ala oeste'
 date: 2003-11-13
 slug: finaliza-empieza
-metas: {}
+metas:
+  description: Jack Bauer se despide de Antena 3 en su segunda temporada.
 ---
 Jack Bauer se despide de Antena 3 en su segunda temporada.
 

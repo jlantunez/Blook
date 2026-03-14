@@ -21,17 +21,14 @@ metas:
 
 <h2>Home</h2>
 
-<p><a title="Click para ampliar" href="http://jlantunez.com/blog/wp-content/uploads/2011/04/home.png" target="_blank" rel="noopener"><img src="http://jlantunez.com/blog/wp-content/uploads/2011/04/home_blue_newtwitter2.png" alt="Captura"/></a></p>
+<p><img src="/img/home_blue_newtwitter2.png" alt="Captura Home"/></p>
 
 <h2>Profile</h2>
 
-<p><a title="Click para ampliar" href="http://jlantunez.com/blog/wp-content/uploads/2011/04/profile.png" target="_blank" rel="noopener"><img src="http://jlantunez.com/blog/wp-content/uploads/2011/04/profile_blue_newtwitter2.png" alt="Captura"/></a></p>
+<p><img src="/img/profile-newtwitter2.png" alt="Captura Perfil profesional con CV"/></p>
 
 <h2>Settings</h2>
-<p><a title="Click para ampliar" href="http://jlantunez.com/blog/wp-content/uploads/2011/04/settings.png" target="_blank" rel="noopener"><img src="http://jlantunez.com/blog/wp-content/uploads/2011/04/settings_blue_newtwitter2.png" alt="Captura"/></a></p>
-
-<h2>Home (Green)</h2>
-<p><a title="Click para ampliar" href="http://jlantunez.com/blog/wp-content/uploads/2011/04/home_green.png" target="_blank" rel="noopener"><img src="http://jlantunez.com/blog/wp-content/uploads/2011/04/home_green_newtwitter2.png" alt="Captura"/></a><p>
+<p><img src="/img/settings-newtwitter2.png" alt="Captura de Settings"/></p>
 
 <p>He cumplido la <a href="http://support.twitter.com/articles/77641-guidelines-for-use-of-the-twitter-trademark">guía de uso de Twitter como marca</a>.</p>
 
