@@ -2,7 +2,10 @@
 title: Efemérides del 20N
 date: 2003-11-20
 slug: efemerides-del-20-n
-metas: {}
+metas:
+  description: >-
+    Un 20 de noviembre murió un dictador. También se presentó Windows y apareció
+    el primer virus informático.
 ---
 <p>Un 20 de noviembre murió un dictador. También se presentó <a href="http://www.ideasapiens.com/blogs/archivos/000015.html">Windows</a> y apareció el <a href="http://barrapunto.com/articles/03/11/11/0913215.shtml">primer virus informático</a>. </p>
 
