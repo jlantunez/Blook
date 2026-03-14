@@ -1,5 +1,5 @@
 ---
-title: RyanAir. Espíritu aterriza como puedas
+title: 'RyanAir, espíritu aterriza como puedas'
 date: 2005-01-13
 slug: ryanair-espiritu-aterriza-como-puedas
 metas:
