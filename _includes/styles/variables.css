@@ -24,17 +24,17 @@
   --font-bold: 700;
 
   /* Colors */
-  --color-background: #f6f2f1;
-  --color-background-highlight: #f5f1f0;
-  --color-background-highlight2: #faf7f3;
-  --color-background-search: #e8e4e1;
+  --color-background: #faf6f2;
+  --color-background-highlight: #f6f2ee;
+  --color-background-highlight2: #fdf9f5;
+  --color-background-search: #f3efeb;
   --color-text: #262524;
   --color-text-strong: #161514;
   --color-text-blockquote: #977055;
-  --color-line: #ded9d7;
+  --color-line: #e9e5e1;
   --color-button: #161514;
   --color-button-text: #fff;
-  --color-input-icon: #e9e5db;
+  --color-input-icon: #e9e5e1;
   --color-error: #a00;
   --color-accent: #d63e1f;
   --color-error-background: #fbebeb;
