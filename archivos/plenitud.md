@@ -24,8 +24,8 @@ cinco años cuando tú, de pastorcillo, la ves actuar de Virgen María. La pleni
 es cuando ella nació y los tres os abrazáis. Y cuando ellos murieron, porque la
 plenitud no teme al espectro.
 
-Timshel es la palabra hebrea que Steinbeck utiliza como eje moral en Al este del
-Edén. Significa “tú podrás”. Implica libertad de elección: el ser humano no está
+Timshel es la palabra hebrea que Steinbeck utiliza como eje moral en *Al este del
+Edén*. Significa “tú podrás”. Implica libertad de elección: el ser humano no está
 condenado por el destino ni obligado por mandato divino, sino que tiene la
 capacidad de elegir entre el bien y el mal. Acaso sea la palabra más importante
 del mundo. La plenitud es Timshel y escuchar a Morricone.
