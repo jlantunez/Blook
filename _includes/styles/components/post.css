@@ -202,10 +202,15 @@ main {
     list-style: decimal;
   }
 
+  .intro {
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+
   .intro::after {
     display: block;
     text-align: center;
-    padding-top: 1lh;
+    padding: 2lh 0 1lh;
     letter-spacing: 1rem;
     content: '***';
     color: var(--color-text);
