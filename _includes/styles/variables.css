@@ -23,35 +23,36 @@
   --font-regular: 400;
   --font-bold: 700;
 
-  /* Colors */
-  --color-background: #faf6f2;
-  --color-background-highlight: #f6f2ee;
-  --color-background-highlight2: #fdf9f5;
-  --color-background-search: #f3efeb;
-  --color-text: #262524;
-  --color-text-strong: #161514;
-  --color-text-blockquote: #977055;
-  --color-line: #e9e5e1;
-  --color-button: #161514;
-  --color-button-text: #fff;
-  --color-input-icon: #e9e5e1;
-  --color-error: #a00;
-  --color-accent: #d63e1f;
-  --color-error-background: #fbebeb;
-  --pagefind-ui-text: #161514;
-  --pagefind-ui-background: #ffffff;
-  --pagefind-ui-border: rgba(0, 0, 0, 0.1);
-  --pagefind-ui-tag: #eeeeee;
-  --color-selection: color-mix(in srgb,
-      var(--color-accent) 15%,
-      var(--color-background));
-
   /* Line heights */
   --line-base: 1.4;
   --line-text: 1.6;
 
-  @media (prefers-color-scheme: dark) {
-    /* Colors */
+  /* Colors */
+  --color-background: #fff9f5;
+  --color-background-highlight: #fcf3f0;
+  --color-background-highlight2: #fff7f4;
+  --color-background-search: #fbefea;
+  --color-text: #444240;
+  --color-text-strong: #161514;
+  --color-text-blockquote: #977055;
+  --color-line: rgba(60, 40, 20, 0.08);
+  --color-button: #402a0d;
+  --color-button-text: #fff;
+  --color-input-icon: #eae3e2;
+  --color-error: #a00;
+  --color-accent: #f3825c;
+  --color-error-background: #fbebeb;
+  --pagefind-ui-text: #161514;
+  --pagefind-ui-background: #fff;
+  --pagefind-ui-border: rgba(60, 40, 20, 0.08);
+  --pagefind-ui-tag: #eeeeee;
+  --color-selection: color-mix(in srgb,
+      var(--color-accent) 15%,
+      var(--color-background));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
     --color-background: #161514;
     --color-background-highlight: #181716;
     --color-background-highlight2: #1c1b1a;
@@ -59,36 +60,30 @@
     --color-text: #a8a7a6;
     --color-text-strong: #fff;
     --color-text-blockquote: #977055;
-    --color-line: #242322;
+    --color-line: rgba(255, 255, 255, 0.05);
     --color-button: #fff;
     --color-button-text: #161514;
     --color-input-icon: #a8a7a6;
-    --color-accent: #f3825c;
     --pagefind-ui-text: #a8a7a6;
-    --pagefind-ui-background: #ffffff;
     --pagefind-ui-border: rgba(255, 255, 255, 0.07);
-    --pagefind-ui-tag: #eeeeee;
   }
 }
 
 /* To force dark mode */
 .dark-scheme {
-    --color-background: #161514;
-    --color-background-highlight: #181716;
-    --color-background-highlight2: #1c1b1a;
-    --color-background-search: #222120;
-    --color-text: #a8a7a6;
-    --color-text-strong: #fff;
-    --color-text-blockquote: #977055;
-    --color-line: #242322;
-    --color-button: #fff;
-    --color-button-text: #161514;
-    --color-input-icon: #a8a7a6;
-    --color-accent: #f3825c;
-    --pagefind-ui-text: #a8a7a6;
-    --pagefind-ui-background: #ffffff;
-    --pagefind-ui-border: rgba(255, 255, 255, 0.07);
-    --pagefind-ui-tag: #eeeeee;
+  --color-background: #161514;
+  --color-background-highlight: #181716;
+  --color-background-highlight2: #1c1b1a;
+  --color-background-search: #222120;
+  --color-text: #a8a7a6;
+  --color-text-strong: #fff;
+  --color-text-blockquote: #977055;
+  --color-line: #242322;
+  --color-button: #fff;
+  --color-button-text: #161514;
+  --color-input-icon: #a8a7a6;
+  --pagefind-ui-text: #a8a7a6;
+  --pagefind-ui-border: rgba(255, 255, 255, 0.07);
 }
 
 /* Fluid typography: https://utopia.fyi/blog/clamp/ */
