@@ -8,7 +8,7 @@ metas:
 ---
 <p class="intro">Post publicado originalmente en la <a href="http://eventoblog.com">web de EBE</a>. La <a href="http://eventoblog.com/2012/06/festival-clic-ebecuba/" target="_blank">primera edición</a> de <a href="http://festivalclic.com/" target="_blank">Festival CLIC</a> (@FestivalCLIC) se celebró del 21 al 23 de junio en La Habana y supuso el primer evento tecnológico nacional, independiente e inclusivo en Cuba organizado por blogueros. En su primer día albergó EBECuba. Una aventura de película con dictadura, supuestas conspiraciones, espías y CNN.</p>
 
-<p>Todo empezó el 11/11/11. El cubano Rafael Campoamor (@Cimarro061) vino como asistente a #EBE11 y nos contó la situación en Cuba. Acordamos cederle 5 minutos en el <a href="http://www.youtube.com/watch?v=AAfGtKuCzNs" target="_blank">escenario para que la explicara</a> e hizo una llamada a viajar a Cuba con portátiles y móviles viejos, <em>pen drives</em>…</p>
+<p>Todo empezó el 11/11/11. El cubano Rafel Campoamor (@Cimarro061) vino como asistente a #EBE11 y nos contó la situación en Cuba. Acordamos cederle 5 minutos en el <a href="http://www.youtube.com/watch?v=AAfGtKuCzNs" target="_blank">escenario para que la explicara</a> e hizo una llamada a viajar a Cuba con portátiles y móviles viejos, <em>pen drives</em>…</p>
 
 <p>Días después nos pusimos a trabajar para celebrar un EBECuba en La Habana. Se unieron a la organización el matrimonio formado por <a href="http://www.desdecuba.com/reinaldoescobar/?p=952" target="_blank">Reinaldo Escobar</a> y <a href="http://www.desdecuba.com/generaciony/?p=6384" target="_blank">Yoani Sánchez</a>, además de los organizadores de <a href="http://www.estadodesats.com/" target="_blank">Estado de Sats</a>: Antonio Rodiles y Ailer González.</p>
 
