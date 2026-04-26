@@ -7,7 +7,7 @@ metas:
     los cuerpos orbitan entre sí llegando a distorsionar el espacio-tiempo.
 image:
   src: /img/decisiones.webp
-  x: 50
+  x: 80
   'y': 50
 ---
 ¿En qué me autoengaño? ¿Qué puedo elegir? ¿Qué me motiva? ¿Qué me limitará siempre? 
