@@ -12,8 +12,6 @@ metas:
 
 <p>Días después nos pusimos a trabajar para celebrar un EBECuba en La Habana. Se unieron a la organización el matrimonio formado por <a href="http://www.desdecuba.com/reinaldoescobar/?p=952" target="_blank">Reinaldo Escobar</a> y <a href="http://www.desdecuba.com/generaciony/?p=6384" target="_blank">Yoani Sánchez</a>, además de los organizadores de <a href="http://www.estadodesats.com/" target="_blank">Estado de Sats</a>: Antonio Rodiles y Ailer González.</p>
 
-<p><span id="more-7273"></span></p>
-
 <p>EBECuba se iba a celebrar en marzo de 2012, pero Rafael no fue claro en cuestiones muy delicadas y decidimos que no continuara en la organización. A partir de ahí, el objetivo fue organizar un evento <a href="http://festivalclic.com/programa" target="_blank">meramente tecnológico e inclusivo</a> en junio de 2012 bajo el nombre de @FestivalCLIC. En su primer día albergaría EBECuba. Ellos hicieron casi todo el trabajo. Desde aquí, nuevamente, nuestra admiración.</p>
 
 <p>Alrededor de 150 personas acudieron finalmente a <a href="https://twitter.com/#!/search/realtime/FestivalCLIC" target="_blank">#FestivalCLIC</a>. Varias de ellas llegaron desde provincias tras muchas horas de viaje.</p>
@@ -36,7 +34,7 @@ metas:
 
 <p>Estamos muy satisfechos con el eco que ha tenido <a href="https://www.google.com/search?hl=es&amp;gl=es&amp;tbm=nws&amp;q=festival+clic&amp;oq=festival+clic&amp;aq=f&amp;aqi=d1g10d1&amp;aql=&amp;gs_l=news-cc.3..43j0l10j43i400.380.1582.0.1782.13.8.0.0.0.0.303.680.1j1j1j1.4.0...0.0.GYuw_heHNNM" target="_blank">#FestivalCLIC en los medios</a> dentro y fuera de Cuba. Además del espacio que los medios afines al sistema e independientes dedicaron al evento, los corresponsales de CNN, BBC, Reuters, AP, AFP y EFE acudieron al evento.</p>
 
-<p>Una de las <a href="http://edition.cnn.com/video/?/video/world/2012/06/25/oppman-cuba-tech-festival.cnn" target="_blank">piezas que la CNN dedicó a #FestivalCLIC</a> me la encontré haciendo zapping en la habitación del hotel. También nos reseñaron en Fast Company: <a href="http://www.fastcompany.com/1841470/social-media-festivals-come-to-cuba?partner=rss" target="_blank">Social Media Festivals Come To Cuba</a>.</p>
+<p>Una de las <a href="https://edition.cnn.com/videos/world/2012/06/25/oppman-cuba-tech-festival.cnn" target="_blank">piezas que la CNN dedicó a #FestivalCLIC</a> me la encontré haciendo zapping en la habitación del hotel. También nos reseñaron en Fast Company: <a href="http://www.fastcompany.com/1841470/social-media-festivals-come-to-cuba?partner=rss" target="_blank">Social Media Festivals Come To Cuba</a>.</p>
 
 <p>Aunque lo que más ilusión nos ha hecho es el cariño que hemos recibido por email y en Twitter desde multitud de países.</p>
 
