@@ -7,7 +7,7 @@ metas:
     racionalizadores y simbólicos.
 image:
   src: /img/simbolos.webp
-  x: 60
+  x: 55
   'y': 50
 ---
 Lo humano es lo artificial. La sobreteorización puede ser la maldad que te impide disfrutar del habitar en libertad.
