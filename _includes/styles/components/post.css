@@ -181,7 +181,6 @@ main {
   line-height: var(--line-text);
   max-width: 45em;
   text-wrap: pretty;
-  margin-top: 2rem;
   animation: fade-in 1s both;
   animation-delay: 0.2s;
 
