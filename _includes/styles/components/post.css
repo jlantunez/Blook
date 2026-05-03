@@ -348,6 +348,8 @@ main {
 
   >li {
     border-bottom: solid 1px var(--color-line);
+    display: flex;
+    align-items: stretch;
   }
 }
 
@@ -359,6 +361,7 @@ main {
   row-gap: 1rem;
   padding: 2rem;
   transition: background-color 200ms;
+  width: 100%;
   grid-template-areas:
     "title"
     "content";
