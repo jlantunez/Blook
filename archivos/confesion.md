@@ -7,7 +7,7 @@ metas:
     del cordón. El abrazo de bienvenida.
 image:
   src: /img/confesion.webp
-  x: 60
+  x: 40
   'y': 50
 ---
 La luz. El llanto de salida. El corte frío del cordón. El abrazo de bienvenida. La voz que pronunciará mi nombre hasta su vejez. El pecho salvador. El primer estímulo consciente que resultó una risa peculiar. Ponerme de pie, caer, levantarme. Hablar. Empezar el colegio en octubre. Decidir que la pelota sería mi mejor amiga. El primer gol. La primera derrota antes de entender la victoria. Ser el capitán que eligen tus compañeros. El patio. El pan de Alcalá. Yerbabuena. Lentejas. Pringá.
