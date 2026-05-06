@@ -18,7 +18,7 @@ metas:
 
 <p>Las conferencias consistieron en paneles sobre Twitter, periodismo digital en Cuba, música, WordPress, sociedad y redes sociales…</p>
 
-<p>Yoani cuenta la <a href="http://blogs.elpais.com/cuba-libre/2012/07/adi%C3%B3s-al-toc-toc.html" target="_blank">experiencia del evento</a> en su blog de El País.</p>
+<p>Yoani cuenta la <a href="https://web.archive.org/web/20120703193659/http://blogs.elpais.com/cuba-libre/2012/07/adi%C3%B3s-al-toc-toc.html" target="_blank">experiencia del evento</a> en su blog de El País.</p>
 
 <p><img alt="Foto de familia con asistentes de Festival Clic" src="/img/foto_familia_festivalclic.jpeg"></p>
 
