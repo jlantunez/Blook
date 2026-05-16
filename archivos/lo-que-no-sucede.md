@@ -7,8 +7,8 @@ metas:
     y plenitud.
 image:
   src: /img/lo-que-no-sucede.webp
-  x: 50
-  'y': 50
+  x: 10
+  'y': 10
 ---
 ¿Qué te hace feliz? ¿Por qué no lo haces más?
 La felicidad es un cóctel neuronal que depende del hacer efímero. Lo aspiracional es la plenitud que nace del ser disciplinado en el placer. Ambas se relacionan desde el sentir.
