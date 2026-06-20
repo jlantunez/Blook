@@ -14,7 +14,7 @@ Esta semana he entendido qué significa ser del Valencia Basket por cortesía de
 
 La familia Roig lleva años gestionando el club desde la narrativa del esfuerzo, el largo plazo y lo local sin exclusiones ni frentismos. Son un caso único en Europa. Los “ultras” en una de las gradas son veinte abuelas con pancartas. Mediterráneo naranja.
 
-Sabiendo que toda identidad es una cárcel, en su dosis justa es la estructura que da lugar y sentido en el mundo. Ubicaron el Roig Arena en una zona deprimida de la ciudad que se ha revitalizado no solo con los eventos, sino también con la construcción de un parque y el colegio de Les Arts, que ha sustituido al centro anterior, ya impropio de este siglo.
+Sabiendo que toda identidad es una cárcel, en su dosis justa es la estructura que da lugar y sentido en el mundo. Ubicaron el Roig Arena en una zona deprimida de la ciudad que se ha revitalizado no sólo con los eventos, sino también con la construcción de un parque y el colegio de Les Arts, que ha sustituido al centro anterior, ya impropio de este siglo.
 
 La cultura es la coherencia constante sistematizada. Es el sistema social compartido de tu organización, que se cocrea con el equipo en un proceso de destilación que va de arriba abajo y viceversa. 
 
