@@ -1,5 +1,5 @@
 ---
-title: Lo que aprendí de BE
+title: Lo que aprendí de EBE
 date: 2026-09-12
 metas:
   description: >-
