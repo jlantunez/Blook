@@ -10,7 +10,7 @@ image:
   x: 50
   'y': 50
 ---
-La matteria es la sustancia de lo que importa. Matteria nace de matter, importar, que a su vez deriva del latín mater, que significa madre, materia prima, madera de construcción. ¿Recuerdas el cáliz de «Indiana Jones»?
+La matteria es la sustancia de lo que importa. Matteria nace de *matter*, importar, que a su vez deriva del latín *mater*, que significa madre, materia prima, madera de construcción. ¿Recuerdas el cáliz de «Indiana Jones»?
 
 La matteria es el ingrediente principal de lo humano. Cuando se utiliza para enfrentarnos, desaparece. El aceleracionismo es a la empresa lo que el populismo a la política. Combatámoslo con matterialismo, uniendo lo material con lo espiritual, lo cotidiano con lo extraordinario, el dato con el sentido. La dirección importa más que la velocidad. Ni caso a Thiel.
 
